@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { View, Text } from "react-native";
 
-function App() {
+// Look at public/index.html!
+
+
+
+import {CheckoutProvider} from './context/CheckoutContext';
+import {VoucherProvider} from './context/VoucherContext';
+import {OrientationProvider} from './context/OrientationContext';
+
+import CheckoutScreen from './screens/CheckoutScreen';
+
+// import OrientationContext from './src/context/OrientationContext';
+
+
+const App = () => {
+  // const {orientation} = useContext(OrientationContext);
+  return <CheckoutScreen />;
+};
+
+// class App extends React.Component {
+//   render() {return <CheckoutScreen />;}
+
+export default () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <CheckoutProvider>
+      <VoucherProvider>
+        <OrientationProvider>
+          <App />
+        </OrientationProvider>
+      </VoucherProvider>
+    </CheckoutProvider>
   );
-}
+};
 
-export default App;
+

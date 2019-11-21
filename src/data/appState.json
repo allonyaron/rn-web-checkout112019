@@ -1,0 +1,4070 @@
+{
+  "airlineTax": 1840,
+  "modifierOptionsById": {
+    "38371": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Dressing on the Side",
+      "modifierCollectionId": 0,
+      "menuItemId": 38371,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    "38372": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "No Dressing",
+      "modifierCollectionId": 0,
+      "menuItemId": 38372,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    "38408": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "No Bacon",
+      "modifierCollectionId": 0,
+      "menuItemId": 38408,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    "38409": {
+      "quantity": 1,
+      "description": "Enter ‘dinehere’ in the promo field to apply your discount",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "RADIO",
+      "title": "Ice Water",
+      "modifierCollectionId": 0,
+      "menuItemId": 38409,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    "38411": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "RADIO",
+      "title": "No Cheese",
+      "modifierCollectionId": 0,
+      "menuItemId": 38411,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    "39731": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "No Onion",
+      "modifierCollectionId": 0,
+      "menuItemId": 39731,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    "40253": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Add Grilled Tuna $10.55",
+      "modifierCollectionId": 0,
+      "menuItemId": 40253,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "10.50",
+      "selected": false,
+      "airlineMiles": 1320
+    },
+    "56382": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "No Cucumber",
+      "modifierCollectionId": 0,
+      "menuItemId": 56382,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    "65227": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Add Avocado $2.05",
+      "modifierCollectionId": 0,
+      "menuItemId": 65227,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "2.00",
+      "selected": false,
+      "airlineMiles": 250
+    },
+    "65239": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Add Chicken $5.05",
+      "modifierCollectionId": 0,
+      "menuItemId": 65239,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "5.05",
+      "selected": false,
+      "airlineMiles": 640
+    },
+    "67857": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Add Shrimp $7.05",
+      "modifierCollectionId": 0,
+      "menuItemId": 67857,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "7.05",
+      "selected": false,
+      "airlineMiles": 890
+    },
+    "68157": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "RADIO",
+      "title": "No Croutons",
+      "modifierCollectionId": 0,
+      "menuItemId": 68157,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    "69991": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "No Feta",
+      "modifierCollectionId": 0,
+      "menuItemId": 69991,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    "114037": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "RADIO",
+      "title": "As Appetizer",
+      "modifierCollectionId": 0,
+      "menuItemId": 114037,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    "132403": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Jack Daniel's Shot $5.00",
+      "modifierCollectionId": 0,
+      "menuItemId": 132403,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    "132404": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Jameson Shot $5.00",
+      "modifierCollectionId": 0,
+      "menuItemId": 132404,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    "132405": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Johnnie Walker Black Shot $5.00",
+      "modifierCollectionId": 0,
+      "menuItemId": 132405,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    "132406": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Jim Beam Shot $5.00",
+      "modifierCollectionId": 0,
+      "menuItemId": 132406,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    "132407": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Cuervo Especial Gold Shot $5.00",
+      "modifierCollectionId": 0,
+      "menuItemId": 132407,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    "136609": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": true,
+      "selectionType": "RADIO",
+      "title": "San Pellegrino 750mL",
+      "modifierCollectionId": 0,
+      "menuItemId": 136609,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "7.50",
+      "selected": true,
+      "airlineMiles": 940
+    },
+    "136610": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "RADIO",
+      "title": "Acqua Panna 750mL",
+      "modifierCollectionId": 0,
+      "menuItemId": 136610,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "7.50",
+      "selected": false,
+      "airlineMiles": 940
+    },
+    "149408": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Add on Soup du Jour $3.00",
+      "modifierCollectionId": 0,
+      "menuItemId": 149408,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "3.00",
+      "selected": false,
+      "airlineMiles": 380
+    },
+    "153247": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Add Salmon $8.00",
+      "modifierCollectionId": 0,
+      "menuItemId": 153247,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "8.00",
+      "selected": false,
+      "airlineMiles": 1000
+    },
+    "153506": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "French Fries $9",
+      "modifierCollectionId": 0,
+      "menuItemId": 153506,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "9.00",
+      "selected": false,
+      "airlineMiles": 1130
+    }
+  },
+  "modifierOptions": [
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Jim Beam Shot $5.00",
+      "modifierCollectionId": 0,
+      "menuItemId": 132406,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Johnnie Walker Black Shot $5.00",
+      "modifierCollectionId": 0,
+      "menuItemId": 132405,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Cuervo Especial Gold Shot $5.00",
+      "modifierCollectionId": 0,
+      "menuItemId": 132407,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Jack Daniel's Shot $5.00",
+      "modifierCollectionId": 0,
+      "menuItemId": 132403,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Jameson Shot $5.00",
+      "modifierCollectionId": 0,
+      "menuItemId": 132404,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "RADIO",
+      "title": "As Appetizer",
+      "modifierCollectionId": 0,
+      "menuItemId": 114037,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "No Feta",
+      "modifierCollectionId": 0,
+      "menuItemId": 69991,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "No Cucumber",
+      "modifierCollectionId": 0,
+      "menuItemId": 56382,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    {
+      "quantity": 1,
+      "description": "Enter ‘dinehere’ in the promo field to apply your discount",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "RADIO",
+      "title": "Ice Water",
+      "modifierCollectionId": 0,
+      "menuItemId": 38409,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": true,
+      "selectionType": "RADIO",
+      "title": "San Pellegrino 750mL",
+      "modifierCollectionId": 0,
+      "menuItemId": 136609,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "7.50",
+      "selected": true,
+      "airlineMiles": 940
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "RADIO",
+      "title": "Acqua Panna 750mL",
+      "modifierCollectionId": 0,
+      "menuItemId": 136610,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "7.50",
+      "selected": false,
+      "airlineMiles": 940
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "No Bacon",
+      "modifierCollectionId": 0,
+      "menuItemId": 38408,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "No Onion",
+      "modifierCollectionId": 0,
+      "menuItemId": 39731,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Dressing on the Side",
+      "modifierCollectionId": 0,
+      "menuItemId": 38371,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "No Dressing",
+      "modifierCollectionId": 0,
+      "menuItemId": 38372,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Add Avocado $2.05",
+      "modifierCollectionId": 0,
+      "menuItemId": 65227,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "2.00",
+      "selected": false,
+      "airlineMiles": 250
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Add on Soup du Jour $3.00",
+      "modifierCollectionId": 0,
+      "menuItemId": 149408,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "3.00",
+      "selected": false,
+      "airlineMiles": 380
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "RADIO",
+      "title": "No Cheese",
+      "modifierCollectionId": 0,
+      "menuItemId": 38411,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "RADIO",
+      "title": "No Croutons",
+      "modifierCollectionId": 0,
+      "menuItemId": 68157,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Add Chicken $5.05",
+      "modifierCollectionId": 0,
+      "menuItemId": 65239,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "5.05",
+      "selected": false,
+      "airlineMiles": 640
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Add Shrimp $7.05",
+      "modifierCollectionId": 0,
+      "menuItemId": 67857,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "7.05",
+      "selected": false,
+      "airlineMiles": 890
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Add Salmon $8.00",
+      "modifierCollectionId": 0,
+      "menuItemId": 153247,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "8.00",
+      "selected": false,
+      "airlineMiles": 1000
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Add Grilled Tuna $10.55",
+      "modifierCollectionId": 0,
+      "menuItemId": 40253,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "10.50",
+      "selected": false,
+      "airlineMiles": 1320
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "French Fries $9",
+      "modifierCollectionId": 0,
+      "menuItemId": 153506,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "9.00",
+      "selected": false,
+      "airlineMiles": 1130
+    }
+  ],
+  "subtotal": "221.50",
+  "totalBeforeTax": "261.37",
+  "airlineTip": 4990,
+  "airlineCharge": 0,
+  "items": [
+    {
+      "quantity": 1,
+      "description": "Light, crisp, refreshing UFO White follows in the tradition of spiced wheat beers that have been brewed in Belgium for well over 300 years. Brewed with orange peel and coriander, UFO White is the perfect choice for a summer’s barbecue, a night out with friends or any time you're thirsting for something a little different. Like all UFO beers, the brewers leave UFO White UnFiltered. 4.8% ABV",
+      "displayPrice": "9.25",
+      "imageUrl": "/images/media/media_25224.jpg",
+      "title": "UFO White Ale",
+      "modifierCollectionId": 1869,
+      "selectedModifiers": [],
+      "menuItemId": 118317,
+      "displayPriceInMiles": 1160,
+      "menuItemPrice": "9.25",
+      "modifierGroups": [
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1742,
+          "maximumSelections": 1,
+          "title": "Add a Shot:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Jack Daniel's Shot $5.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 132403,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Jameson Shot $5.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 132404,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Jim Beam Shot $5.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 132406,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Johnnie Walker Black Shot $5.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 132405,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Cuervo Especial Gold Shot $5.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 132407,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 1160
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "1.00",
+      "imageUrl": "/images/media/media_26537.jpg",
+      "title": "Shelter Newark's Homeless",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menuItemId": 134834,
+      "displayPriceInMiles": 130,
+      "menuItemPrice": "1.00",
+      "modifierGroups": [],
+      "airlineMiles": 130
+    },
+    {
+      "quantity": 1,
+      "description": "Our chef prepares a pizza made with tomato sauce, mozzarella cheese, and sliced meatballs.",
+      "displayPrice": "23.00",
+      "imageUrl": "/images/media/media_21227.jpg",
+      "title": "Meatball Pizza",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menuItemId": 153569,
+      "displayPriceInMiles": 2880,
+      "menuItemPrice": "23.00",
+      "modifierGroups": [],
+      "airlineMiles": 2880
+    },
+    {
+      "quantity": 1,
+      "description": "Our mushroom pizza is topped with tomato sauce, fresh mozzarella, and wild mushrooms.",
+      "displayPrice": "19.00",
+      "imageUrl": "/images/media/media_28039.jpg",
+      "title": "Mushroom Pizza",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menuItemId": 153567,
+      "displayPriceInMiles": 2380,
+      "menuItemPrice": "19.00",
+      "modifierGroups": [],
+      "airlineMiles": 2380
+    },
+    {
+      "quantity": 1,
+      "description": "Lettuce and baby arugula, radish, English cucumbers, goats' milk feta and a confit shallot vinaigrette.",
+      "displayPrice": "13.50",
+      "imageUrl": "/images/media/media_24042.jpg",
+      "title": "Chopped Salad",
+      "modifierCollectionId": 1232,
+      "selectedModifiers": [],
+      "menuItemId": 138823,
+      "displayPriceInMiles": 1690,
+      "menuItemPrice": "13.50",
+      "modifierGroups": [
+        {
+          "selectionType": "RADIO",
+          "minimumSelections": 0,
+          "id": 1621,
+          "maximumSelections": 1000,
+          "title": "Prepared as an appetizer:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "RADIO",
+              "title": "As Appetizer",
+              "modifierCollectionId": 0,
+              "menuItemId": 114037,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1674,
+          "maximumSelections": 1000,
+          "title": "Add Avocado:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Avocado $2.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65227,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "2.00",
+              "selected": false,
+              "airlineMiles": 250
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 25,
+          "maximumSelections": 1,
+          "title": "Salad Dressing Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Dressing on the Side",
+              "modifierCollectionId": 0,
+              "menuItemId": 38371,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Dressing",
+              "modifierCollectionId": 0,
+              "menuItemId": 38372,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1187,
+          "maximumSelections": 1000,
+          "title": "Chopped Salad Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Feta",
+              "modifierCollectionId": 0,
+              "menuItemId": 69991,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Cucumber",
+              "modifierCollectionId": 0,
+              "menuItemId": 56382,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1839,
+          "maximumSelections": 1000,
+          "title": "Add on Soup:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add on Soup du Jour $3.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 149408,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "3.00",
+              "selected": false,
+              "airlineMiles": 380
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1114,
+          "maximumSelections": 1000,
+          "title": "Vanguard Salad Additions:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Chicken $5.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65239,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.05",
+              "selected": false,
+              "airlineMiles": 640
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Shrimp $7.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 67857,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "7.05",
+              "selected": false,
+              "airlineMiles": 890
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Salmon $8.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 153247,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "8.00",
+              "selected": false,
+              "airlineMiles": 1000
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Grilled Tuna $10.55",
+              "modifierCollectionId": 0,
+              "menuItemId": 40253,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "10.50",
+              "selected": false,
+              "airlineMiles": 1320
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "French Fries $9",
+              "modifierCollectionId": 0,
+              "menuItemId": 153506,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "9.00",
+              "selected": false,
+              "airlineMiles": 1130
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 1690
+    },
+    {
+      "quantity": 1,
+      "description": "San Marzano tomato sauce, fresh mozzarella, sweet soppressata, red onions and Parmesan top this pizza.",
+      "displayPrice": "19.00",
+      "imageUrl": "/images/media/media_28531.jpg",
+      "title": "Soppressata Pizza",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menuItemId": 138805,
+      "displayPriceInMiles": 2380,
+      "menuItemPrice": "19.00",
+      "modifierGroups": [],
+      "airlineMiles": 2380
+    },
+    {
+      "quantity": 1,
+      "description": "Baby organic kale is tossed with roasted tomatoes, crispy shallots and a roasted garlic vinaigrette.  Topped with marinated hanger steak.",
+      "displayPrice": "30.00",
+      "imageUrl": "/images/media/media_28360.jpg",
+      "title": "*Steak Chopped Salad",
+      "modifierCollectionId": 1699,
+      "selectedModifiers": [],
+      "menuItemId": 138817,
+      "displayPriceInMiles": 3750,
+      "menuItemPrice": "30.00",
+      "modifierGroups": [
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1607,
+          "maximumSelections": 1000,
+          "title": "Steak Chopped Salad Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Bacon",
+              "modifierCollectionId": 0,
+              "menuItemId": 38408,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Onion",
+              "modifierCollectionId": 0,
+              "menuItemId": 39731,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "RADIO",
+          "minimumSelections": 0,
+          "id": 1621,
+          "maximumSelections": 1000,
+          "title": "Prepared as an appetizer:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "RADIO",
+              "title": "As Appetizer",
+              "modifierCollectionId": 0,
+              "menuItemId": 114037,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 25,
+          "maximumSelections": 1,
+          "title": "Salad Dressing Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Dressing on the Side",
+              "modifierCollectionId": 0,
+              "menuItemId": 38371,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Dressing",
+              "modifierCollectionId": 0,
+              "menuItemId": 38372,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1674,
+          "maximumSelections": 1000,
+          "title": "Add Avocado:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Avocado $2.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65227,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "2.00",
+              "selected": false,
+              "airlineMiles": 250
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1839,
+          "maximumSelections": 1000,
+          "title": "Add on Soup:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add on Soup du Jour $3.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 149408,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "3.00",
+              "selected": false,
+              "airlineMiles": 380
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1114,
+          "maximumSelections": 1000,
+          "title": "Vanguard Salad Additions:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Chicken $5.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65239,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.05",
+              "selected": false,
+              "airlineMiles": 640
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Shrimp $7.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 67857,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "7.05",
+              "selected": false,
+              "airlineMiles": 890
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Salmon $8.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 153247,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "8.00",
+              "selected": false,
+              "airlineMiles": 1000
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Grilled Tuna $10.55",
+              "modifierCollectionId": 0,
+              "menuItemId": 40253,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "10.50",
+              "selected": false,
+              "airlineMiles": 1320
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "French Fries $9",
+              "modifierCollectionId": 0,
+              "menuItemId": 153506,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "9.00",
+              "selected": false,
+              "airlineMiles": 1130
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 3750
+    },
+    {
+      "quantity": 1,
+      "description": "Our chefs prepare a pizza topped with Prosciutto di Parma, sweet onion marmalade, fontina cheese, and black mission figs.",
+      "displayPrice": "19.00",
+      "imageUrl": "/images/media/media_27062.jpg",
+      "title": "Prosciutto & Fig",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menuItemId": 138806,
+      "displayPriceInMiles": 2380,
+      "menuItemPrice": "19.00",
+      "modifierGroups": [],
+      "airlineMiles": 2380
+    },
+    {
+      "quantity": 1,
+      "description": "Baby organic kale is tossed with roasted tomatoes, crispy shallots and a roasted garlic vinaigrette.  Topped with marinated hanger steak.",
+      "displayPrice": "30.00",
+      "imageUrl": "/images/media/media_28360.jpg",
+      "title": "*Steak Chopped Salad",
+      "modifierCollectionId": 1699,
+      "selectedModifiers": [],
+      "menuItemId": 138817,
+      "displayPriceInMiles": 3750,
+      "menuItemPrice": "30.00",
+      "modifierGroups": [
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1607,
+          "maximumSelections": 1000,
+          "title": "Steak Chopped Salad Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Bacon",
+              "modifierCollectionId": 0,
+              "menuItemId": 38408,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": true,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Onion",
+              "modifierCollectionId": 0,
+              "menuItemId": 39731,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": true,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "RADIO",
+          "minimumSelections": 0,
+          "id": 1621,
+          "maximumSelections": 1000,
+          "title": "Prepared as an appetizer:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "RADIO",
+              "title": "As Appetizer",
+              "modifierCollectionId": 0,
+              "menuItemId": 114037,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 25,
+          "maximumSelections": 1,
+          "title": "Salad Dressing Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Dressing on the Side",
+              "modifierCollectionId": 0,
+              "menuItemId": 38371,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Dressing",
+              "modifierCollectionId": 0,
+              "menuItemId": 38372,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1674,
+          "maximumSelections": 1000,
+          "title": "Add Avocado:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Avocado $2.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65227,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "2.00",
+              "selected": false,
+              "airlineMiles": 250
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1839,
+          "maximumSelections": 1000,
+          "title": "Add on Soup:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add on Soup du Jour $3.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 149408,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "3.00",
+              "selected": false,
+              "airlineMiles": 380
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1114,
+          "maximumSelections": 1000,
+          "title": "Vanguard Salad Additions:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Chicken $5.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65239,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.05",
+              "selected": false,
+              "airlineMiles": 640
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Shrimp $7.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 67857,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "7.05",
+              "selected": false,
+              "airlineMiles": 890
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Salmon $8.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 153247,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "8.00",
+              "selected": false,
+              "airlineMiles": 1000
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Grilled Tuna $10.55",
+              "modifierCollectionId": 0,
+              "menuItemId": 40253,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "10.50",
+              "selected": false,
+              "airlineMiles": 1320
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "French Fries $9",
+              "modifierCollectionId": 0,
+              "menuItemId": 153506,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "9.00",
+              "selected": false,
+              "airlineMiles": 1130
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 3750
+    },
+    {
+      "quantity": 1,
+      "description": "Choose from Acqua Panna mineral water, San Pellegrino sparkling water, or ice water.",
+      "displayPrice": "0.00",
+      "imageUrl": "/images/media/media_26787.jpg",
+      "title": "Choice of Water",
+      "modifierCollectionId": 916,
+      "selectedModifiers": [136609],
+      "menuItemId": 60394,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "modifierGroups": [
+        {
+          "selectionType": "RADIO",
+          "minimumSelections": 1,
+          "id": 933,
+          "maximumSelections": 1,
+          "title": "Water",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "Enter ‘dinehere’ in the promo field to apply your discount",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "RADIO",
+              "title": "Ice Water",
+              "modifierCollectionId": 0,
+              "menuItemId": 38409,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": true,
+              "selectionType": "RADIO",
+              "title": "San Pellegrino 750mL",
+              "modifierCollectionId": 0,
+              "menuItemId": 136609,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "7.50",
+              "selected": false,
+              "airlineMiles": 940
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "RADIO",
+              "title": "Acqua Panna 750mL",
+              "modifierCollectionId": 0,
+              "menuItemId": 136610,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "7.50",
+              "selected": false,
+              "airlineMiles": 940
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 0
+    },
+    {
+      "quantity": 1,
+      "description": "Our chefs toss romaine lettuce with a creamy Caesar dressing. Finished with grated Parmesan cheese, croutons,  and fried capers.",
+      "displayPrice": "14.50",
+      "imageUrl": "/images/media/media_24046.jpg",
+      "title": "Caesar Salad",
+      "modifierCollectionId": 1251,
+      "selectedModifiers": [],
+      "menuItemId": 138783,
+      "displayPriceInMiles": 1820,
+      "menuItemPrice": "14.50",
+      "modifierGroups": [
+        {
+          "selectionType": "RADIO",
+          "minimumSelections": 0,
+          "id": 604,
+          "maximumSelections": 1000,
+          "title": "Caesar Salad Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "RADIO",
+              "title": "No Cheese",
+              "modifierCollectionId": 0,
+              "menuItemId": 38411,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "RADIO",
+              "title": "No Croutons",
+              "modifierCollectionId": 0,
+              "menuItemId": 68157,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "RADIO",
+          "minimumSelections": 0,
+          "id": 1621,
+          "maximumSelections": 1000,
+          "title": "Prepared as an appetizer:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "RADIO",
+              "title": "As Appetizer",
+              "modifierCollectionId": 0,
+              "menuItemId": 114037,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 25,
+          "maximumSelections": 1,
+          "title": "Salad Dressing Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Dressing on the Side",
+              "modifierCollectionId": 0,
+              "menuItemId": 38371,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Dressing",
+              "modifierCollectionId": 0,
+              "menuItemId": 38372,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1674,
+          "maximumSelections": 1000,
+          "title": "Add Avocado:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Avocado $2.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65227,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "2.00",
+              "selected": false,
+              "airlineMiles": 250
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1839,
+          "maximumSelections": 1000,
+          "title": "Add on Soup:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add on Soup du Jour $3.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 149408,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "3.00",
+              "selected": false,
+              "airlineMiles": 380
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1114,
+          "maximumSelections": 1000,
+          "title": "Vanguard Salad Additions:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Chicken $5.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65239,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.05",
+              "selected": false,
+              "airlineMiles": 640
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Shrimp $7.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 67857,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "7.05",
+              "selected": false,
+              "airlineMiles": 890
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Salmon $8.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 153247,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "8.00",
+              "selected": false,
+              "airlineMiles": 1000
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Grilled Tuna $10.55",
+              "modifierCollectionId": 0,
+              "menuItemId": 40253,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "10.50",
+              "selected": false,
+              "airlineMiles": 1320
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "French Fries $9",
+              "modifierCollectionId": 0,
+              "menuItemId": 153506,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "9.00",
+              "selected": false,
+              "airlineMiles": 1130
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 1820
+    },
+    {
+      "quantity": 1,
+      "description": "Coca-Cola is the most popular and biggest-selling soft drink in history, as well as the best-known brand in the world. 16 oz. serving.",
+      "displayPrice": "4.00",
+      "imageUrl": "/images/media/media_13744.jpg",
+      "title": "Coke",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menuItemId": 60381,
+      "displayPriceInMiles": 500,
+      "menuItemPrice": "4.00",
+      "modifierGroups": [],
+      "airlineMiles": 500
+    }
+  ],
+  "modifierCollectionsById": {
+    "0": {
+      "id": 0,
+      "groups": []
+    },
+    "916": {
+      "id": 916,
+      "groups": [933]
+    },
+    "1232": {
+      "id": 1232,
+      "groups": [1621, 1674, 25, 1187, 1839, 1114]
+    },
+    "1251": {
+      "id": 1251,
+      "groups": [604, 1621, 25, 1674, 1839, 1114]
+    },
+    "1699": {
+      "id": 1699,
+      "groups": [1607, 1621, 25, 1674, 1839, 1114]
+    },
+    "1869": {
+      "id": 1869,
+      "groups": [1742]
+    }
+  },
+  "tabItems": [],
+  "conciergeVersion": "3.11.1.uap",
+  "tipPercentage": "0.18",
+  "ccvScannerEnabled": false,
+  "moniker": "",
+  "modifierGroupsById": {
+    "25": {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 25,
+      "maximumSelections": 1,
+      "title": "Salad Dressing Options:",
+      "addonItems": false,
+      "modifierItems": [38371, 38372]
+    },
+    "604": {
+      "selectionType": "RADIO",
+      "minimumSelections": 0,
+      "id": 604,
+      "maximumSelections": 1000,
+      "title": "Caesar Salad Options:",
+      "addonItems": false,
+      "modifierItems": [38411, 68157]
+    },
+    "933": {
+      "selectionType": "RADIO",
+      "minimumSelections": 1,
+      "id": 933,
+      "maximumSelections": 1,
+      "title": "Water",
+      "addonItems": false,
+      "modifierItems": [38409, 136609, 136610]
+    },
+    "1114": {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 1114,
+      "maximumSelections": 1000,
+      "title": "Vanguard Salad Additions:",
+      "addonItems": false,
+      "modifierItems": [65239, 67857, 153247, 40253, 153506]
+    },
+    "1187": {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 1187,
+      "maximumSelections": 1000,
+      "title": "Chopped Salad Options:",
+      "addonItems": false,
+      "modifierItems": [69991, 56382]
+    },
+    "1607": {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 1607,
+      "maximumSelections": 1000,
+      "title": "Steak Chopped Salad Options:",
+      "addonItems": false,
+      "modifierItems": [38408, 39731]
+    },
+    "1621": {
+      "selectionType": "RADIO",
+      "minimumSelections": 0,
+      "id": 1621,
+      "maximumSelections": 1000,
+      "title": "Prepared as an appetizer:",
+      "addonItems": false,
+      "modifierItems": [114037]
+    },
+    "1674": {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 1674,
+      "maximumSelections": 1000,
+      "title": "Add Avocado:",
+      "addonItems": false,
+      "modifierItems": [65227]
+    },
+    "1742": {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 1742,
+      "maximumSelections": 1,
+      "title": "Add a Shot:",
+      "addonItems": false,
+      "modifierItems": [132403, 132404, 132406, 132405, 132407]
+    },
+    "1839": {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 1839,
+      "maximumSelections": 1000,
+      "title": "Add on Soup:",
+      "addonItems": false,
+      "modifierItems": [149408]
+    }
+  },
+  "isTabOpen": false,
+  "cmsIp": "http://10.80.10.22",
+  "success": 1,
+  "upsellItems": [134834, 118317, 60381, 60394, 138783],
+  "cartItems": [
+    {
+      "quantity": 1,
+      "description": "Our chefs prepare a pizza topped with Prosciutto di Parma, sweet onion marmalade, fontina cheese, and black mission figs.",
+      "itemType": "cart",
+      "displayPrice": "19.00",
+      "selectedRadios": {},
+      "selectedChecks": [],
+      "uniqueId": "138806",
+      "imageUrl": "/images/media/media_27062.jpg",
+      "title": "Prosciutto & Fig",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menuItemId": 138806,
+      "displayPriceInMiles": 2380,
+      "menuItemPrice": "19.00",
+      "modifierGroups": [],
+      "airlineMiles": 2380
+    },
+    {
+      "quantity": 2,
+      "description": "San Marzano tomato sauce, fresh mozzarella, sweet soppressata, red onions and Parmesan top this pizza.",
+      "itemType": "cart",
+      "displayPrice": "38.00",
+      "selectedRadios": {},
+      "selectedChecks": [],
+      "uniqueId": "138805",
+      "imageUrl": "/images/media/media_28531.jpg",
+      "title": "Soppressata Pizza",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menuItemId": 138805,
+      "displayPriceInMiles": 4760,
+      "menuItemPrice": "19.00",
+      "modifierGroups": [],
+      "airlineMiles": 2380
+    },
+    {
+      "quantity": 2,
+      "description": "Our mushroom pizza is topped with tomato sauce, fresh mozzarella, and wild mushrooms.",
+      "itemType": "cart",
+      "displayPrice": "38.00",
+      "selectedRadios": {},
+      "selectedChecks": [],
+      "uniqueId": "153567",
+      "imageUrl": "/images/media/media_28039.jpg",
+      "title": "Mushroom Pizza",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menuItemId": 153567,
+      "displayPriceInMiles": 4760,
+      "menuItemPrice": "19.00",
+      "modifierGroups": [],
+      "airlineMiles": 2380
+    },
+    {
+      "quantity": 1,
+      "description": "Our chef prepares a pizza made with tomato sauce, mozzarella cheese, and sliced meatballs.",
+      "itemType": "cart",
+      "displayPrice": "23.00",
+      "selectedRadios": {},
+      "selectedChecks": [],
+      "uniqueId": "153569",
+      "imageUrl": "/images/media/media_21227.jpg",
+      "title": "Meatball Pizza",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menuItemId": 153569,
+      "displayPriceInMiles": 2880,
+      "menuItemPrice": "23.00",
+      "modifierGroups": [],
+      "airlineMiles": 2880
+    },
+    {
+      "quantity": 1,
+      "description": "Lettuce and baby arugula, radish, English cucumbers, goats' milk feta and a confit shallot vinaigrette.",
+      "itemType": "cart",
+      "displayPrice": "13.50",
+      "selectedRadios": {},
+      "selectedChecks": [],
+      "uniqueId": "138823",
+      "imageUrl": "/images/media/media_24042.jpg",
+      "title": "Chopped Salad",
+      "modifierCollectionId": 1232,
+      "selectedModifiers": [],
+      "menuItemId": 138823,
+      "displayPriceInMiles": 1690,
+      "menuItemPrice": "13.50",
+      "modifierGroups": [
+        {
+          "selectionType": "RADIO",
+          "minimumSelections": 0,
+          "id": 1621,
+          "maximumSelections": 1000,
+          "title": "Prepared as an appetizer:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "RADIO",
+              "title": "As Appetizer",
+              "modifierCollectionId": 0,
+              "menuItemId": 114037,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1674,
+          "maximumSelections": 1000,
+          "title": "Add Avocado:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Avocado $2.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65227,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "2.00",
+              "selected": false,
+              "airlineMiles": 250
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 25,
+          "maximumSelections": 1,
+          "title": "Salad Dressing Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Dressing on the Side",
+              "modifierCollectionId": 0,
+              "menuItemId": 38371,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Dressing",
+              "modifierCollectionId": 0,
+              "menuItemId": 38372,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1187,
+          "maximumSelections": 1000,
+          "title": "Chopped Salad Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Feta",
+              "modifierCollectionId": 0,
+              "menuItemId": 69991,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Cucumber",
+              "modifierCollectionId": 0,
+              "menuItemId": 56382,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1839,
+          "maximumSelections": 1000,
+          "title": "Add on Soup:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add on Soup du Jour $3.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 149408,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "3.00",
+              "selected": false,
+              "airlineMiles": 380
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1114,
+          "maximumSelections": 1000,
+          "title": "Vanguard Salad Additions:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Chicken $5.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65239,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.05",
+              "selected": false,
+              "airlineMiles": 640
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Shrimp $7.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 67857,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "7.05",
+              "selected": false,
+              "airlineMiles": 890
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Salmon $8.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 153247,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "8.00",
+              "selected": false,
+              "airlineMiles": 1000
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Grilled Tuna $10.55",
+              "modifierCollectionId": 0,
+              "menuItemId": 40253,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "10.50",
+              "selected": false,
+              "airlineMiles": 1320
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "French Fries $9",
+              "modifierCollectionId": 0,
+              "menuItemId": 153506,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "9.00",
+              "selected": false,
+              "airlineMiles": 1130
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 1690
+    },
+    {
+      "quantity": 2,
+      "description": "Baby organic kale is tossed with roasted tomatoes, crispy shallots and a roasted garlic vinaigrette.  Topped with marinated hanger steak.",
+      "itemType": "cart",
+      "displayPrice": "60.00",
+      "selectedRadios": {},
+      "selectedChecks": [],
+      "uniqueId": "138817",
+      "imageUrl": "/images/media/media_28360.jpg",
+      "title": "*Steak Chopped Salad",
+      "modifierCollectionId": 1699,
+      "selectedModifiers": [],
+      "menuItemId": 138817,
+      "displayPriceInMiles": 7500,
+      "menuItemPrice": "30.00",
+      "modifierGroups": [
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1607,
+          "maximumSelections": 1000,
+          "title": "Steak Chopped Salad Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Bacon",
+              "modifierCollectionId": 0,
+              "menuItemId": 38408,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Onion",
+              "modifierCollectionId": 0,
+              "menuItemId": 39731,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "RADIO",
+          "minimumSelections": 0,
+          "id": 1621,
+          "maximumSelections": 1000,
+          "title": "Prepared as an appetizer:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "RADIO",
+              "title": "As Appetizer",
+              "modifierCollectionId": 0,
+              "menuItemId": 114037,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 25,
+          "maximumSelections": 1,
+          "title": "Salad Dressing Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Dressing on the Side",
+              "modifierCollectionId": 0,
+              "menuItemId": 38371,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Dressing",
+              "modifierCollectionId": 0,
+              "menuItemId": 38372,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1674,
+          "maximumSelections": 1000,
+          "title": "Add Avocado:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Avocado $2.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65227,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "2.00",
+              "selected": false,
+              "airlineMiles": 250
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1839,
+          "maximumSelections": 1000,
+          "title": "Add on Soup:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add on Soup du Jour $3.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 149408,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "3.00",
+              "selected": false,
+              "airlineMiles": 380
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1114,
+          "maximumSelections": 1000,
+          "title": "Vanguard Salad Additions:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Chicken $5.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65239,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.05",
+              "selected": false,
+              "airlineMiles": 640
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Shrimp $7.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 67857,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "7.05",
+              "selected": false,
+              "airlineMiles": 890
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Salmon $8.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 153247,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "8.00",
+              "selected": false,
+              "airlineMiles": 1000
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Grilled Tuna $10.55",
+              "modifierCollectionId": 0,
+              "menuItemId": 40253,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "10.50",
+              "selected": false,
+              "airlineMiles": 1320
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "French Fries $9",
+              "modifierCollectionId": 0,
+              "menuItemId": 153506,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "9.00",
+              "selected": false,
+              "airlineMiles": 1130
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 3750
+    },
+    {
+      "quantity": 1,
+      "description": "Baby organic kale is tossed with roasted tomatoes, crispy shallots and a roasted garlic vinaigrette.  Topped with marinated hanger steak.",
+      "itemType": "cart",
+      "displayPrice": "30.00",
+      "selectedRadios": {},
+      "selectedChecks": [],
+      "uniqueId": "138817-38408-39731",
+      "imageUrl": "/images/media/media_28360.jpg",
+      "title": "*Steak Chopped Salad",
+      "modifierCollectionId": 1699,
+      "selectedModifiers": [38408, 39731],
+      "menuItemId": 138817,
+      "displayPriceInMiles": 3750,
+      "menuItemPrice": "30.00",
+      "modifierGroups": [
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1607,
+          "maximumSelections": 1000,
+          "title": "Steak Chopped Salad Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Bacon",
+              "modifierCollectionId": 0,
+              "menuItemId": 38408,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": true,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Onion",
+              "modifierCollectionId": 0,
+              "menuItemId": 39731,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": true,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "RADIO",
+          "minimumSelections": 0,
+          "id": 1621,
+          "maximumSelections": 1000,
+          "title": "Prepared as an appetizer:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "RADIO",
+              "title": "As Appetizer",
+              "modifierCollectionId": 0,
+              "menuItemId": 114037,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 25,
+          "maximumSelections": 1,
+          "title": "Salad Dressing Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Dressing on the Side",
+              "modifierCollectionId": 0,
+              "menuItemId": 38371,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Dressing",
+              "modifierCollectionId": 0,
+              "menuItemId": 38372,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1674,
+          "maximumSelections": 1000,
+          "title": "Add Avocado:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Avocado $2.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65227,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "2.00",
+              "selected": false,
+              "airlineMiles": 250
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1839,
+          "maximumSelections": 1000,
+          "title": "Add on Soup:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add on Soup du Jour $3.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 149408,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "3.00",
+              "selected": false,
+              "airlineMiles": 380
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1114,
+          "maximumSelections": 1000,
+          "title": "Vanguard Salad Additions:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Chicken $5.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65239,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.05",
+              "selected": false,
+              "airlineMiles": 640
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Shrimp $7.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 67857,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "7.05",
+              "selected": false,
+              "airlineMiles": 890
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Salmon $8.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 153247,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "8.00",
+              "selected": false,
+              "airlineMiles": 1000
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Grilled Tuna $10.55",
+              "modifierCollectionId": 0,
+              "menuItemId": 40253,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "10.50",
+              "selected": false,
+              "airlineMiles": 1320
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "French Fries $9",
+              "modifierCollectionId": 0,
+              "menuItemId": 153506,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "9.00",
+              "selected": false,
+              "airlineMiles": 1130
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 3750
+    }
+  ],
+  "translations": {
+    "cancel": "Cancel",
+    "unpaid": "Unpaid",
+    "promotions": "PROMOTIONS",
+    "charge": "Charge",
+    "expirationDate": "Expiration Date",
+    "inYourTab": "IN YOUR TAB",
+    "addToTab": "ADD TO TAB",
+    "pleaseEnterYourRedemptionCodeBelowAndTapSubmitToContinue": "Please enter your redemption code below and tap Submit to continue.",
+    "gratuity": "Gratuity:",
+    "tax": "Tax",
+    "applyTip": "Apply Tip",
+    "redeemVouchers": "Redeem Vouchers",
+    "credit": "Credit",
+    "totalBeforeTax": "Total before tax:",
+    "or": "OR",
+    "theTipAmount": "the tip amount",
+    "redemptionCode": "Redemption Code",
+    "yourVoucherHasBeenApplied": "Your voucher has been applied",
+    "takeout": "TAKEOUT?",
+    "voucherNumber": "Voucher Number",
+    "voucherAmount": "Voucher Amount",
+    "applyAnotherVoucher": "Apply another voucher",
+    "scanYourBoardingPassToViewOffers": "SCAN YOUR BOARDING PASS TO VIEW OFFERS",
+    "creditCardVoucher": "Credit Card Voucher",
+    "onYourCheck": "on your check",
+    "addMoreItems": "Add More Items",
+    "enterPromoCode": "Enter Promo Code",
+    "joinATab": "JOIN A TAB",
+    "submit": "Submit",
+    "item": "Item",
+    "back": "BACK",
+    "pleaseEnterYourVoucherInformationBelowAndTapSubmitToContinue": "Please enter your voucher information below and tap Submit to continue.",
+    "welcome": "WELCOME",
+    "payWithMiles": "PAY WITH MILES",
+    "items": "Items",
+    "notYourTab": "Not Your Tab?",
+    "continue": "Continue",
+    "pleaseEnter": "Please Enter",
+    "chooseVoucherType": "Choose Voucher Type",
+    "upgradeYourMeal": "UPGRADE YOUR MEAL",
+    "closeTab": "CLOSE TAB",
+    "miles": "Miles",
+    "orderTotal": "ORDER TOTAL:",
+    "updateCheck": "Update Check",
+    "discount": "Discount",
+    "redeemVoucher": "Redeem Voucher",
+    "orderSummary": "ORDER SUMMARY",
+    "other": "OTHER",
+    "payNow": "PAY NOW",
+    "payWith": "PAY WITH",
+    "awardMiles": "AWARD MILES",
+    "addToCheck": "Add to Check",
+    "paymentMethod": "PAYMENT METHOD",
+    "ok": "OK"
+  },
+  "airlineTotalBeforeTax": 32680,
+  "languageCode": "eng",
+  "tipAmount": "39.87",
+  "shouldAllowPayment": true,
+  "cartHasFees": false,
+  "shouldAllowMilesPayment": true,
+  "modifierGroups": [
+    {
+      "selectionType": "RADIO",
+      "minimumSelections": 1,
+      "id": 933,
+      "maximumSelections": 1,
+      "title": "Water",
+      "addonItems": false,
+      "modifierItems": [38409, 136609, 136610]
+    },
+    {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 1607,
+      "maximumSelections": 1000,
+      "title": "Steak Chopped Salad Options:",
+      "addonItems": false,
+      "modifierItems": [38408, 39731]
+    },
+    {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 25,
+      "maximumSelections": 1,
+      "title": "Salad Dressing Options:",
+      "addonItems": false,
+      "modifierItems": [38371, 38372]
+    },
+    {
+      "selectionType": "RADIO",
+      "minimumSelections": 0,
+      "id": 604,
+      "maximumSelections": 1000,
+      "title": "Caesar Salad Options:",
+      "addonItems": false,
+      "modifierItems": [38411, 68157]
+    },
+    {
+      "selectionType": "RADIO",
+      "minimumSelections": 0,
+      "id": 1621,
+      "maximumSelections": 1000,
+      "title": "Prepared as an appetizer:",
+      "addonItems": false,
+      "modifierItems": [114037]
+    },
+    {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 1674,
+      "maximumSelections": 1000,
+      "title": "Add Avocado:",
+      "addonItems": false,
+      "modifierItems": [65227]
+    },
+    {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 1839,
+      "maximumSelections": 1000,
+      "title": "Add on Soup:",
+      "addonItems": false,
+      "modifierItems": [149408]
+    },
+    {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 1114,
+      "maximumSelections": 1000,
+      "title": "Vanguard Salad Additions:",
+      "addonItems": false,
+      "modifierItems": [65239, 67857, 153247, 40253, 153506]
+    },
+    {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 1742,
+      "maximumSelections": 1,
+      "title": "Add a Shot:",
+      "addonItems": false,
+      "modifierItems": [132403, 132404, 132406, 132405, 132407]
+    },
+    {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 1187,
+      "maximumSelections": 1000,
+      "title": "Chopped Salad Options:",
+      "addonItems": false,
+      "modifierItems": [69991, 56382]
+    }
+  ],
+  "checkName": "DO_NOT_MAKE-3juod",
+  "noKitchen": 0,
+  "total": "276.04",
+  "warnings": {
+    "alcoholWarningTitle": "Alcohol Warning:",
+    "rawFoodProductTitle": "Raw Food Product:",
+    "allergyWarningBody": "Menu items contain common food allergens such as those found in peanuts, tree nuts, fish, shelfish, eggs, milk, wheat and soy. Our facilities are NOT allergen free environments.",
+    "rawFoodProductBody": "Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of food borne illnesses.",
+    "alcoholWarningBody": "Customers must be 21 years of age or older to order and/ or drink alcoholic beverages.",
+    "allergyWarningTitle": "Allergy Warning:"
+  },
+  "airlineTipMiles": 4990,
+  "airlineTotalException": 0,
+  "ccVoucher": true,
+  "airlineSubtotalMiles": 27690,
+  "taxAndFeeSeparate": false,
+  "promotions": [
+    {
+      "name": "chase",
+      "enabled": true,
+      "applied": false
+    },
+    {
+      "name": "jetblue",
+      "enabled": false,
+      "applied": false
+    },
+    {
+      "enabled": true,
+      "name": "papi",
+      "url": "/images/media/promotions/image002.jpg",
+      "applied": false
+    },
+    {
+      "enabled": true,
+      "name": "united",
+      "applied": false,
+      "originalTotalMiles": 34520
+    }
+  ],
+  "totalException": "0.00",
+  "paymentType": "CREDITCARD",
+  "modifierCollections": [
+    {
+      "id": 0,
+      "groups": []
+    },
+    {
+      "id": 1232,
+      "groups": [1621, 1674, 25, 1187, 1839, 1114]
+    },
+    {
+      "id": 1869,
+      "groups": [1742]
+    },
+    {
+      "id": 1251,
+      "groups": [604, 1621, 25, 1674, 1839, 1114]
+    },
+    {
+      "id": 916,
+      "groups": [933]
+    },
+    {
+      "id": 1699,
+      "groups": [1607, 1621, 25, 1674, 1839, 1114]
+    }
+  ],
+  "isMileagePlusEnabled": true,
+  "boardingPassEnabled": true,
+  "tabCartTotal": "0.00",
+  "joinTabEnabled": true,
+  "orderType": "DINEIN",
+  "airlineTaxMiles": 1840,
+  "tax": "14.67",
+  "cartFeeList": [
+    {
+      "amount": "$14.67",
+      "amountMiles": 1840,
+      "name": "Tax",
+      "description": ""
+    },
+    {
+      "amount": "$14.67",
+      "amountMiles": 1840,
+      "name": "Total",
+      "description": ""
+    }
+  ],
+  "airlineTotalExceptionMiles": 0,
+  "airlineTotalMiles": 34520,
+  "promoScannerEnabled": true,
+  "itemsById": {
+    "60381": {
+      "quantity": 1,
+      "description": "Coca-Cola is the most popular and biggest-selling soft drink in history, as well as the best-known brand in the world. 16 oz. serving.",
+      "displayPrice": "4.00",
+      "imageUrl": "/images/media/media_13744.jpg",
+      "title": "Coke",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menuItemId": 60381,
+      "displayPriceInMiles": 500,
+      "menuItemPrice": "4.00",
+      "modifierGroups": [],
+      "airlineMiles": 500
+    },
+    "60394": {
+      "quantity": 1,
+      "description": "Choose from Acqua Panna mineral water, San Pellegrino sparkling water, or ice water.",
+      "displayPrice": "0.00",
+      "imageUrl": "/images/media/media_26787.jpg",
+      "title": "Choice of Water",
+      "modifierCollectionId": 916,
+      "selectedModifiers": [136609],
+      "menuItemId": 60394,
+      "displayPriceInMiles": 0,
+      "menuItemPrice": "0.00",
+      "modifierGroups": [
+        {
+          "selectionType": "RADIO",
+          "minimumSelections": 1,
+          "id": 933,
+          "maximumSelections": 1,
+          "title": "Water",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "Enter ‘dinehere’ in the promo field to apply your discount",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "RADIO",
+              "title": "Ice Water",
+              "modifierCollectionId": 0,
+              "menuItemId": 38409,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": true,
+              "selectionType": "RADIO",
+              "title": "San Pellegrino 750mL",
+              "modifierCollectionId": 0,
+              "menuItemId": 136609,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "7.50",
+              "selected": false,
+              "airlineMiles": 940
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "RADIO",
+              "title": "Acqua Panna 750mL",
+              "modifierCollectionId": 0,
+              "menuItemId": 136610,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "7.50",
+              "selected": false,
+              "airlineMiles": 940
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 0
+    },
+    "118317": {
+      "quantity": 1,
+      "description": "Light, crisp, refreshing UFO White follows in the tradition of spiced wheat beers that have been brewed in Belgium for well over 300 years. Brewed with orange peel and coriander, UFO White is the perfect choice for a summer’s barbecue, a night out with friends or any time you're thirsting for something a little different. Like all UFO beers, the brewers leave UFO White UnFiltered. 4.8% ABV",
+      "displayPrice": "9.25",
+      "imageUrl": "/images/media/media_25224.jpg",
+      "title": "UFO White Ale",
+      "modifierCollectionId": 1869,
+      "selectedModifiers": [],
+      "menuItemId": 118317,
+      "displayPriceInMiles": 1160,
+      "menuItemPrice": "9.25",
+      "modifierGroups": [
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1742,
+          "maximumSelections": 1,
+          "title": "Add a Shot:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Jack Daniel's Shot $5.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 132403,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Jameson Shot $5.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 132404,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Jim Beam Shot $5.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 132406,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Johnnie Walker Black Shot $5.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 132405,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Cuervo Especial Gold Shot $5.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 132407,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 1160
+    },
+    "134834": {
+      "quantity": 1,
+      "description": "",
+      "displayPrice": "1.00",
+      "imageUrl": "/images/media/media_26537.jpg",
+      "title": "Shelter Newark's Homeless",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menuItemId": 134834,
+      "displayPriceInMiles": 130,
+      "menuItemPrice": "1.00",
+      "modifierGroups": [],
+      "airlineMiles": 130
+    },
+    "138783": {
+      "quantity": 1,
+      "description": "Our chefs toss romaine lettuce with a creamy Caesar dressing. Finished with grated Parmesan cheese, croutons,  and fried capers.",
+      "displayPrice": "14.50",
+      "imageUrl": "/images/media/media_24046.jpg",
+      "title": "Caesar Salad",
+      "modifierCollectionId": 1251,
+      "selectedModifiers": [],
+      "menuItemId": 138783,
+      "displayPriceInMiles": 1820,
+      "menuItemPrice": "14.50",
+      "modifierGroups": [
+        {
+          "selectionType": "RADIO",
+          "minimumSelections": 0,
+          "id": 604,
+          "maximumSelections": 1000,
+          "title": "Caesar Salad Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "RADIO",
+              "title": "No Cheese",
+              "modifierCollectionId": 0,
+              "menuItemId": 38411,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "RADIO",
+              "title": "No Croutons",
+              "modifierCollectionId": 0,
+              "menuItemId": 68157,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "RADIO",
+          "minimumSelections": 0,
+          "id": 1621,
+          "maximumSelections": 1000,
+          "title": "Prepared as an appetizer:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "RADIO",
+              "title": "As Appetizer",
+              "modifierCollectionId": 0,
+              "menuItemId": 114037,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 25,
+          "maximumSelections": 1,
+          "title": "Salad Dressing Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Dressing on the Side",
+              "modifierCollectionId": 0,
+              "menuItemId": 38371,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Dressing",
+              "modifierCollectionId": 0,
+              "menuItemId": 38372,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1674,
+          "maximumSelections": 1000,
+          "title": "Add Avocado:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Avocado $2.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65227,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "2.00",
+              "selected": false,
+              "airlineMiles": 250
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1839,
+          "maximumSelections": 1000,
+          "title": "Add on Soup:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add on Soup du Jour $3.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 149408,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "3.00",
+              "selected": false,
+              "airlineMiles": 380
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1114,
+          "maximumSelections": 1000,
+          "title": "Vanguard Salad Additions:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Chicken $5.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65239,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.05",
+              "selected": false,
+              "airlineMiles": 640
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Shrimp $7.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 67857,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "7.05",
+              "selected": false,
+              "airlineMiles": 890
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Salmon $8.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 153247,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "8.00",
+              "selected": false,
+              "airlineMiles": 1000
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Grilled Tuna $10.55",
+              "modifierCollectionId": 0,
+              "menuItemId": 40253,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "10.50",
+              "selected": false,
+              "airlineMiles": 1320
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "French Fries $9",
+              "modifierCollectionId": 0,
+              "menuItemId": 153506,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "9.00",
+              "selected": false,
+              "airlineMiles": 1130
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 1820
+    },
+    "138805": {
+      "quantity": 1,
+      "description": "San Marzano tomato sauce, fresh mozzarella, sweet soppressata, red onions and Parmesan top this pizza.",
+      "displayPrice": "19.00",
+      "imageUrl": "/images/media/media_28531.jpg",
+      "title": "Soppressata Pizza",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menuItemId": 138805,
+      "displayPriceInMiles": 2380,
+      "menuItemPrice": "19.00",
+      "modifierGroups": [],
+      "airlineMiles": 2380
+    },
+    "138806": {
+      "quantity": 1,
+      "description": "Our chefs prepare a pizza topped with Prosciutto di Parma, sweet onion marmalade, fontina cheese, and black mission figs.",
+      "displayPrice": "19.00",
+      "imageUrl": "/images/media/media_27062.jpg",
+      "title": "Prosciutto & Fig",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menuItemId": 138806,
+      "displayPriceInMiles": 2380,
+      "menuItemPrice": "19.00",
+      "modifierGroups": [],
+      "airlineMiles": 2380
+    },
+    "138817": {
+      "quantity": 1,
+      "description": "Baby organic kale is tossed with roasted tomatoes, crispy shallots and a roasted garlic vinaigrette.  Topped with marinated hanger steak.",
+      "displayPrice": "30.00",
+      "imageUrl": "/images/media/media_28360.jpg",
+      "title": "*Steak Chopped Salad",
+      "modifierCollectionId": 1699,
+      "selectedModifiers": [],
+      "menuItemId": 138817,
+      "displayPriceInMiles": 3750,
+      "menuItemPrice": "30.00",
+      "modifierGroups": [
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1607,
+          "maximumSelections": 1000,
+          "title": "Steak Chopped Salad Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Bacon",
+              "modifierCollectionId": 0,
+              "menuItemId": 38408,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": true,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Onion",
+              "modifierCollectionId": 0,
+              "menuItemId": 39731,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": true,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "RADIO",
+          "minimumSelections": 0,
+          "id": 1621,
+          "maximumSelections": 1000,
+          "title": "Prepared as an appetizer:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "RADIO",
+              "title": "As Appetizer",
+              "modifierCollectionId": 0,
+              "menuItemId": 114037,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 25,
+          "maximumSelections": 1,
+          "title": "Salad Dressing Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Dressing on the Side",
+              "modifierCollectionId": 0,
+              "menuItemId": 38371,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Dressing",
+              "modifierCollectionId": 0,
+              "menuItemId": 38372,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1674,
+          "maximumSelections": 1000,
+          "title": "Add Avocado:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Avocado $2.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65227,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "2.00",
+              "selected": false,
+              "airlineMiles": 250
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1839,
+          "maximumSelections": 1000,
+          "title": "Add on Soup:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add on Soup du Jour $3.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 149408,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "3.00",
+              "selected": false,
+              "airlineMiles": 380
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1114,
+          "maximumSelections": 1000,
+          "title": "Vanguard Salad Additions:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Chicken $5.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65239,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.05",
+              "selected": false,
+              "airlineMiles": 640
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Shrimp $7.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 67857,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "7.05",
+              "selected": false,
+              "airlineMiles": 890
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Salmon $8.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 153247,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "8.00",
+              "selected": false,
+              "airlineMiles": 1000
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Grilled Tuna $10.55",
+              "modifierCollectionId": 0,
+              "menuItemId": 40253,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "10.50",
+              "selected": false,
+              "airlineMiles": 1320
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "French Fries $9",
+              "modifierCollectionId": 0,
+              "menuItemId": 153506,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "9.00",
+              "selected": false,
+              "airlineMiles": 1130
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 3750
+    },
+    "138823": {
+      "quantity": 1,
+      "description": "Lettuce and baby arugula, radish, English cucumbers, goats' milk feta and a confit shallot vinaigrette.",
+      "displayPrice": "13.50",
+      "imageUrl": "/images/media/media_24042.jpg",
+      "title": "Chopped Salad",
+      "modifierCollectionId": 1232,
+      "selectedModifiers": [],
+      "menuItemId": 138823,
+      "displayPriceInMiles": 1690,
+      "menuItemPrice": "13.50",
+      "modifierGroups": [
+        {
+          "selectionType": "RADIO",
+          "minimumSelections": 0,
+          "id": 1621,
+          "maximumSelections": 1000,
+          "title": "Prepared as an appetizer:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "RADIO",
+              "title": "As Appetizer",
+              "modifierCollectionId": 0,
+              "menuItemId": 114037,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1674,
+          "maximumSelections": 1000,
+          "title": "Add Avocado:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Avocado $2.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65227,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "2.00",
+              "selected": false,
+              "airlineMiles": 250
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 25,
+          "maximumSelections": 1,
+          "title": "Salad Dressing Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Dressing on the Side",
+              "modifierCollectionId": 0,
+              "menuItemId": 38371,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Dressing",
+              "modifierCollectionId": 0,
+              "menuItemId": 38372,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1187,
+          "maximumSelections": 1000,
+          "title": "Chopped Salad Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Feta",
+              "modifierCollectionId": 0,
+              "menuItemId": 69991,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Cucumber",
+              "modifierCollectionId": 0,
+              "menuItemId": 56382,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1839,
+          "maximumSelections": 1000,
+          "title": "Add on Soup:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add on Soup du Jour $3.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 149408,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "3.00",
+              "selected": false,
+              "airlineMiles": 380
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1114,
+          "maximumSelections": 1000,
+          "title": "Vanguard Salad Additions:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Chicken $5.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 65239,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "5.05",
+              "selected": false,
+              "airlineMiles": 640
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Shrimp $7.05",
+              "modifierCollectionId": 0,
+              "menuItemId": 67857,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "7.05",
+              "selected": false,
+              "airlineMiles": 890
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Salmon $8.00",
+              "modifierCollectionId": 0,
+              "menuItemId": 153247,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "8.00",
+              "selected": false,
+              "airlineMiles": 1000
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Add Grilled Tuna $10.55",
+              "modifierCollectionId": 0,
+              "menuItemId": 40253,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "10.50",
+              "selected": false,
+              "airlineMiles": 1320
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "displayPrice": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "French Fries $9",
+              "modifierCollectionId": 0,
+              "menuItemId": 153506,
+              "displayPriceInMiles": 0,
+              "menuItemPrice": "9.00",
+              "selected": false,
+              "airlineMiles": 1130
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 1690
+    },
+    "153567": {
+      "quantity": 1,
+      "description": "Our mushroom pizza is topped with tomato sauce, fresh mozzarella, and wild mushrooms.",
+      "displayPrice": "19.00",
+      "imageUrl": "/images/media/media_28039.jpg",
+      "title": "Mushroom Pizza",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menuItemId": 153567,
+      "displayPriceInMiles": 2380,
+      "menuItemPrice": "19.00",
+      "modifierGroups": [],
+      "airlineMiles": 2380
+    },
+    "153569": {
+      "quantity": 1,
+      "description": "Our chef prepares a pizza made with tomato sauce, mozzarella cheese, and sliced meatballs.",
+      "displayPrice": "23.00",
+      "imageUrl": "/images/media/media_21227.jpg",
+      "title": "Meatball Pizza",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menuItemId": 153569,
+      "displayPriceInMiles": 2880,
+      "menuItemPrice": "23.00",
+      "modifierGroups": [],
+      "airlineMiles": 2880
+    }
+  },
+  "charge": "0.00",
+  "paymentDeferred": 0
+}
