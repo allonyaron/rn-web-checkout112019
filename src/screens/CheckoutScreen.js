@@ -9,11 +9,15 @@ import PaymentContainer from "../components/PaymentContainer";
 import CartContainer from "../components/CartContainer";
 import SideBar from "../components/SideBar";
 
-const CheckoutScreen = () => {
+const CheckoutScreen = (props) => {
   const { orientation } = useContext(OrientationContext);
   if (orientation === "portrait") {
     return (
-      <View style={styles.pageContainer}>
+      <View style={styles.pageContainer}
+      ref={cartScreen => (window.cartScreen = cartScreen)} 
+      {...props}
+
+      >
         {/* remove default status bar on top of ipad screen */}
         <StatusBar hidden={true} />
         <HeaderContainer />
@@ -37,6 +41,8 @@ const CheckoutScreen = () => {
   } else if (orientation === "landscape") {
     return (
       <View style={styles.pageContainer}>
+      {/* remove default status bar on top of ipad screen */}
+        <StatusBar hidden={true} />
         <HeaderContainer />
         <View style={styles.bodyContainer}>
           <View style={styles.mainBodyContainerLandscape}>

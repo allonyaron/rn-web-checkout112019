@@ -3,6 +3,23 @@ import { View, Text } from "react-native";
 
 // Look at public/index.html!
 
+import {
+updateReactReduxStoreFromIOS, 
+updateAllTotals,
+handleTaxTotalMilesChange,
+handlePassengerChange,
+updateUpsells,
+handlePromoCodeChange,
+toggleOrientationChange,
+toggleItemsLoading,
+handleSetPromoCode,
+clearVouchers,
+logRocketInit,
+logRocketIdentifyUser,
+toggleCalcTotalLoading, 
+handleSetCCVoucherInfo,
+} from './actions'
+
 
 
 import {CheckoutProvider} from './context/CheckoutContext';
@@ -16,7 +33,22 @@ import CheckoutScreen from './screens/CheckoutScreen';
 
 const App = () => {
   // const {orientation} = useContext(OrientationContext);
-  return <CheckoutScreen />;
+  return <CheckoutScreen 
+    updateReactReduxStoreFromIOS = {updateReactReduxStoreFromIOS }
+    updateAllTotals  = {updateAllTotals} 
+    handleTaxTotalMilesChange = {handleTaxTotalMilesChange }
+    handlePassengerChange = {handlePassengerChange }
+    updateUpsells = {updateUpsells }
+    handlePromoCodeChange = {handlePromoCodeChange }
+    toggleOrientationChange = {toggleOrientationChange }
+    toggleItemsLoading = {toggleItemsLoading }
+    handleSetPromoCode = {handleSetPromoCode }
+    clearVouchers = {clearVouchers }
+    logRocketInit = {logRocketInit }
+    logRocketIdentifyUser = {logRocketIdentifyUser }
+    toggleCalcTotalLoading = {toggleCalcTotalLoading }
+    handleSetCCVoucherInfo = {handleSetCCVoucherInfo }
+  />;
 };
 
 // class App extends React.Component {
