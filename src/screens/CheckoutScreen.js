@@ -1,24 +1,33 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 
 import { Text, View, StyleSheet, StatusBar } from "react-native";
 
 import OrientationContext from "../context/OrientationContext";
-
 import HeaderContainer from "../components/HeaderContainer";
 import PaymentContainer from "../components/PaymentContainer";
 import CartContainer from "../components/CartContainer";
 import SideBar from "../components/SideBar";
 
-const CheckoutScreen = (props) => {
+import CheckoutContext from "../context/CheckoutContext";
+
+import { updateReactReduxStoreFromIOS } from "../actions";
+import data from "../data/appState.json";
+
+const CheckoutScreen = props => {
   const { orientation } = useContext(OrientationContext);
-  
-  console.log(`TMB - CheckoutScreen`);
+
+  const { dispatch } = useContext(CheckoutContext);
+  console.log(props);
+  useEffect(() => {
+    updateReactReduxStoreFromIOS(dispatch, data);
+  }, []);
+
   if (orientation === "portrait") {
     return (
-      <View style={styles.pageContainer}
-      ref={cartScreen => (window.cartScreen = cartScreen)} 
-      {...props}
-
+      <View
+        style={styles.pageContainer}
+        ref={cartScreen => (window.cartScreen = cartScreen)}
+        {...props}
       >
         {/* remove default status bar on top of ipad screen */}
         <StatusBar hidden={true} />
@@ -43,7 +52,7 @@ const CheckoutScreen = (props) => {
   } else if (orientation === "landscape") {
     return (
       <View style={styles.pageContainer}>
-      {/* remove default status bar on top of ipad screen */}
+        {/* remove default status bar on top of ipad screen */}
         <StatusBar hidden={true} />
         <HeaderContainer />
         <View style={styles.bodyContainer}>
