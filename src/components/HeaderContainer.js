@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {
   Image,
   View,
@@ -8,6 +8,9 @@ import {
   ScrollView,
 } from 'react-native';
 // import {ScrollView} from 'react-native-gesture-handler';
+
+import CheckoutContext from "../context/CheckoutContext";
+
 
 let translations = {};
 translations.scanYourBoardingPassToViewOffers =
@@ -26,10 +29,12 @@ let warnings = {
 };
 
 const HeaderContainer = () => {
+  const {sendWebkitMessageToIOS} = useContext(CheckoutContext);
+
   return (
     <View style={styles.headerContainer}>
       <View style={styles.headerStyle}>
-        <TouchableOpacity style={styles.backButton} onPress={() => {}}>
+        <TouchableOpacity style={styles.backButton} onPress={() => sendWebkitMessageToIOS('CloseWebCart')}>
           <Text style={styles.backButtonText}>Back</Text>
         </TouchableOpacity>
         <ScrollView
@@ -74,7 +79,7 @@ const HeaderContainer = () => {
       <View>
         <TouchableOpacity
           style={styles.scanBoardingPassStyle}
-          onPress={() => console.log('handleScanBoardingPass')}>
+          onPress={() => sendWebkitMessageToIOS('handleScanBoardingPass')}>
           <Text style={styles.scanBoardingPassTextStyle}>
             {translations.scanYourBoardingPassToViewOffers}
           </Text>

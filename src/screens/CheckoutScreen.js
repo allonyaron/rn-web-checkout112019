@@ -11,6 +11,8 @@ import SideBar from "../components/SideBar";
 
 const CheckoutScreen = (props) => {
   const { orientation } = useContext(OrientationContext);
+  
+  console.log(`TMB - CheckoutScreen`);
   if (orientation === "portrait") {
     return (
       <View style={styles.pageContainer}

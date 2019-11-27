@@ -10,11 +10,7 @@ import {
 
 import CheckoutContext from '../context/CheckoutContext';
 
-const addQuantity = payload => {
-  // can I use cmsIp
-  const url = `http://ewrccms05-staging.sys.otg.localdomain/MPConnect/services/mpconnect/order/cart`;
-  // fetchAPIPost(url, payload);
-};
+
 
 function Plus({addQuantity}) {
   return (
@@ -27,6 +23,10 @@ function Plus({addQuantity}) {
   );
 }
 
+// sendWebkitMessageToIOS - (message, data) - incrementCartQuanity - {"itemId":140003,"sign":"add","cartIndex":0}
+// sendWebkitMessageToIOS - (message, data) - incrementCartQuanity - {"itemId":140003,"sign":"subtract","cartIndex":0}
+
+
 function Minus({subtractQuantity, minusStyle}) {
   return (
     <TouchableOpacity>
@@ -38,31 +38,42 @@ function Minus({subtractQuantity, minusStyle}) {
   );
 }
 
-const ItemContainer = ({item, cmsIp, paymentType}) => {
-  const {quantity, displayPrice, title, displayPriceInMiles, imageUrl} = item;
-
+const ItemContainer = ({item, cmsIP, payment_type, index}) => {
+  const {menu_item_id, quantity, display_price, title, display_price_in_miles, imageUrl} = item;
+  const {sendWebkitMessageToIOS} = useContext(CheckoutContext);
+  
   return (
     <View style={styles.itemContainer}>
-      <Image style={styles.itemImage} source={{uri: `${cmsIp}${imageUrl}`}} />
+      <Image style={styles.itemImage} source={{uri: `${cmsIP}${imageUrl}`}} />
       <View style={styles.itemTextContainer}>
         <Text style={styles.itemTextTitle}>{title}</Text>
-        <Text style={styles.itemTextModifiers}>Add Chicken</Text>
+        <Text style={styles.itemTextModifiers}></Text>
       </View>
       <View style={styles.quantityContainer}>
-        <Minus />
+        <TouchableOpacity onPress={() => sendWebkitMessageToIOS('incrementCartQuanity',{"itemId":menu_item_id,"sign":"subtract","cartIndex":index})}>
+          <Image
+            style={styles.minus}
+            source={require('../assets/images/ui-minus-44-x-44-blue.png')}
+          />
+        </TouchableOpacity>
         <Text style={styles.quantityText}>{quantity}</Text>
-        <Plus />
+        <TouchableOpacity onPress={() => sendWebkitMessageToIOS('incrementCartQuanity',{"itemId":menu_item_id,"sign":"add","cartIndex":index})}>
+          <Image
+            style={styles.plus}
+            source={require('../assets/images/ui-plus-44-x-44-blue.png')}
+          />
+        </TouchableOpacity>
       </View>
       <Text style={styles.itemPrice}>
-        {paymentType === 'MILES' ? displayPriceInMiles : `$${displayPrice}`}
+        {payment_type === 'MILES' ? display_price_in_miles : `$${display_price}`}
       </Text>
     </View>
   );
 };
 
 const CartContainer = () => {
-  const {state} = useContext(CheckoutContext);
-  const {itemQuantity, cartItems, cmsIp, paymentType} = state;
+  const {state, sendWebkitMessageToIOS} = useContext(CheckoutContext);
+  const {itemQuantity, cartItems, cmsIP, payment_type} = state;
 
   return (
     <View style={styles.itemsContainer}>
@@ -71,18 +82,33 @@ const CartContainer = () => {
           {itemQuantity} Items on your check
         </Text>
       </View>
-      <ScrollView style={{flex: 1}}>
+      <View style={styles.cartItemContainer}>
+      {cartItems && (<ScrollView style={{flex: 1}}>
         {cartItems.map((item, idx) => {
           return (
             <ItemContainer
               item={item}
               key={idx}
-              cmsIp={cmsIp}
-              paymentType={paymentType}
+              index={idx}
+              cmsIP={cmsIP}
+              payment_type={payment_type}
             />
           );
         })}
-      </ScrollView>
+      </ScrollView>)}
+      </View>
+      <View style={styles.addItemButton}>
+        <TouchableOpacity
+          style={styles.addItemButtonContainer}
+          onPress={() => sendWebkitMessageToIOS('AddMoreItems')}
+        >
+          <Image
+            style={styles.addItemButtonPlus}
+            source={require('../assets/images/ui-plus-44-x-44-white.png')}
+          />
+          <Text style={styles.addItemButtonText}>Add More Items</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
@@ -90,11 +116,13 @@ const CartContainer = () => {
 export default CartContainer;
 
 const grey = '#737373';
+const white = '#ffffff';
+const blue = '#157efb';
 
 const styles = StyleSheet.create({
   itemsContainer: {
     flex: 1,
-    margin: 12,
+    // margin: 12,
   },
   headerTitle: {
     color: '#737373',
@@ -102,10 +130,15 @@ const styles = StyleSheet.create({
     height: 30,
     letterSpacing: 0.8,
     textAlign: 'left',
+    marginTop: 12,
+    marginHorizontal: 12,
   },
   headerBorder: {
     // borderBottomWidth: 1,
     // borderColor: "#C7C7C7"
+  },
+  cartItemContainer: {
+    flex: 1
   },
   itemContainer: {
     // flex: 1,
@@ -113,6 +146,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderTopWidth: 1,
     borderColor: '#C7C7C7',
+    marginHorizontal: 12,
   },
   itemImage: {
     height: 56,
@@ -122,20 +156,16 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     flex: 1,
     marginLeft: 12,
-    // alignItems: "baseline"
   },
   itemTextTitle: {
     fontSize: 17,
     fontWeight: 'bold',
     marginBottom: 3,
-    // marginTop: 1
-    // paddingLeft: 5
   },
   itemTextModifiers: {
     color: grey,
     fontSize: 15,
     fontWeight: '300',
-    // paddingLeft: 5
   },
 
   itemPrice: {
@@ -162,37 +192,31 @@ const styles = StyleSheet.create({
   quantityText: {
     fontSize: 18,
   },
+  addItemButton: {
+    // flex: 1,
+    justifyContent: 'flex-end',
+    // marginBottom: 0,
+    // height: 44
+  },
+  addItemButtonContainer: {
+    flex: 1,
+    alignItems: 'center',
+    backgroundColor: blue,
+    borderBottomLeftRadius: 25,
+    borderBottomRightRadius: 25,
+    flexDirection: 'row',
+    height: 44,
+    // justifyContent: 'flex-end',
+  },
+  addItemButtonPlus: {
+    height: 21,
+    marginLeft: 13,
+    marginRight: 7.5,
+    width: 21
+  },
+  addItemButtonText: {
+    color: white,
+    fontSize: 22,
+    fontWeight: '200'
+  }
 });
-
-// const fetchAPIPost = async (url, payload) => {
-//   try {
-//     let response = await fetch(url, {
-//       method: 'POST',
-//       headers: {'Content-Type': 'application/json'},
-//       body: JSON.stringify({
-//         cartRequest: {
-//           items: [
-//             {
-//               quantity: 2,
-//               menu_item_price: 12.5,
-//               menu_item_id: '140003',
-//               airlineMiles: 1570,
-//               modifiers: [],
-//             },
-//           ],
-//           calc_total_only: 1,
-//           tip_amount: 4.5,
-//         },
-//       }),
-//     });
-//     let data = await response.json();
-//     //update to handle multiple promo - currently only one promo allowed
-//     if (data.success) {
-//       return data.data[0].amount_redemption_max;
-//     } else {
-//       throw new Error(data.message);
-//     }
-//   } catch (err) {
-//     Alert.alert('Invalid Promo Code');
-//   }
-// };

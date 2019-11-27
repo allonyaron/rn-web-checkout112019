@@ -8,10 +8,10 @@ import CheckoutContext from '../context/CheckoutContext';
 let otherTipPercentageLabel = 'OTHER';
 
 let tipAmountArr = [16, 18, 20];
-let gratuityTotals = (paymentType, airlineSubtotalMiles, subtotal) =>
+let gratuityTotals = (payment_type, airlineSubtotalMiles, subtotal) =>
   tipAmountArr.map(amount => {
     let gratuityTotalAmount =
-      paymentType === 'MILES'
+      payment_type === 'MILES'
         ? (airlineSubtotalMiles * (amount / 100)).toFixed(0)
         : `${(subtotal * (amount / 100)).toFixed(2)}`;
     console.log(`gratuityTotalAmount - ${gratuityTotalAmount}`);
@@ -25,12 +25,12 @@ let gratuityTotals = (paymentType, airlineSubtotalMiles, subtotal) =>
 const Gratuity = () => {
   const [activeButton, setActiveButton] = useState(18);
   const {state, dispatch} = useContext(CheckoutContext);
-  const {subtotal, airlineSubtotalMiles, paymentType, airlineTip} = state;
+  const {subtotal, airlineSubtotalMiles, payment_type, airlineTip} = state;
   const [modalVisible, setModalVisible] = useState(false);
   const [tipPercent, setTipPercent] = useState(18);
 
   const gratuityOptions = gratuityTotals(
-    paymentType,
+    payment_type,
     airlineSubtotalMiles,
     subtotal,
   );
@@ -48,7 +48,7 @@ const Gratuity = () => {
               setActiveButton(option.amount);
               dispatch({
                 type:
-                  paymentType === 'MILES'
+                  payment_type === 'MILES'
                     ? 'SET_GRATUITY_MILES'
                     : 'SET_GRATUITY',
                 payload: option.tipAmount,
@@ -74,7 +74,7 @@ const Gratuity = () => {
                     ? styles.active
                     : styles.notActive,
                 ]}>
-                {paymentType !== 'MILES' ? '$' : null}
+                {payment_type !== 'MILES' ? '$' : null}
                 {option.tipAmount}
               </Text>
             )}

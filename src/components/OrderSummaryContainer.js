@@ -19,7 +19,7 @@ let orderTotalLabel = 'ORDER TOTAL:';
 const OrderSummary = () => {
   const {state} = useContext(CheckoutContext);
   const {
-    paymentType,
+    payment_type,
     subtotal,
     tipAmount,
     tax,
@@ -33,12 +33,12 @@ const OrderSummary = () => {
   const [takeout, setTakeout] = useState('DINEIN');
 
   let subtotalDisplay =
-    paymentType === 'MILES' ? airlineSubtotalMiles : `$${subtotal}`;
+    payment_type === 'MILES' ? airlineSubtotalMiles : `$${subtotal}`;
 
   let discountAmountDisplay =
-    paymentType === 'MILES' ? 0 : `-$${exceptionAmount}`;
+    payment_type === 'MILES' ? 0 : `-$${exceptionAmount}`;
 
-  let gratuityDisplay = paymentType === 'MILES' ? airlineTip : `$${tipAmount}`;
+  let gratuityDisplay = payment_type === 'MILES' ? airlineTip : `$${tipAmount}`;
 
   let totalBeforeTaxCurrency = (
     ((+subtotal + +tipAmount) * 100 - exceptionAmount * 100) /
@@ -47,10 +47,10 @@ const OrderSummary = () => {
 
   let totalBeforeTaxMiles = (+airlineSubtotalMiles + +airlineTip).toFixed(0);
   let totalBeforeTaxDisplay =
-    paymentType !== 'MILES'
+    payment_type !== 'MILES'
       ? `$${totalBeforeTaxCurrency}`
       : totalBeforeTaxMiles;
-  let taxDisplay = paymentType !== 'MILES' ? `$${tax}` : airlineTax;
+  let taxDisplay = payment_type !== 'MILES' ? `$${tax}` : airlineTax;
 
   let totalAmountCurrencyDisplay = `$${(+totalBeforeTaxCurrency + +tax).toFixed(
     2,

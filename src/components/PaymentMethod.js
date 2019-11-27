@@ -16,7 +16,7 @@ let joinATabTitle = "Join A Tab";
 
 const PaymentMethod = () => {
   const { state, dispatch } = useContext(CheckoutContext);
-  const { paymentType } = state;
+  const { payment_type } = state;
 
   return (
     <View>
@@ -29,7 +29,7 @@ const PaymentMethod = () => {
         >
           <Image
             style={styles.checkImage}
-            source={paymentType === "CREDITCARD" ? checked : unchecked}
+            source={payment_type === "CREDITCARD" ? checked : unchecked}
           />
         </TouchableOpacity>
         <Text style={styles.text}>{creditTitle}</Text>
@@ -45,7 +45,7 @@ const PaymentMethod = () => {
         >
           <Image
             style={styles.checkImage}
-            source={paymentType === "MILES" ? checked : unchecked}
+            source={payment_type === "MILES" ? checked : unchecked}
           />
         </TouchableOpacity>
 
@@ -60,7 +60,7 @@ const PaymentMethod = () => {
         >
           <Image
             style={styles.checkImage}
-            source={paymentType === "JOINTAB" ? checked : unchecked}
+            source={payment_type === "JOINTAB" ? checked : unchecked}
           />
         </TouchableOpacity>
         <Text style={styles.text}>{joinATabTitle}</Text>
