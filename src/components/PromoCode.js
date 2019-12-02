@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import { Image, StyleSheet, Text, TextInput, TouchableOpacity, View, Alert } from 'react-native';
 
 import VoucherContext from '../context/VoucherContext';
+import CheckoutContext from '../context/CheckoutContext';
 
 let enterPromoCode = 'Enter Promo Code';
 
@@ -49,6 +50,9 @@ const PromoCode = () => {
 	const [promoCode, setPromoCode] = useState();
 	const [promoEnabled, setPromoEnabled] = useState(true);
 	const { addPromo } = useContext(VoucherContext);
+
+	const { sendWebkitMessageToIOS } = useContext(CheckoutContext);
+
 	// let redemptionAmount;
 	return (
 		<View style={styles.container}>
@@ -79,14 +83,17 @@ const PromoCode = () => {
 				)}
 				<View style={[styles.button]}>
 					<TouchableOpacity
-						onPress={async () => {
-							let redemptionAmount = await fetchAPIPost(
-								'http://ewrccms05-staging.sys.otg.localdomain/papi/giftcardbalance',
-								{ promoCode }
-							);
+						onPress={() => {
+							// async () => {
+							// let redemptionAmount = await fetchAPIPost(
+							// 	'http://ewrccms05-staging.sys.otg.localdomain/papi/giftcardbalance',
+							// 	{ promoCode }
+							// );
 							//if Success
-							if (redemptionAmount) {
-								addPromo(redemptionAmount);
+							// if (redemptionAmount) {
+							// addPromo(redemptionAmount);
+							sendWebkitMessageToIOS('handlePromoCodeSubmit', { promoCode: 'KATEST22' });
+							if (true) {
 								setPromoCode('1 Promo Applied');
 								setPromoEnabled(false);
 							} else {
