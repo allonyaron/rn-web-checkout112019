@@ -1,6 +1,12 @@
 import React, { useContext, useEffect } from "react";
 
-import { Text, View, StyleSheet, StatusBar } from "react-native";
+import {
+  Text,
+  View,
+  StyleSheet,
+  StatusBar,
+  TouchableOpacity
+} from "react-native";
 
 import OrientationContext from "../context/OrientationContext";
 import HeaderContainer from "../components/HeaderContainer";
@@ -16,7 +22,7 @@ import data from "../data/appState.json";
 const CheckoutScreen = props => {
   const { orientation } = useContext(OrientationContext);
 
-  const { dispatch } = useContext(CheckoutContext);
+  const { state, dispatch } = useContext(CheckoutContext);
   console.log(props);
   useEffect(() => {
     updateReactReduxStoreFromIOS(dispatch, data);
@@ -45,7 +51,17 @@ const CheckoutScreen = props => {
         </View>
         <View style={styles.footerContainer}>
           <View style={styles.upsellContainer} />
-          <View style={styles.payButtonContainer} />
+          <View style={styles.payButtonContainer}>
+            <TouchableOpacity
+              onPress={
+                () => {}
+                // sendWebkitMessageToIOS('pay', { paymentType, vouchers })
+              }
+            >
+              <Text style={styles.payNowText}>PAY NOW – ${state.total}</Text>
+              {/* check on   PAY NOW – ${state.totalAmountCurrencyDisplay} */}
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
     );
@@ -79,6 +95,9 @@ const CheckoutScreen = props => {
   }
   return <Text>THIS IS THE ORIENTATION{orientation}</Text>;
 };
+
+const white = "#ffffff";
+const blue = "#157efb";
 
 const styles = StyleSheet.create({
   pageContainer: {
@@ -132,6 +151,15 @@ const styles = StyleSheet.create({
     marginLeft: 13,
     marginRight: 13,
     marginTop: 10
+  },
+  payNowText: {
+    fontSize: 60,
+    fontWeight: "600",
+    letterSpacing: 2.4,
+    color: white,
+    textAlign: "center"
+    // paddingLeft: 20,
+    // paddingRight: 20
   },
 
   bodyContainer: {

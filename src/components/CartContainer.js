@@ -10,31 +10,6 @@ import {
 
 import CheckoutContext from "../context/CheckoutContext";
 
-function Plus({ addQuantity }) {
-  return (
-    <TouchableOpacity onPress={addQuantity}>
-      <Image
-        style={styles.plus}
-        source={require("../assets/images/ui-plus-44-x-44-blue.png")}
-      />
-    </TouchableOpacity>
-  );
-}
-
-// sendWebkitMessageToIOS - (message, data) - incrementCartQuanity - {"itemId":140003,"sign":"add","cartIndex":0}
-// sendWebkitMessageToIOS - (message, data) - incrementCartQuanity - {"itemId":140003,"sign":"subtract","cartIndex":0}
-
-function Minus({ subtractQuantity, minusStyle }) {
-  return (
-    <TouchableOpacity>
-      <Image
-        style={styles.minus}
-        source={require("../assets/images/ui-minus-44-x-44-blue.png")}
-      />
-    </TouchableOpacity>
-  );
-}
-
 const ItemContainer = ({ item, cmsIP, payment_type, index }) => {
   const {
     menu_item_id,
@@ -84,11 +59,13 @@ const ItemContainer = ({ item, cmsIP, payment_type, index }) => {
           />
         </TouchableOpacity>
       </View>
-      <Text style={styles.itemPrice}>
-        {payment_type === "MILES"
-          ? display_price_in_miles
-          : `$${display_price}`}
-      </Text>
+      <View style={styles.priceContainer}>
+        <Text style={styles.itemPrice}>
+          {payment_type === "MILES"
+            ? display_price_in_miles
+            : `$2${display_price}`}
+        </Text>
+      </View>
     </View>
   );
 };
@@ -191,11 +168,13 @@ const styles = StyleSheet.create({
     fontSize: 15,
     fontWeight: "300"
   },
-
+  priceContainer: {
+    width: 75
+  },
   itemPrice: {
-    fontSize: 17,
-    paddingLeft: 14,
-    paddingRight: 5
+    fontSize: 17
+    // paddingLeft: 14,
+    // paddingRight: 5
   },
   quantityContainer: {
     flexDirection: "row",
