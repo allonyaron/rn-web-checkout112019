@@ -1,4 +1,5 @@
-import React, { useContext, useEffect } from "react";
+
+import React, { useContext } from "react";
 
 import {
   Text,
@@ -23,10 +24,6 @@ const CheckoutScreen = props => {
   const { orientation } = useContext(OrientationContext);
 
   const { state, dispatch } = useContext(CheckoutContext);
-  console.log(props);
-  useEffect(() => {
-    updateReactReduxStoreFromIOS(dispatch, data);
-  }, []);
 
   if (orientation === "portrait") {
     return (
@@ -100,48 +97,49 @@ const white = "#ffffff";
 const blue = "#157efb";
 
 const styles = StyleSheet.create({
-  pageContainer: {
-    flex: 1,
-    backgroundColor: "#f6f6f6"
-  },
-  headerContainer: {
-    height: 109
-  },
-  headerStyle: {
-    height: 61,
-    borderBottomWidth: 1,
-    borderColor: "#C7C7C7"
-  },
-  sideBarContainer: {
-    flex: 32,
-    backgroundColor: "#ffffff",
-    borderWidth: 1,
-    borderColor: "#d1d1d1",
-    borderRadius: 25,
-    marginRight: 10
-  },
+	pageContainer: {
+		flex: 1,
+		backgroundColor: '#f6f6f6',
+	},
+	headerContainer: {
+		height: 109,
+	},
+	headerStyle: {
+		height: 61,
+		borderBottomWidth: 1,
+		borderColor: '#C7C7C7',
+	},
+	sideBarContainer: {
+		flex: 32,
+		backgroundColor: '#ffffff',
+		borderWidth: 1,
+		borderColor: '#d1d1d1',
+		borderRadius: 25,
+		marginRight: 10,
+	},
 
-  scanBoardingPassStyle: {
-    height: 48,
-    alignItems: "center",
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "center"
-  },
-  scanBoardingPassTextStyle: {
-    color: "#007aff",
-    fontSize: 25.65,
-    fontWeight: "500",
-    letterSpacing: 0.5,
-    textAlign: "center"
-  },
+	scanBoardingPassStyle: {
+		height: 48,
+		alignItems: 'center',
+		display: 'flex',
+		flexDirection: 'row',
+		justifyContent: 'center',
+	},
+	scanBoardingPassTextStyle: {
+		color: '#007aff',
+		fontSize: 25.65,
+		fontWeight: '500',
+		letterSpacing: 0.5,
+		textAlign: 'center',
+	},
 
-  scanBooardingCameraImage: {
-    height: 24,
-    marginLeft: 12,
-    marginRight: 12,
-    width: 32.5
-  },
+	scanBooardingCameraImage: {
+		height: 24,
+		marginLeft: 12,
+		marginRight: 12,
+		width: 32.5,
+	},
+
 
   payButtonContainer: {
     height: 89,
@@ -162,91 +160,93 @@ const styles = StyleSheet.create({
     // paddingRight: 20
   },
 
-  bodyContainer: {
-    flex: 1,
-    flexDirection: "row"
-  },
-  mainBodyContainer: {
-    flex: 68,
-    marginLeft: 10,
-    marginRight: 10
-  },
-  paymentContainer: {
-    backgroundColor: "white",
-    borderWidth: 1,
-    borderColor: "#d1d1d1",
-    borderRadius: 25,
-    display: "flex",
-    flexDirection: "row",
-    height: 266
-  },
-  paymentMethodContainer: {
-    height: 50,
-    backgroundColor: "peru",
-    flex: 0.45
-  },
-  gratuityContainer: {
-    height: 50,
-    backgroundColor: "aqua",
-    flex: 0.55
-  },
-  cartContainer: {
-    backgroundColor: "white",
-    borderWidth: 1,
-    borderColor: "#d1d1d1",
-    borderRadius: 25,
-    height: 380,
-    marginTop: 7.5
-  },
-  footerContainer: {
-    marginBottom: 13
-  },
-  upsellContainer: {
-    backgroundColor: "white",
-    borderBottomWidth: 1,
-    borderColor: "#d1d1d1",
-    borderLeftWidth: 1,
-    borderRadius: 25,
-    borderRightWidth: 1,
-    borderTopWidth: 1,
-    height: 140,
-    marginLeft: 11.5,
-    marginRight: 14.5,
-    marginTop: 11.5
-  },
+	bodyContainer: {
+		flex: 1,
+		flexDirection: 'row',
+	},
+	mainBodyContainer: {
+		flex: 68,
+		marginLeft: 10,
+		marginRight: 10,
+	},
+	paymentContainer: {
+		backgroundColor: 'white',
+		borderWidth: 1,
+		borderColor: '#d1d1d1',
+		borderRadius: 25,
+		display: 'flex',
+		flexDirection: 'row',
+		height: 266,
+	},
+	paymentMethodContainer: {
+		height: 50,
+		backgroundColor: 'peru',
+		flex: 0.45,
+	},
+	gratuityContainer: {
+		height: 50,
+		backgroundColor: 'aqua',
+		flex: 0.55,
+	},
+	cartContainer: {
+		backgroundColor: 'white',
+		borderWidth: 1,
+		borderColor: '#d1d1d1',
+		borderRadius: 25,
+		height: 380,
+		marginTop: 7.5,
+	},
+	footerContainer: {
+		marginBottom: 13,
+	},
+	upsellContainer: {
+		backgroundColor: 'white',
+		borderBottomWidth: 1,
+		borderColor: '#d1d1d1',
+		borderLeftWidth: 1,
+		borderRadius: 25,
+		borderRightWidth: 1,
+		borderTopWidth: 1,
+		height: 140,
+		marginLeft: 11.5,
+		marginRight: 14.5,
+		marginTop: 11.5,
+	},
 
-  //Landscape
-  paymentContainerLandscape: {
-    flex: 28
-  },
-  cartContainerLandscape: {
-    flex: 48,
-    backgroundColor: "white",
-    borderWidth: 1,
-    borderColor: "#d1d1d1",
-    borderRadius: 25
-  },
-  sideBarContainerLandscape: {
-    flex: 24,
-    backgroundColor: "#ffffff",
-    borderWidth: 1,
-    borderColor: "#d1d1d1",
-    borderRadius: 25,
-    marginRight: 10
-  },
-  mainBodyContainerLandscape: {
-    flex: 76,
-    flexDirection: "column"
-  },
-  paymentCartContainerLandscape: {
-    flex: 6,
-    flexDirection: "row"
-  },
-  paymentMethodContainer: {},
-  footerContainerLandscape: {
-    flex: 4,
-    marginBottom: 13
-  }
+	//Landscape
+	paymentContainerLandscape: {
+		flex: 28,
+	},
+	cartContainerLandscape: {
+		flex: 48,
+		backgroundColor: 'white',
+		borderWidth: 1,
+		borderColor: '#d1d1d1',
+		borderRadius: 25,
+	},
+	sideBarContainerLandscape: {
+		flex: 24,
+		backgroundColor: '#ffffff',
+		borderWidth: 1,
+		borderColor: '#d1d1d1',
+		borderRadius: 25,
+		// marginRight: 10,
+		margin: 5,
+	},
+	mainBodyContainerLandscape: {
+		flex: 76,
+		flexDirection: 'column',
+		margin: 5,
+	},
+	paymentCartContainerLandscape: {
+		flex: 6,
+		flexDirection: 'row',
+	},
+	paymentMethodContainer: {},
+	footerContainerLandscape: {
+		flex: 4,
+		marginBottom: 13,
+	},
 });
 
 export default CheckoutScreen;
