@@ -43,7 +43,7 @@ const ItemContainer = ({ item, cmsIP, payment_type, index }) => {
             source={require("../assets/images/ui-minus-44-x-44-blue.png")}
           />
         </TouchableOpacity>
-        <Text style={styles.quantityText}>{quantity}</Text>
+        <Text style={styles.quantityText}>5{quantity}</Text>
         <TouchableOpacity
           onPress={() =>
             sendWebkitMessageToIOS("incrementCartQuanity", {
@@ -123,7 +123,6 @@ const blue = "#157efb";
 const styles = StyleSheet.create({
   itemsContainer: {
     flex: 1
-    // margin: 12,
   },
   headerTitle: {
     color: "#737373",
@@ -134,10 +133,7 @@ const styles = StyleSheet.create({
     marginTop: 12,
     marginHorizontal: 12
   },
-  headerBorder: {
-    // borderBottomWidth: 1,
-    // borderColor: "#C7C7C7"
-  },
+  headerBorder: {},
   cartItemContainer: {
     flex: 1
   },
@@ -173,23 +169,23 @@ const styles = StyleSheet.create({
   },
   itemPrice: {
     fontSize: 17
-    // paddingLeft: 14,
-    // paddingRight: 5
   },
   quantityContainer: {
     flexDirection: "row",
     marginRight: 10,
-    marginLeft: 5
+    marginLeft: 5,
+    justifyContent: "space-between",
+    width: 80
   },
   minus: {
     height: 24,
-    marginRight: 15,
+    // marginRight: 15,
     width: 24
   },
 
   plus: {
     height: 24,
-    marginLeft: 15,
+    // marginLeft: 15,
     width: 24
   },
   quantityText: {
