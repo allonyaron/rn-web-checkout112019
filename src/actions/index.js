@@ -53,6 +53,7 @@ const setAppInitialState = ({
 	payment_type,
 	cartItems,
 	cmsIP,
+	totalException,
 }) => ({
 	subtotal,
 	tipAmount,
@@ -67,6 +68,7 @@ const setAppInitialState = ({
 	payment_type,
 	cartItems,
 	cmsIP,
+	totalException,
 	itemQuantity: getItemQuantity(cartItems),
 });
 
