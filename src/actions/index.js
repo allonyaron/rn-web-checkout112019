@@ -5,6 +5,7 @@
 // }
 
 export const updateReactReduxStoreFromIOSDispatch = dispatch => {
+
 	return appState => {
 		console.log(
 			`IOS message test - updateReactReduxStoreFromIOSDispatch - appState -  ${JSON.stringify(appState)}`

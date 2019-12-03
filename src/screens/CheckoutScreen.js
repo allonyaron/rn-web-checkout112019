@@ -1,70 +1,100 @@
-import React, { useContext } from 'react';
 
-import { Text, View, StyleSheet, StatusBar } from 'react-native';
+import React, { useContext } from "react";
 
-import OrientationContext from '../context/OrientationContext';
+import {
+  Text,
+  View,
+  StyleSheet,
+  StatusBar,
+  TouchableOpacity
+} from "react-native";
 
-import HeaderContainer from '../components/HeaderContainer';
-import PaymentContainer from '../components/PaymentContainer';
-import CartContainer from '../components/CartContainer';
-import SideBar from '../components/SideBar';
+import OrientationContext from "../context/OrientationContext";
+import HeaderContainer from "../components/HeaderContainer";
+import PaymentContainer from "../components/PaymentContainer";
+import CartContainer from "../components/CartContainer";
+import SideBar from "../components/SideBar";
+
+import CheckoutContext from "../context/CheckoutContext";
+
+import { updateReactReduxStoreFromIOS } from "../actions";
+import data from "../data/appState.json";
 
 const CheckoutScreen = props => {
-	const { orientation } = useContext(OrientationContext);
+  const { orientation } = useContext(OrientationContext);
 
-	if (orientation === 'portrait') {
-		return (
-			<View style={styles.pageContainer} ref={cartScreen => (window.cartScreen = cartScreen)} {...props}>
-				{/* remove default status bar on top of ipad screen */}
-				<StatusBar hidden={true} />
-				<HeaderContainer />
-				<View style={styles.bodyContainer}>
-					<View style={styles.mainBodyContainer}>
-						<PaymentContainer orientation={orientation} />
-						<View style={styles.cartContainer}>
-							<CartContainer />
-						</View>
-					</View>
-					<View style={styles.sideBarContainer}>
-						<SideBar />
-					</View>
-				</View>
-				<View style={styles.footerContainer}>
-					<View style={styles.upsellContainer} />
-					<View style={styles.payButtonContainer} />
-				</View>
-			</View>
-		);
-	} else if (orientation === 'landscape') {
-		return (
-			<View style={styles.pageContainer}>
-				{/* remove default status bar on top of ipad screen */}
-				<StatusBar hidden={true} />
-				<HeaderContainer />
-				<View style={styles.bodyContainer}>
-					<View style={styles.mainBodyContainerLandscape}>
-						<View style={styles.paymentCartContainerLandscape}>
-							<View style={styles.paymentContainerLandscape}>
-								<PaymentContainer orientation={orientation} />
-							</View>
-							<View style={styles.cartContainerLandscape}>
-								<CartContainer />
-							</View>
-						</View>
-						<View style={styles.footerContainerLandscape}>
-							<View style={styles.upsellContainer} />
-							<View style={styles.payButtonContainer} />
-						</View>
-					</View>
-					<View style={styles.sideBarContainerLandscape}>
-						<SideBar />
-					</View>
-				</View>
-			</View>
-		);
-	}
-	return <Text>THIS IS THE ORIENTATION{orientation}</Text>;
+  const { state, dispatch } = useContext(CheckoutContext);
+
+  if (orientation === "portrait") {
+    return (
+      <View
+        style={styles.pageContainer}
+        ref={cartScreen => (window.cartScreen = cartScreen)}
+        {...props}
+      >
+        {/* remove default status bar on top of ipad screen */}
+        <StatusBar hidden={true} />
+        <HeaderContainer />
+        <View style={styles.bodyContainer}>
+          <View style={styles.mainBodyContainer}>
+            <PaymentContainer orientation={orientation} />
+            <View style={styles.cartContainer}>
+              <CartContainer />
+            </View>
+          </View>
+          <View style={styles.sideBarContainer}>
+            <SideBar />
+          </View>
+        </View>
+        <View style={styles.footerContainer}>
+          <View style={styles.upsellContainer} />
+          <View style={styles.payButtonContainer}>
+            <TouchableOpacity
+              onPress={
+                () => {}
+                // sendWebkitMessageToIOS('pay', { paymentType, vouchers })
+              }
+            >
+              <Text style={styles.payNowText}>PAY NOW – ${state.total}</Text>
+              {/* check on   PAY NOW – ${state.totalAmountCurrencyDisplay} */}
+            </TouchableOpacity>
+          </View>
+        </View>
+      </View>
+    );
+  } else if (orientation === "landscape") {
+    return (
+      <View style={styles.pageContainer}>
+        {/* remove default status bar on top of ipad screen */}
+        <StatusBar hidden={true} />
+        <HeaderContainer />
+        <View style={styles.bodyContainer}>
+          <View style={styles.mainBodyContainerLandscape}>
+            <View style={styles.paymentCartContainerLandscape}>
+              <View style={styles.paymentContainerLandscape}>
+                <PaymentContainer orientation={orientation} />
+              </View>
+              <View style={styles.cartContainerLandscape}>
+                <CartContainer />
+              </View>
+            </View>
+            <View style={styles.footerContainerLandscape}>
+              <View style={styles.upsellContainer} />
+              <View style={styles.payButtonContainer} />
+            </View>
+          </View>
+          <View style={styles.sideBarContainerLandscape}>
+            <SideBar />
+          </View>
+        </View>
+      </View>
+    );
+  }
+  return <Text>THIS IS THE ORIENTATION{orientation}</Text>;
 };
+
+const white = "#ffffff";
+const blue = "#157efb";
 
 const styles = StyleSheet.create({
 	pageContainer: {
@@ -110,15 +140,25 @@ const styles = StyleSheet.create({
 		width: 32.5,
 	},
 
-	payButtonContainer: {
-		height: 89,
-		backgroundColor: '#157efb',
-		borderRadius: 44.5,
-		justifyContent: 'center',
-		marginLeft: 13,
-		marginRight: 13,
-		marginTop: 10,
-	},
+
+  payButtonContainer: {
+    height: 89,
+    backgroundColor: "#157efb",
+    borderRadius: 44.5,
+    justifyContent: "center",
+    marginLeft: 13,
+    marginRight: 13,
+    marginTop: 10
+  },
+  payNowText: {
+    fontSize: 60,
+    fontWeight: "600",
+    letterSpacing: 2.4,
+    color: white,
+    textAlign: "center"
+    // paddingLeft: 20,
+    // paddingRight: 20
+  },
 
 	bodyContainer: {
 		flex: 1,
