@@ -10,7 +10,7 @@ import {
 
 import CheckoutContext from "../context/CheckoutContext";
 
-const ItemContainer = ({ item, cmsIP, payment_type, index }) => {
+const Item = ({ item, cmsIP, payment_type, index }) => {
   const {
     menu_item_id,
     quantity,
@@ -43,7 +43,7 @@ const ItemContainer = ({ item, cmsIP, payment_type, index }) => {
             source={require("../assets/images/ui-minus-44-x-44-blue.png")}
           />
         </TouchableOpacity>
-        <Text style={styles.quantityText}>5{quantity}</Text>
+        <Text style={styles.quantityText}>{quantity}</Text>
         <TouchableOpacity
           onPress={() =>
             sendWebkitMessageToIOS("incrementCartQuanity", {
@@ -63,14 +63,14 @@ const ItemContainer = ({ item, cmsIP, payment_type, index }) => {
         <Text style={styles.itemPrice}>
           {payment_type === "MILES"
             ? display_price_in_miles
-            : `$2${display_price}`}
+            : `$${display_price}`}
         </Text>
       </View>
     </View>
   );
 };
 
-const CartContainer = () => {
+const ItemsContainer = () => {
   const { state, sendWebkitMessageToIOS } = useContext(CheckoutContext);
   const { itemQuantity, cartItems, cmsIP, payment_type } = state;
 
@@ -86,7 +86,7 @@ const CartContainer = () => {
           <ScrollView style={{ flex: 1 }}>
             {cartItems.map((item, idx) => {
               return (
-                <ItemContainer
+                <Item
                   item={item}
                   key={idx}
                   index={idx}
@@ -114,7 +114,7 @@ const CartContainer = () => {
   );
 };
 
-export default CartContainer;
+export default ItemsContainer;
 
 const grey = "#737373";
 const white = "#ffffff";

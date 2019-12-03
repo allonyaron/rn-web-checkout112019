@@ -14,6 +14,8 @@ export const CheckoutProvider = ({ children }) => {
           )}`
         );
         return { ...state, ...action.payload };
+      case "UPDATE_ALL_TOTALS":
+        return { ...state, ...action.payload };
       case "SET_CURRENCY":
         console.log(`SET_CURRENCY`);
         return { ...state, payment_type: action.payload };

@@ -1,0 +1,70 @@
+{
+  "totalException": "-10.00",
+  "total": "6.58",
+  "joinTabEnabled": true,
+  "tax": "1.83",
+  "airlineTip": 290,
+  "airlineSubtotalMiles": 1570,
+  "airlineTotalBeforeTax": 1860,
+  "is_mileage_plus_enabled": true,
+  "airlineTax": 230,
+  "isTabOpen": false,
+  "boardingPassEnabled": true,
+  "cartHasFees": true,
+  "tabCartTotal": "0.00",
+  "airlineCharge": 120,
+  "shouldAllowPayment": true,
+  "tipPercentage": "0.18",
+  "taxAndFeeSeparate": false,
+  "promotions": [
+    {
+      "name": "chase",
+      "enabled": true,
+      "applied": false
+    },
+    {
+      "name": "jetblue",
+      "enabled": false,
+      "applied": false
+    },
+    {
+      "name": "papi",
+      "enabled": false,
+      "applied": true
+    },
+    {
+      "enabled": true,
+      "name": "united",
+      "applied": false,
+      "originalTotalMiles": 1970
+    }
+  ],
+  "airlineTotalMiles": 2100,
+  "tipAmount": "2.25",
+  "subtotal": "12.50",
+  "cartFeeList": [
+    {
+      "amount": "$1.00",
+      "amountMiles": 120,
+      "name": "Delivery Charge",
+      "description": "This is a service fee applied to all orders to cover the cost of delivery.This is a service fee applied to all orders."
+    },
+    {
+      "amount": "$0.83",
+      "amountMiles": 110,
+      "name": "Tax",
+      "description": ""
+    },
+    {
+      "amount": "$1.83",
+      "amountMiles": 230,
+      "name": "Total",
+      "description": ""
+    }
+  ],
+  "totalBeforeTax": "14.75",
+  "airlineTotalException": 0,
+  "shouldAllowMilesPayment": true,
+  "ccVoucher": false,
+  "charge": "1.00"
+}
