@@ -4,11 +4,12 @@ import {
   View,
   Text,
   TouchableHighlight,
-  Modal,
+  // Modal,
   TextInput,
   KeyboardAvoidingView,
   Image
 } from "react-native";
+import Modal from "modal-react-native-web";
 
 import VoucherContext from "../context/VoucherContext";
 import OrientationContext from "../context/OrientationContext";
@@ -114,7 +115,6 @@ const VoucherModal = ({ modalVisible, setModalVisible }) => {
         borderColor: "#de071c",
         backgroundColor: "#fef0f0"
       });
-
   };
 
   const [inputs, useFocusNextField] = useState({});
@@ -125,7 +125,6 @@ const VoucherModal = ({ modalVisible, setModalVisible }) => {
   // };
 
   const handleVoucherData = data => {
-    // console.log(`TMB - validateForm() - ${validateForm()}`);
     // debugger;
     if (validateForm()) {
       console.log(`TMB - validateForm() - true`);
@@ -697,7 +696,8 @@ const styles = StyleSheet.create({
   errorMessage: {
     color: "#de071c",
     fontSize: 12,
-    paddingTop: 8
+    paddingTop: 8,
+    height: 15
   },
   image: {
     height: 160,
