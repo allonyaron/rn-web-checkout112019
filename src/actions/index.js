@@ -22,7 +22,10 @@ export const updateReactReduxStoreFromIOSDispatch = dispatch => {
 };
 export const udpateAllTotalsDispatch = dispatch => {
   return totals => {
-    let payload = updateStateFromIOS(totals);
+    console.log(
+      `IOS message test - udpateAllTotalsDispatch - ${JSON.stringify(totals)}`
+    );
+    let payload = updateAllTotals(totals);
     dispatch({ type: "UPDATE_ALL_TOTALS", payload: payload });
   };
 };
@@ -71,7 +74,8 @@ const updateStateFromIOS = ({
   payment_type,
   cartItems,
   cmsIP,
-  totalException
+  totalException,
+  airlineTotalExceptionMiles
 }) => ({
   subtotal,
   tipAmount,
@@ -87,7 +91,36 @@ const updateStateFromIOS = ({
   cartItems,
   cmsIP,
   totalException,
+  airlineTotalExceptionMiles,
   itemQuantity: getItemQuantity(cartItems)
+});
+
+const updateAllTotals = ({
+  subtotal,
+  airlineSubtotalMiles,
+  tipAmount,
+  totalBeforeTax,
+  airlineTotalBeforeTax,
+  tax,
+  airlineTax,
+  total,
+  totalException,
+  airlineTotalExceptionMiles,
+  airlineTip,
+  airlineTotalMiles
+}) => ({
+  subtotal,
+  airlineSubtotalMiles,
+  tipAmount,
+  totalBeforeTax,
+  airlineTotalBeforeTax,
+  tax,
+  airlineTax,
+  total,
+  totalException,
+  airlineTotalExceptionMiles,
+  airlineTip,
+  airlineTotalMiles
 });
 
 // export const updateReactReduxStoreFromIOS = appState => {
