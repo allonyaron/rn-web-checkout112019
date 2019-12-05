@@ -170,8 +170,8 @@ const styles = StyleSheet.create({
     flex: 0.3,
     height: 30,
     // marginRight: 13,
-    width: 73,
-    marginRight: 25
+    width: 70
+    // marginRight: 25
   },
   rowContainer: {
     flexDirection: "row",
@@ -180,6 +180,7 @@ const styles = StyleSheet.create({
     marginTop: 5
   },
   takeoutLabel: {
+    flex: 0.7,
     color: "#737373",
     fontSize: 16
   },

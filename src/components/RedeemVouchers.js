@@ -10,7 +10,7 @@ import {
   Modal
 } from "react-native";
 
-import VoucherModal from "./VoucherModal";
+import VoucherModal from "./modals/VoucherModal";
 
 let redeemVouchersText = "Redeem Vouchers";
 
