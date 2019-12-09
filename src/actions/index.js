@@ -75,7 +75,8 @@ const updateStateFromIOS = ({
   cartItems,
   cmsIP,
   totalException,
-  airlineTotalExceptionMiles
+  airlineTotalExceptionMiles,
+  promotions
 }) => ({
   subtotal,
   tipAmount,
@@ -92,6 +93,7 @@ const updateStateFromIOS = ({
   cmsIP,
   totalException,
   airlineTotalExceptionMiles,
+  promotions,
   itemQuantity: getItemQuantity(cartItems)
 });
 

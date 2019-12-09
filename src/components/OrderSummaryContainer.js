@@ -16,6 +16,9 @@ let totalBeforeTaxLabel = "Total Before Tax";
 let taxLabel = "Tax";
 let orderTotalLabel = "ORDER TOTAL:";
 
+let promotionsOriginalTotalMiles = 2500;
+// promotions[3].originalTotalMiles
+
 const OrderSummary = () => {
   const { state } = useContext(CheckoutContext);
   const {
@@ -28,7 +31,8 @@ const OrderSummary = () => {
     airlineTip,
     airlineTax,
     totalException,
-    airlineTotalExceptionMiles
+    airlineTotalExceptionMiles,
+    promotions
   } = state;
   const { exceptionAmount, showException } = useContext(VoucherContext);
   const [takeoutSwitch, setTakeoutSwitch] = useState(false);
@@ -42,10 +46,6 @@ const OrderSummary = () => {
 
   let totalExceptionDisplayFlag = !!+totalException;
 
-  console.log(
-    `TMB - totalException - ${+totalException} = ${!!+totalException}`
-  );
-
   const discountAmountFormat = totalExceptionString => {
     return payment_type === "MILES"
       ? airlineTotalExceptionMiles
@@ -58,8 +58,6 @@ const OrderSummary = () => {
     console.log(typeof totalException);
     discountAmountDisplay = discountAmountFormat(totalException);
   }
-
-  console.log(`TMB - discountAmountDisplay - ${discountAmountDisplay}`);
 
   let gratuityDisplay = payment_type === "MILES" ? airlineTip : `$${tipAmount}`;
 
@@ -137,11 +135,28 @@ const OrderSummary = () => {
           <Text style={styles.orText}>OR</Text>
           <Text style={styles.milesTotalAmountLabel}>PAY WITH MILES</Text>
         </View>
-        <View>
-          <Text style={[styles.milesTotalAmountLabel, styles.milesTotalAmount]}>
-            {totalAmountMilesDisplay}
-          </Text>
-          <Text style={styles.awardMilesText}>AWARD MILES</Text>
+        <View style={{ flex: 1 }}>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between"
+              // alignItems: "center"
+            }}
+          >
+            <Text
+              style={[styles.promotionsOriginalTotalMiles, { color: "red " }]}
+            >
+              {promotionsOriginalTotalMiles}
+            </Text>
+            <Text
+              style={[styles.milesTotalAmountLabel, styles.milesTotalAmount]}
+            >
+              {totalAmountMilesDisplay}
+            </Text>
+          </View>
+          <View style={{}}>
+            <Text style={styles.awardMilesText}>AWARD MILES</Text>
+          </View>
         </View>
       </View>
     </View>
@@ -151,6 +166,7 @@ const OrderSummary = () => {
 export default OrderSummary;
 
 const royalBlue = "#003399";
+const grey = "#737373";
 
 const styles = StyleSheet.create({
   orderSummaryContainer: {
@@ -207,10 +223,19 @@ const styles = StyleSheet.create({
   milesTotalAmount: {
     color: royalBlue,
     fontSize: 16,
-    fontWeight: "bold",
-    marginTop: 12,
-    textAlign: "right"
+    fontWeight: "bold"
+    // marginTop: 3
+    // textAlign: "right"
   },
+
+  promotionsOriginalTotalMiles: {
+    color: grey,
+    fontSize: 11,
+    textDecorationLine: "line-through"
+    // textAlign: "left",
+    // marginTop: 3
+  },
+
   orText: {
     fontSize: 9,
     marginBottom: 3,

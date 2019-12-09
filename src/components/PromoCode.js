@@ -29,6 +29,7 @@ const PromoCode = () => {
   // const { addPromo } = useContext(VoucherContext);
 
   const { sendWebkitMessageToIOS, state } = useContext(CheckoutContext);
+
   let { promoScannerEnabled } = state;
   promoScannerEnabled = true;
 
@@ -51,7 +52,11 @@ const PromoCode = () => {
         </View>
         {promoScannerEnabled && (
           <View style={[styles.cameraContainer]}>
-            <TouchableOpacity onPress={() => {}}>
+            <TouchableOpacity
+              onPress={() => {
+                sendWebkitMessageToIOS("showPromoBarcodeScanner");
+              }}
+            >
               <Image
                 style={[styles.cameraImage]}
                 source={require("../assets/images/icon-camera-heading.png")}
