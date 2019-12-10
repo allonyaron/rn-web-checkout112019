@@ -1,0 +1,1663 @@
+{
+  "airlineTax": 0,
+  "fp_check_number": 100082,
+  "modifierOptionsById": {
+    "38404": {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Fries Instead of Mixed Greens",
+      "modifierCollectionId": 0,
+      "menu_item_id": 38404,
+      "display_price_in_miles": 0,
+      "menu_item_price": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    "39731": {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "No Onions",
+      "modifierCollectionId": 0,
+      "menu_item_id": 39731,
+      "display_price_in_miles": 0,
+      "menu_item_price": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    "70605": {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "No Relish",
+      "modifierCollectionId": 0,
+      "menu_item_id": 70605,
+      "display_price_in_miles": 0,
+      "menu_item_price": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    "115942": {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "25 oz. Sierra Nevada Pale Ale",
+      "modifierCollectionId": 0,
+      "menu_item_id": 115942,
+      "display_price_in_miles": 0,
+      "menu_item_price": "4.75",
+      "selected": false,
+      "airlineMiles": 600
+    },
+    "133397": {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Pitcher Additional $24",
+      "modifierCollectionId": 0,
+      "menu_item_id": 133397,
+      "display_price_in_miles": 0,
+      "menu_item_price": "24.00",
+      "selected": false,
+      "airlineMiles": 3000
+    },
+    "139621": {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Shot of Jack Daniels $5.00",
+      "modifierCollectionId": 0,
+      "menu_item_id": 139621,
+      "display_price_in_miles": 0,
+      "menu_item_price": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    "139622": {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Shot of Jameson $5.00",
+      "modifierCollectionId": 0,
+      "menu_item_id": 139622,
+      "display_price_in_miles": 0,
+      "menu_item_price": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    "139623": {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Shot of Johnny Walker Black $5.00",
+      "modifierCollectionId": 0,
+      "menu_item_id": 139623,
+      "display_price_in_miles": 0,
+      "menu_item_price": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    "139624": {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Shot of Jim Beam $5.00",
+      "modifierCollectionId": 0,
+      "menu_item_id": 139624,
+      "display_price_in_miles": 0,
+      "menu_item_price": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    "139625": {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Shot of Cuervo Especial Gold $5.00",
+      "modifierCollectionId": 0,
+      "menu_item_id": 139625,
+      "display_price_in_miles": 0,
+      "menu_item_price": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    "141980": {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "No Tomato Jam",
+      "modifierCollectionId": 0,
+      "menu_item_id": 141980,
+      "display_price_in_miles": 0,
+      "menu_item_price": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    "141981": {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "No Sauerkraut",
+      "modifierCollectionId": 0,
+      "menu_item_id": 141981,
+      "display_price_in_miles": 0,
+      "menu_item_price": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    }
+  },
+  "modifierOptions": [
+    {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Fries Instead of Mixed Greens",
+      "modifierCollectionId": 0,
+      "menu_item_id": 38404,
+      "display_price_in_miles": 0,
+      "menu_item_price": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "No Relish",
+      "modifierCollectionId": 0,
+      "menu_item_id": 70605,
+      "display_price_in_miles": 0,
+      "menu_item_price": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Shot of Jim Beam $5.00",
+      "modifierCollectionId": 0,
+      "menu_item_id": 139624,
+      "display_price_in_miles": 0,
+      "menu_item_price": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Shot of Johnny Walker Black $5.00",
+      "modifierCollectionId": 0,
+      "menu_item_id": 139623,
+      "display_price_in_miles": 0,
+      "menu_item_price": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Shot of Cuervo Especial Gold $5.00",
+      "modifierCollectionId": 0,
+      "menu_item_id": 139625,
+      "display_price_in_miles": 0,
+      "menu_item_price": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Shot of Jack Daniels $5.00",
+      "modifierCollectionId": 0,
+      "menu_item_id": 139621,
+      "display_price_in_miles": 0,
+      "menu_item_price": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Shot of Jameson $5.00",
+      "modifierCollectionId": 0,
+      "menu_item_id": 139622,
+      "display_price_in_miles": 0,
+      "menu_item_price": "5.00",
+      "selected": false,
+      "airlineMiles": 630
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "No Onions",
+      "modifierCollectionId": 0,
+      "menu_item_id": 39731,
+      "display_price_in_miles": 0,
+      "menu_item_price": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "No Tomato Jam",
+      "modifierCollectionId": 0,
+      "menu_item_id": 141980,
+      "display_price_in_miles": 0,
+      "menu_item_price": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "25 oz. Sierra Nevada Pale Ale",
+      "modifierCollectionId": 0,
+      "menu_item_id": 115942,
+      "display_price_in_miles": 0,
+      "menu_item_price": "4.75",
+      "selected": false,
+      "airlineMiles": 600
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "Pitcher Additional $24",
+      "modifierCollectionId": 0,
+      "menu_item_id": 133397,
+      "display_price_in_miles": 0,
+      "menu_item_price": "24.00",
+      "selected": false,
+      "airlineMiles": 3000
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "display_price": "0.00",
+      "selectedByDefault": false,
+      "selectionType": "CHECKBOX",
+      "title": "No Sauerkraut",
+      "modifierCollectionId": 0,
+      "menu_item_id": 141981,
+      "display_price_in_miles": 0,
+      "menu_item_price": "0.00",
+      "selected": false,
+      "airlineMiles": 0
+    }
+  ],
+  "subtotal": "9.75",
+  "totalBeforeTax": "11.51",
+  "airlineTip": 0,
+  "airlineCharge": 0,
+  "items": [
+    {
+      "quantity": 1,
+      "description": "Introduced in 1961, Sprite is the world's leading lemon-lime flavored soft drink. Its crisp, clean taste really quenches your thirst. 16 oz. serving.",
+      "display_price": "4.00",
+      "imageUrl": "/images/media/media_13720.jpg",
+      "title": "Sprite",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menu_item_id": 72498,
+      "display_price_in_miles": 500,
+      "menu_item_price": "4.00",
+      "modifierGroups": [],
+      "airlineMiles": 500
+    },
+    {
+      "quantity": 1,
+      "description": "Pale Ale began as a home brewer’s dream, grew into an icon, and inspired countless brewers to follow a passion of their own. Its unique piney and grapefruit aromas from the use of whole-cone American hops have fascinated beer drinkers for decades and made this beer a classic, yet it remains new, complex and surprising to thousands of beer drinkers every day. It is—as it always has been—all natural, bottle conditioned and refreshingly bold. 5% ABV",
+      "display_price": "9.50",
+      "imageUrl": "/images/media/media_28637.jpg",
+      "title": "Sierra Nevada Pale Ale Draft",
+      "modifierCollectionId": 2141,
+      "selectedModifiers": [],
+      "menu_item_id": 119685,
+      "display_price_in_miles": 1190,
+      "menu_item_price": "9.50",
+      "modifierGroups": [
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 2023,
+          "maximumSelections": 1000,
+          "title": "Would you like this as a pitcher?",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Pitcher Additional $24",
+              "modifierCollectionId": 0,
+              "menu_item_id": 133397,
+              "display_price_in_miles": 0,
+              "menu_item_price": "24.00",
+              "selected": false,
+              "airlineMiles": 3000
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 2100,
+          "maximumSelections": 1,
+          "title": "Add a Shot:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Jack Daniels $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139621,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Jameson $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139622,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Jim Beam $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139624,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Johnny Walker Black $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139623,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Cuervo Especial Gold $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139625,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 752,
+          "maximumSelections": 1000,
+          "title": "Would you like a 25 oz. Sierra Nevada Pale Ale?",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "25 oz. Sierra Nevada Pale Ale",
+              "modifierCollectionId": 0,
+              "menu_item_id": 115942,
+              "display_price_in_miles": 0,
+              "menu_item_price": "4.75",
+              "selected": false,
+              "airlineMiles": 600
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 1190
+    },
+    {
+      "quantity": 1,
+      "description": "Budweiser is brewed using barley malt, rice, water, hops and yeast. It is lagered with beechwood chips in the aging vessel, which creates a smoother taste. 5% ABV",
+      "display_price": "8.25",
+      "imageUrl": "/images/media/media_13131.jpg",
+      "title": "Budweiser",
+      "modifierCollectionId": 2248,
+      "selectedModifiers": [],
+      "menu_item_id": 119705,
+      "display_price_in_miles": 1040,
+      "menu_item_price": "8.25",
+      "modifierGroups": [
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 2100,
+          "maximumSelections": 1,
+          "title": "Add a Shot:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Jack Daniels $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139621,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Jameson $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139622,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Jim Beam $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139624,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Johnny Walker Black $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139623,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Cuervo Especial Gold $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139625,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 1040
+    },
+    {
+      "quantity": 1,
+      "description": "Sam Adams New England IPA-Clocking in at 6.8% ABV, the unfiltered IPA provides a burst of fruited hop aroma and leaves drinkers wanting another sip. In comparison to West Coast style IPAs which have prominent hop bitterness and a light, dry mouthfeel, New",
+      "display_price": "9.25",
+      "imageUrl": "/images/media/media_32897.jpg",
+      "title": "Football Is Back Beer Special",
+      "modifierCollectionId": 2248,
+      "selectedModifiers": [],
+      "menu_item_id": 79071,
+      "display_price_in_miles": 1160,
+      "menu_item_price": "9.25",
+      "modifierGroups": [
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 2100,
+          "maximumSelections": 1,
+          "title": "Add a Shot:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Jack Daniels $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139621,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Jameson $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139622,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Jim Beam $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139624,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Johnny Walker Black $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139623,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Cuervo Especial Gold $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139625,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 1160
+    },
+    {
+      "quantity": 1,
+      "description": "",
+      "display_price": "1.00",
+      "imageUrl": "/images/media/media_32378.jpg",
+      "title": "Shelter Newark's Homeless",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menu_item_id": 143707,
+      "display_price_in_miles": 130,
+      "menu_item_price": "1.00",
+      "modifierGroups": [],
+      "airlineMiles": 130
+    },
+    {
+      "quantity": 1,
+      "description": "A Kobe beef dog topped with sauerkraut, relish, caramelized onions, and tomato jam. Served with a side of french fries",
+      "display_price": "9.75",
+      "imageUrl": "/images/media/media_31436.jpg",
+      "title": "Classic Dog",
+      "modifierCollectionId": 1324,
+      "selectedModifiers": [],
+      "menu_item_id": 72957,
+      "display_price_in_miles": 1220,
+      "menu_item_price": "9.75",
+      "modifierGroups": [
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 67,
+          "maximumSelections": 1000,
+          "title": "Instead of Mixed Greens:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Fries Instead of Mixed Greens",
+              "modifierCollectionId": 0,
+              "menu_item_id": 38404,
+              "display_price_in_miles": 0,
+              "menu_item_price": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1301,
+          "maximumSelections": 1000,
+          "title": "Hot Dog Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Relish",
+              "modifierCollectionId": 0,
+              "menu_item_id": 70605,
+              "display_price_in_miles": 0,
+              "menu_item_price": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Onions",
+              "modifierCollectionId": 0,
+              "menu_item_id": 39731,
+              "display_price_in_miles": 0,
+              "menu_item_price": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Tomato Jam",
+              "modifierCollectionId": 0,
+              "menu_item_id": 141980,
+              "display_price_in_miles": 0,
+              "menu_item_price": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Sauerkraut",
+              "modifierCollectionId": 0,
+              "menu_item_id": 141981,
+              "display_price_in_miles": 0,
+              "menu_item_price": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 1220
+    }
+  ],
+  "modifierCollectionsById": {
+    "0": {
+      "id": 0,
+      "groups": []
+    },
+    "1324": {
+      "id": 1324,
+      "groups": [67, 1301]
+    },
+    "2141": {
+      "id": 2141,
+      "groups": [2023, 2100, 752]
+    },
+    "2248": {
+      "id": 2248,
+      "groups": [2100]
+    }
+  },
+  "tabItems": [
+    {
+      "quantity": 1,
+      "description": "A Kobe beef dog topped with sauerkraut, relish, caramelized onions, and tomato jam. Served with a side of french fries",
+      "display_price": "9.75",
+      "selectedRadios": {},
+      "selectedChecks": [],
+      "uniqueId": "72957",
+      "imageUrl": "/images/media/media_31436.jpg",
+      "title": "Classic Dog",
+      "modifierCollectionId": 1324,
+      "selectedModifiers": [],
+      "menu_item_id": 72957,
+      "display_price_in_miles": 1220,
+      "menu_item_price": "9.75",
+      "modifierGroups": [
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 67,
+          "maximumSelections": 1000,
+          "title": "Instead of Mixed Greens:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Fries Instead of Mixed Greens",
+              "modifierCollectionId": 0,
+              "menu_item_id": 38404,
+              "display_price_in_miles": 0,
+              "menu_item_price": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1301,
+          "maximumSelections": 1000,
+          "title": "Hot Dog Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Relish",
+              "modifierCollectionId": 0,
+              "menu_item_id": 70605,
+              "display_price_in_miles": 0,
+              "menu_item_price": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Onions",
+              "modifierCollectionId": 0,
+              "menu_item_id": 39731,
+              "display_price_in_miles": 0,
+              "menu_item_price": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Tomato Jam",
+              "modifierCollectionId": 0,
+              "menu_item_id": 141980,
+              "display_price_in_miles": 0,
+              "menu_item_price": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Sauerkraut",
+              "modifierCollectionId": 0,
+              "menu_item_id": 141981,
+              "display_price_in_miles": 0,
+              "menu_item_price": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 1220
+    }
+  ],
+  "ConciergeVersion": "3.11.1.uap",
+  "tipPercentage": "0.18",
+  "check_id": "DO_NOT_MAKE-4dl4m",
+  "ccvScannerEnabled": false,
+  "moniker": "3790000000043081111",
+  "modifierGroupsById": {
+    "67": {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 67,
+      "maximumSelections": 1000,
+      "title": "Instead of Mixed Greens:",
+      "addonItems": false,
+      "modifierItems": [38404]
+    },
+    "752": {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 752,
+      "maximumSelections": 1000,
+      "title": "Would you like a 25 oz. Sierra Nevada Pale Ale?",
+      "addonItems": false,
+      "modifierItems": [115942]
+    },
+    "1301": {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 1301,
+      "maximumSelections": 1000,
+      "title": "Hot Dog Options:",
+      "addonItems": false,
+      "modifierItems": [70605, 39731, 141980, 141981]
+    },
+    "2023": {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 2023,
+      "maximumSelections": 1000,
+      "title": "Would you like this as a pitcher?",
+      "addonItems": false,
+      "modifierItems": [133397]
+    },
+    "2100": {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 2100,
+      "maximumSelections": 1,
+      "title": "Add a Shot:",
+      "addonItems": false,
+      "modifierItems": [139621, 139622, 139624, 139623, 139625]
+    }
+  },
+  "isTabOpen": true,
+  "cmsIP": "http://10.80.10.96",
+  "success": 1,
+  "upsellItems": [72498, 119685, 119705, 79071, 143707],
+  "cartItems": [],
+  "translations": {
+    "Cancel": "Cancel",
+    "Unpaid": "Unpaid",
+    "PROMOTIONS": "PROMOTIONS",
+    "Charge": "Charge",
+    "Expiration Date": "Expiration Date",
+    "IN YOUR TAB": "IN YOUR TAB",
+    "ADD TO TAB": "ADD TO TAB",
+    "Please enter your redemption code below and tap Submit to continue.": "Please enter your redemption code below and tap Submit to continue.",
+    "GRATUITY": "GRATUITY",
+    "Tax:": "Tax",
+    "Gratuity:": "Gratuity:",
+    "Apply Tip": "Apply Tip",
+    "Redeem Vouchers": "Redeem Vouchers",
+    "Credit": "Credit",
+    "Total before tax:": "Total before tax:",
+    "OR": "OR",
+    "the tip amount": "the tip amount",
+    "Redemption Code": "Redemption Code",
+    "Your voucher has been applied": "Your voucher has been applied",
+    "TAKEOUT?": "TAKEOUT?",
+    "Voucher Number": "Voucher Number",
+    "Voucher Amount": "Voucher Amount",
+    "Apply another voucher": "Apply another voucher",
+    "SCAN YOUR BOARDING PASS TO VIEW OFFERS": "SCAN YOUR BOARDING PASS TO VIEW OFFERS",
+    "Credit Card Voucher": "Credit Card Voucher",
+    "on your check": "on your check",
+    "Add More Items": "Add More Items",
+    "Enter Promo Code": "Enter Promo Code",
+    "JOIN A TAB": "JOIN A TAB",
+    "Submit": "Submit",
+    "Item": "Item",
+    "BACK": "BACK",
+    "Please enter your voucher information below and tap Submit to continue.": "Please enter your voucher information below and tap Submit to continue.",
+    "WELCOME": "WELCOME",
+    "PAY WITH MILES": "PAY WITH MILES",
+    "Items": "Items",
+    "Not Your Tab?": "Not Your Tab?",
+    "Continue": "Continue",
+    "Please Enter": "Please Enter",
+    "Choose Voucher Type": "Choose Voucher Type",
+    "UPGRADE YOUR MEAL": "UPGRADE YOUR MEAL",
+    "CLOSE TAB": "CLOSE TAB",
+    "Miles": "Miles",
+    "ORDER TOTAL:": "ORDER TOTAL:",
+    "Update Check": "Update Check",
+    "Discount:": "Discount",
+    "Redeem Voucher": "Redeem Voucher",
+    "ORDER SUMMARY": "ORDER SUMMARY",
+    "OTHER": "OTHER",
+    "PAY NOW": "PAY NOW",
+    "PAY WITH": "PAY WITH",
+    "AWARD MILES": "AWARD MILES",
+    "Add to Check": "Add to Check",
+    "PAYMENT METHOD": "PAYMENT METHOD",
+    "OK": "OK"
+  },
+  "airlineTotalBeforeTax": 0,
+  "languageCode": "eng",
+  "tipAmount": "1.76",
+  "shouldAllowPayment": true,
+  "cartHasFees": false,
+  "shouldAllowMilesPayment": true,
+  "modifierGroups": [
+    {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 2100,
+      "maximumSelections": 1,
+      "title": "Add a Shot:",
+      "addonItems": false,
+      "modifierItems": [139621, 139622, 139624, 139623, 139625]
+    },
+    {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 752,
+      "maximumSelections": 1000,
+      "title": "Would you like a 25 oz. Sierra Nevada Pale Ale?",
+      "addonItems": false,
+      "modifierItems": [115942]
+    },
+    {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 2023,
+      "maximumSelections": 1000,
+      "title": "Would you like this as a pitcher?",
+      "addonItems": false,
+      "modifierItems": [133397]
+    },
+    {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 1301,
+      "maximumSelections": 1000,
+      "title": "Hot Dog Options:",
+      "addonItems": false,
+      "modifierItems": [70605, 39731, 141980, 141981]
+    },
+    {
+      "selectionType": "CHECKBOX",
+      "minimumSelections": 0,
+      "id": 67,
+      "maximumSelections": 1000,
+      "title": "Instead of Mixed Greens:",
+      "addonItems": false,
+      "modifierItems": [38404]
+    }
+  ],
+  "total": "12.16",
+  "no_kitchen": 0,
+  "warnings": {
+    "alcoholWarningTitle": "Alcohol Warning:",
+    "rawFoodProductTitle": "Raw Food Product:",
+    "allergyWarningBody": "Menu items contain common food allergens such as those found in peanuts, tree nuts, fish, shellfish, eggs, milk, wheat and soy. Our facilities are NOT allergen free environments.",
+    "rawFoodProductBody": "Consuming raw or undercooked meats, poultry, seafood, shellfish or eggs may increase your risk of food borne illnesses.",
+    "alcoholWarningBody": "Customers must be 21 years of age or older to order and/ or drink alcoholic beverages.",
+    "allergyWarningTitle": "Allergy Warning:"
+  },
+  "airlineTipMiles": 0,
+  "airlineTotalException": 0,
+  "taxAndFeeSeparate": false,
+  "ccVoucher": true,
+  "airlineSubtotalMiles": 0,
+  "promotions": [
+    {
+      "name": "chase",
+      "enabled": true,
+      "applied": false
+    },
+    {
+      "name": "jetblue",
+      "enabled": false,
+      "applied": false
+    },
+    {
+      "name": "papi",
+      "enabled": false,
+      "applied": false
+    },
+    {
+      "enabled": true,
+      "name": "united",
+      "applied": false,
+      "originalTotalMiles": 0
+    }
+  ],
+  "totalException": "0.00",
+  "payment_type": "CREDITCARD",
+  "modifierCollections": [
+    {
+      "id": 0,
+      "groups": []
+    },
+    {
+      "id": 2248,
+      "groups": [2100]
+    },
+    {
+      "id": 1324,
+      "groups": [67, 1301]
+    },
+    {
+      "id": 2141,
+      "groups": [2023, 2100, 752]
+    }
+  ],
+  "is_mileage_plus_enabled": true,
+  "boardingPassEnabled": true,
+  "tabCartTotal": "0.00",
+  "joinTabEnabled": true,
+  "tab_check_name": "DO_NOT_MAKE-4dl4m",
+  "airlineTaxMiles": 0,
+  "tax": "0.65",
+  "cartFeeList": [
+    {
+      "amount": "$0.65",
+      "amountMiles": 0,
+      "name": "Tax",
+      "description": ""
+    },
+    {
+      "amount": "$0.65",
+      "amountMiles": 0,
+      "name": "Total",
+      "description": ""
+    }
+  ],
+  "airlineTotalExceptionMiles": 0,
+  "airlineTotalMiles": 0,
+  "promoScannerEnabled": true,
+  "itemsById": {
+    "72498": {
+      "quantity": 1,
+      "description": "Introduced in 1961, Sprite is the world's leading lemon-lime flavored soft drink. Its crisp, clean taste really quenches your thirst. 16 oz. serving.",
+      "display_price": "4.00",
+      "imageUrl": "/images/media/media_13720.jpg",
+      "title": "Sprite",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menu_item_id": 72498,
+      "display_price_in_miles": 500,
+      "menu_item_price": "4.00",
+      "modifierGroups": [],
+      "airlineMiles": 500
+    },
+    "72957": {
+      "quantity": 1,
+      "description": "A Kobe beef dog topped with sauerkraut, relish, caramelized onions, and tomato jam. Served with a side of french fries",
+      "display_price": "9.75",
+      "imageUrl": "/images/media/media_31436.jpg",
+      "title": "Classic Dog",
+      "modifierCollectionId": 1324,
+      "selectedModifiers": [],
+      "menu_item_id": 72957,
+      "display_price_in_miles": 1220,
+      "menu_item_price": "9.75",
+      "modifierGroups": [
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 67,
+          "maximumSelections": 1000,
+          "title": "Instead of Mixed Greens:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Fries Instead of Mixed Greens",
+              "modifierCollectionId": 0,
+              "menu_item_id": 38404,
+              "display_price_in_miles": 0,
+              "menu_item_price": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 1301,
+          "maximumSelections": 1000,
+          "title": "Hot Dog Options:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Relish",
+              "modifierCollectionId": 0,
+              "menu_item_id": 70605,
+              "display_price_in_miles": 0,
+              "menu_item_price": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Onions",
+              "modifierCollectionId": 0,
+              "menu_item_id": 39731,
+              "display_price_in_miles": 0,
+              "menu_item_price": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Tomato Jam",
+              "modifierCollectionId": 0,
+              "menu_item_id": 141980,
+              "display_price_in_miles": 0,
+              "menu_item_price": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "No Sauerkraut",
+              "modifierCollectionId": 0,
+              "menu_item_id": 141981,
+              "display_price_in_miles": 0,
+              "menu_item_price": "0.00",
+              "selected": false,
+              "airlineMiles": 0
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 1220
+    },
+    "79071": {
+      "quantity": 1,
+      "description": "Sam Adams New England IPA-Clocking in at 6.8% ABV, the unfiltered IPA provides a burst of fruited hop aroma and leaves drinkers wanting another sip. In comparison to West Coast style IPAs which have prominent hop bitterness and a light, dry mouthfeel, New",
+      "display_price": "9.25",
+      "imageUrl": "/images/media/media_32897.jpg",
+      "title": "Football Is Back Beer Special",
+      "modifierCollectionId": 2248,
+      "selectedModifiers": [],
+      "menu_item_id": 79071,
+      "display_price_in_miles": 1160,
+      "menu_item_price": "9.25",
+      "modifierGroups": [
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 2100,
+          "maximumSelections": 1,
+          "title": "Add a Shot:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Jack Daniels $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139621,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Jameson $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139622,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Jim Beam $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139624,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Johnny Walker Black $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139623,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Cuervo Especial Gold $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139625,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 1160
+    },
+    "119685": {
+      "quantity": 1,
+      "description": "Pale Ale began as a home brewer’s dream, grew into an icon, and inspired countless brewers to follow a passion of their own. Its unique piney and grapefruit aromas from the use of whole-cone American hops have fascinated beer drinkers for decades and made this beer a classic, yet it remains new, complex and surprising to thousands of beer drinkers every day. It is—as it always has been—all natural, bottle conditioned and refreshingly bold. 5% ABV",
+      "display_price": "9.50",
+      "imageUrl": "/images/media/media_28637.jpg",
+      "title": "Sierra Nevada Pale Ale Draft",
+      "modifierCollectionId": 2141,
+      "selectedModifiers": [],
+      "menu_item_id": 119685,
+      "display_price_in_miles": 1190,
+      "menu_item_price": "9.50",
+      "modifierGroups": [
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 2023,
+          "maximumSelections": 1000,
+          "title": "Would you like this as a pitcher?",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Pitcher Additional $24",
+              "modifierCollectionId": 0,
+              "menu_item_id": 133397,
+              "display_price_in_miles": 0,
+              "menu_item_price": "24.00",
+              "selected": false,
+              "airlineMiles": 3000
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 2100,
+          "maximumSelections": 1,
+          "title": "Add a Shot:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Jack Daniels $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139621,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Jameson $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139622,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Jim Beam $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139624,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Johnny Walker Black $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139623,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Cuervo Especial Gold $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139625,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            }
+          ]
+        },
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 752,
+          "maximumSelections": 1000,
+          "title": "Would you like a 25 oz. Sierra Nevada Pale Ale?",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "25 oz. Sierra Nevada Pale Ale",
+              "modifierCollectionId": 0,
+              "menu_item_id": 115942,
+              "display_price_in_miles": 0,
+              "menu_item_price": "4.75",
+              "selected": false,
+              "airlineMiles": 600
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 1190
+    },
+    "119705": {
+      "quantity": 1,
+      "description": "Budweiser is brewed using barley malt, rice, water, hops and yeast. It is lagered with beechwood chips in the aging vessel, which creates a smoother taste. 5% ABV",
+      "display_price": "8.25",
+      "imageUrl": "/images/media/media_13131.jpg",
+      "title": "Budweiser",
+      "modifierCollectionId": 2248,
+      "selectedModifiers": [],
+      "menu_item_id": 119705,
+      "display_price_in_miles": 1040,
+      "menu_item_price": "8.25",
+      "modifierGroups": [
+        {
+          "selectionType": "CHECKBOX",
+          "minimumSelections": 0,
+          "id": 2100,
+          "maximumSelections": 1,
+          "title": "Add a Shot:",
+          "addonItems": false,
+          "modifierItems": [
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Jack Daniels $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139621,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Jameson $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139622,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Jim Beam $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139624,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Johnny Walker Black $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139623,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            },
+            {
+              "quantity": 1,
+              "description": "",
+              "display_price": "0.00",
+              "selectedByDefault": false,
+              "selectionType": "CHECKBOX",
+              "title": "Shot of Cuervo Especial Gold $5.00",
+              "modifierCollectionId": 0,
+              "menu_item_id": 139625,
+              "display_price_in_miles": 0,
+              "menu_item_price": "5.00",
+              "selected": false,
+              "airlineMiles": 630
+            }
+          ]
+        }
+      ],
+      "airlineMiles": 1040
+    },
+    "143707": {
+      "quantity": 1,
+      "description": "",
+      "display_price": "1.00",
+      "imageUrl": "/images/media/media_32378.jpg",
+      "title": "Shelter Newark's Homeless",
+      "modifierCollectionId": 0,
+      "selectedModifiers": [],
+      "menu_item_id": 143707,
+      "display_price_in_miles": 130,
+      "menu_item_price": "1.00",
+      "modifierGroups": [],
+      "airlineMiles": 130
+    }
+  },
+  "charge": "0.00",
+  "payment_deferred": 0
+}
