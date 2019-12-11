@@ -11,19 +11,31 @@ import {
 import OrientationContext from "../context/OrientationContext";
 import HeaderContainer from "../components/HeaderContainer";
 import PaymentContainer from "../components/PaymentContainer";
-import ItemsContainer from "../components/ItemsContainer";
+// import TabContainer from "../components/TabContainer";
+import {
+  TabItemsContainer,
+  CartItemsContainer
+} from "../components/ItemsContainer";
 import SideBar from "../components/SideBar";
 
 import CheckoutContext from "../context/CheckoutContext";
 
-import { updateReactReduxStoreFromIOS } from "../actions";
-import data from "../data/appState.json";
+// import { updateReactReduxStoreFromIOS } from "../actions";
+// import data from "../data/appState.json";
+
+// let isTabOpen = true;
 
 const CheckoutScreen = props => {
   const { orientation } = useContext(OrientationContext);
 
-  const { state, dispatch } = useContext(CheckoutContext);
+  const { state } = useContext(CheckoutContext);
+  // const { state, dispatch } = useContext(CheckoutContext);
 
+  // dispatch({ type: "SET_INIT_APPSTATE", payload: data });
+
+  const { isTabOpen } = state;
+  //set default for isTabOpen
+  console.log(`TMB-isTabOpen - ${isTabOpen}`);
   if (orientation === "portrait") {
     return (
       <View
@@ -35,12 +47,22 @@ const CheckoutScreen = props => {
         <StatusBar hidden={true} />
         <HeaderContainer />
         <View style={styles.bodyContainer}>
-          <View style={styles.mainBodyContainer}>
-            <PaymentContainer orientation={orientation} />
-            <View style={styles.itemsContainer}>
-              <ItemsContainer />
+          {isTabOpen !== true ? (
+            <View style={styles.mainBodyContainer}>
+              <PaymentContainer orientation={orientation} />
+              <View style={styles.itemsContainer}>
+                <TabItemsContainer />
+                <CartItemsContainer />
+              </View>
             </View>
-          </View>
+          ) : (
+            <View style={styles.mainBodyContainer}>
+              <PaymentContainer orientation={orientation} />
+              <View style={styles.itemsContainer}>
+                <CartItemsContainer />
+              </View>
+            </View>
+          )}
           <View style={styles.sideBarContainer}>
             <SideBar />
           </View>
@@ -56,6 +78,9 @@ const CheckoutScreen = props => {
             >
               <Text style={styles.payNowText}>PAY NOW – ${state.total}</Text>
               {/* check on   PAY NOW – ${state.totalAmountCurrencyDisplay} */}
+              {/* pay - {"paymentType":"MILES","vouchers":[]} */}
+              {/* pay - {"paymentType":"CREDITCARD","vouchers":[]} */}
+              {/* pay - {"paymentType":"JOINTAB","vouchers":[]} */}
             </TouchableOpacity>
           </View>
         </View>
@@ -74,7 +99,7 @@ const CheckoutScreen = props => {
                 <PaymentContainer orientation={orientation} />
               </View>
               <View style={styles.itemsContainerLandscape}>
-                <ItemsContainer />
+                <CartItemsContainer />
               </View>
             </View>
             <View style={styles.footerContainerLandscape}>
@@ -159,7 +184,7 @@ const styles = StyleSheet.create({
   },
 
   bodyContainer: {
-    flex: 1,
+    flex: "stretch",
     flexDirection: "row"
   },
   mainBodyContainer: {
@@ -191,8 +216,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#d1d1d1",
     borderRadius: 25,
-    height: 380,
-    marginTop: 7.5
+    // height: 380,
+    marginTop: 7
   },
   footerContainer: {
     marginBottom: 13

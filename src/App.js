@@ -1,10 +1,9 @@
 import React, { useContext } from "react";
-import { View, Text } from "react-native";
+// import { View, Text } from "react-native";
 
 // Look at public/index.html!
 
 import {
-  // updateReactReduxStoreFromIOS,
   updateReactReduxStoreFromIOSDispatch,
   udpateAllTotalsDispatch,
   handleTaxTotalMilesChange,
@@ -28,13 +27,14 @@ import { OrientationProvider } from "./context/OrientationContext";
 
 import CheckoutScreen from "./screens/CheckoutScreen";
 
+// import testAppState from './data/appState.json'
+
 // import OrientationContext from './src/context/OrientationContext';
 // const {CheckoutProvider} = CheckoutContext
 
 const App = () => {
   // const {orientation} = useContext(OrientationContext);
 
-  console.log(`TMB - CheckoutScreen`);
   const { dispatch } = useContext(CheckoutContext);
 
   window.cartScreen = {};

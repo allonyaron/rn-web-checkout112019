@@ -55,6 +55,12 @@ export const toggleCalcTotalLoading = () =>
 export const handleSetCCVoucherInfo = () =>
   console.log(`IOS message test - handleSetCCVoucherInfo`);
 
+// export const setGratuity = () =>
+//   dispatch({
+//     type: payment_type === "MILES" ? "SET_GRATUITY_MILES" : "SET_GRATUITY",
+//     payload: option.tipAmount
+//   });
+
 const getItemQuantity = items => {
   let itemQuantity = items.reduce((acc, item) => acc + item.quantity, 0);
   return itemQuantity;
@@ -76,7 +82,9 @@ const updateStateFromIOS = ({
   cmsIP,
   totalException,
   airlineTotalExceptionMiles,
-  promotions
+  promotions,
+  isTabOpen,
+  tabItems
 }) => ({
   subtotal,
   tipAmount,
@@ -94,7 +102,11 @@ const updateStateFromIOS = ({
   totalException,
   airlineTotalExceptionMiles,
   promotions,
-  itemQuantity: getItemQuantity(cartItems)
+  tabItems,
+  isTabOpen,
+  itemQuantity: getItemQuantity(cartItems),
+  cartItemQuantity: getItemQuantity(cartItems),
+  tabItemQuantity: getItemQuantity(tabItems)
 });
 
 const updateAllTotals = ({

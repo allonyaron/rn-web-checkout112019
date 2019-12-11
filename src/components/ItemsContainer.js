@@ -70,9 +70,19 @@ const Item = ({ item, cmsIP, payment_type, index }) => {
   );
 };
 
-const ItemsContainer = () => {
+//cartItems
+// const ItemContainerDisplay = ({
+//   itemQuantity,
+//   itemData,
+//   addMoreItemsButton,
+//   sendWebkitMessageToIOS,
+//   cmsIP,
+//   payment_type
+// }) => {
+// const ItemContainerDisplay = () => {
+const ItemsContainer = ({ itemData, addMoreItemsButton, itemQuantity }) => {
   const { state, sendWebkitMessageToIOS } = useContext(CheckoutContext);
-  const { itemQuantity, cartItems, cmsIP, payment_type } = state;
+  const { cmsIP, payment_type } = state;
 
   return (
     <View style={styles.itemsContainer}>
@@ -82,9 +92,9 @@ const ItemsContainer = () => {
         </Text>
       </View>
       <View style={styles.cartItemContainer}>
-        {cartItems && (
+        {itemData && (
           <ScrollView style={{ flex: 1 }}>
-            {cartItems.map((item, idx) => {
+            {itemData.map((item, idx) => {
               return (
                 <Item
                   item={item}
@@ -98,23 +108,66 @@ const ItemsContainer = () => {
           </ScrollView>
         )}
       </View>
-      <View>
-        <TouchableOpacity
-          style={styles.addItemButtonContainer}
-          onPress={() => sendWebkitMessageToIOS("AddMoreItems")}
-        >
-          <Image
-            style={styles.addItemButtonPlus}
-            source={require("../assets/images/ui-plus-44-x-44-white.png")}
-          />
-          <Text style={styles.addItemButtonText}>Add More Items</Text>
-        </TouchableOpacity>
-      </View>
+      {addMoreItemsButton && (
+        <View>
+          <TouchableOpacity
+            style={styles.addItemButtonContainer}
+            onPress={() => sendWebkitMessageToIOS("AddMoreItems")}
+          >
+            <Image
+              style={styles.addItemButtonPlus}
+              source={require("../assets/images/ui-plus-44-x-44-white.png")}
+            />
+            <Text style={styles.addItemButtonText}>Add More Items</Text>
+          </TouchableOpacity>
+        </View>
+      )}
     </View>
   );
 };
 
-export default ItemsContainer;
+// const ItemsContainer = () => {
+//   const { state, sendWebkitMessageToIOS } = useContext(CheckoutContext);
+//   const { itemQuantity, cartItems, cmsIP, payment_type } = state;
+
+//   const addMoreItemsButton = false;
+//   return (
+//     <ItemContainerDisplay
+//       itemQuantity={itemQuantity}
+//       addMoreItemsButton={addMoreItemsButton}
+//       itemData={cartItems}
+//       sendWebkitMessageToIOS={sendWebkitMessageToIOS}
+//       cmsIP={cmsIP}
+//       payment_type={payment_type}
+//     />
+//   );
+// };
+
+export const CartItemsContainer = () => {
+  const { state } = useContext(CheckoutContext);
+  const { cartItems, cartItemQuantity } = state;
+  return (
+    <ItemsContainer
+      addMoreItemsButton={true}
+      itemData={cartItems}
+      itemQuantity={cartItemQuantity}
+    />
+  );
+};
+export const TabItemsContainer = () => {
+  const { state } = useContext(CheckoutContext);
+  const { tabItems, tabItemQuantity } = state;
+
+  return (
+    <ItemsContainer
+      addMoreItemsButton={false}
+      itemData={tabItems}
+      itemQuantity={tabItemQuantity}
+    />
+  );
+};
+
+// export default { CartItemsContainer, TabItemsContainer };
 
 const grey = "#737373";
 const white = "#ffffff";
