@@ -32,6 +32,7 @@ const OrderSummary = () => {
     airlineTax,
     totalException,
     airlineTotalExceptionMiles,
+    airlineTotalMiles,
     promotions
   } = state;
   const { exceptionAmount, showException } = useContext(VoucherContext);
@@ -151,7 +152,7 @@ const OrderSummary = () => {
             <Text
               style={[styles.milesTotalAmountLabel, styles.milesTotalAmount]}
             >
-              {totalAmountMilesDisplay}
+              {airlineTotalMiles}
             </Text>
           </View>
           <View style={{}}>

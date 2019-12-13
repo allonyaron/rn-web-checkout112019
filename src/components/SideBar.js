@@ -1,16 +1,32 @@
-import React from "react";
+import React, { useContext } from "react";
 import { View, StyleSheet, TouchableOpacity, Text } from "react-native";
 
 import OrderSummary from "./OrderSummaryContainer";
 
-let payNow = "PAY NOW";
+import CheckoutContext from "../context/CheckoutContext";
+
+let buttonText = "PAY NOW";
 
 const SidebarContainer = () => {
+  const { state, sendWebkitMessageToIOS } = useContext(CheckoutContext);
+  const { isTabOpen, payment_type } = state;
+
+  const payButtonOnPress = () => {
+    if (isTabOpen) {
+      sendWebkitMessageToIOS("NOT_MY_TAB");
+    } else {
+      sendWebkitMessageToIOS("pay", {
+        paymentType: payment_type,
+        vouchers: []
+      });
+    }
+  };
+
   return (
     <View>
       <View style={styles.payNowButtonContainer}>
-        <TouchableOpacity onPress={() => console.log("paynow sidebar")}>
-          <Text style={styles.payNowButtontext}>{payNow}</Text>
+        <TouchableOpacity onPress={payButtonOnPress}>
+          <Text style={styles.payNowButtontext}>{buttonText}</Text>
         </TouchableOpacity>
       </View>
       <View
@@ -43,6 +59,5 @@ const styles = StyleSheet.create({
     fontSize: 22,
     fontWeight: "600",
     textAlign: "center"
-    // width: 180
   }
 });

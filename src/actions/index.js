@@ -12,11 +12,6 @@ export const updateReactReduxStoreFromIOSDispatch = dispatch => {
       )}`
     );
     let payload = updateStateFromIOS(appState);
-    console.log(
-      `IOS message test - updateReactReduxStoreFromIOSDispatch - ${JSON.stringify(
-        payload
-      )}`
-    );
     dispatch({ type: "SET_INIT_APPSTATE", payload: payload });
   };
 };
@@ -84,7 +79,8 @@ const updateStateFromIOS = ({
   airlineTotalExceptionMiles,
   promotions,
   isTabOpen,
-  tabItems
+  tabItems,
+  passengerName
 }) => ({
   subtotal,
   tipAmount,
@@ -104,6 +100,7 @@ const updateStateFromIOS = ({
   promotions,
   tabItems,
   isTabOpen,
+  passengerName,
   itemQuantity: getItemQuantity(cartItems),
   cartItemQuantity: getItemQuantity(cartItems),
   tabItemQuantity: getItemQuantity(tabItems)

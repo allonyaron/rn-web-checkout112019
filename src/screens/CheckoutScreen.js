@@ -1,17 +1,11 @@
 import React, { useContext } from "react";
 
-import {
-  Text,
-  View,
-  StyleSheet,
-  StatusBar,
-  TouchableOpacity
-} from "react-native";
+import { Text, View, StyleSheet, StatusBar } from "react-native";
 
 import OrientationContext from "../context/OrientationContext";
 import HeaderContainer from "../components/HeaderContainer";
 import PaymentContainer from "../components/PaymentContainer";
-// import TabContainer from "../components/TabContainer";
+import FooterContainer from "../components/FooterContainer";
 import {
   TabItemsContainer,
   CartItemsContainer
@@ -28,13 +22,15 @@ import CheckoutContext from "../context/CheckoutContext";
 const CheckoutScreen = props => {
   const { orientation } = useContext(OrientationContext);
   const { state } = useContext(CheckoutContext);
-  // const { state, dispatch } = useContext(CheckoutContext);
-
-  // dispatch({ type: "SET_INIT_APPSTATE", payload: data });
-
   const { isTabOpen } = state;
+
   //set default for isTabOpen
   // let isTabOpen = true;
+
+  //isCartEmpty(tabCartTotal, cartQuantity)
+  // export const isCartEmpty = (total, cartQuantity) =>
+  //   total === 0 && cartQuantity === 0;
+
   console.log(`TMB-isTabOpen - ${isTabOpen}`);
   if (orientation === "portrait") {
     return (
@@ -78,18 +74,7 @@ const CheckoutScreen = props => {
         <View style={styles.footerContainer}>
           <View style={styles.upsellContainer} />
           <View style={styles.payButtonContainer}>
-            <TouchableOpacity
-              onPress={
-                () => {}
-                // sendWebkitMessageToIOS('pay', { paymentType, vouchers })
-              }
-            >
-              <Text style={styles.payNowText}>PAY NOW – ${state.total}</Text>
-              {/* check on   PAY NOW – ${state.totalAmountCurrencyDisplay} */}
-              {/* pay - {"paymentType":"MILES","vouchers":[]} */}
-              {/* pay - {"paymentType":"CREDITCARD","vouchers":[]} */}
-              {/* pay - {"paymentType":"JOINTAB","vouchers":[]} */}
-            </TouchableOpacity>
+            <FooterContainer />
           </View>
         </View>
       </View>
