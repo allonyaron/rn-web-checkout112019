@@ -11,7 +11,8 @@ export const CheckoutProvider = ({ children }) => {
     tipAmount: 0,
     totalException: 0,
     tax: 0,
-    airlineTax: 0
+    airlineTax: 0,
+    payment_type: "CREDIT_CARD"
   };
 
   let reducer = (state, action) => {
@@ -43,6 +44,9 @@ export const CheckoutProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const sendWebkitMessageToIOS = (message, data) => {
+    console.log(
+      `sendWebkitMessageToIOS = (message, data) - ${message} - ${data}`
+    );
     // if (isAppPresent()) {
     data =
       data !== undefined

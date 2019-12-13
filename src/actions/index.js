@@ -12,11 +12,7 @@ export const updateReactReduxStoreFromIOSDispatch = dispatch => {
       )}`
     );
     let payload = updateStateFromIOS(appState);
-    console.log(
-      `IOS message test - updateReactReduxStoreFromIOSDispatch - ${JSON.stringify(
-        payload
-      )}`
-    );
+
     dispatch({ type: "SET_INIT_APPSTATE", payload: payload });
   };
 };
