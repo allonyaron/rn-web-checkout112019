@@ -3,7 +3,16 @@ import React, { useReducer } from "react";
 const CheckoutContext = React.createContext();
 
 export const CheckoutProvider = ({ children }) => {
-  const initialState = {};
+  const initialState = {
+    itemQuantity: 0,
+    airlineSubtotalMiles: 0,
+    subtotal: 0,
+    airlineTip: 0,
+    tipAmount: 0,
+    totalException: 0,
+    tax: 0,
+    airlineTax: 0
+  };
 
   let reducer = (state, action) => {
     switch (action.type) {
@@ -13,6 +22,8 @@ export const CheckoutProvider = ({ children }) => {
             action.payload
           )}`
         );
+        return { ...state, ...action.payload };
+      case "UPDATE_ALL_TOTALS":
         return { ...state, ...action.payload };
       case "SET_CURRENCY":
         console.log(`SET_CURRENCY`);

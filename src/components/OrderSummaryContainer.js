@@ -1,211 +1,253 @@
-import React, { useContext, useState } from 'react';
-import { View, StyleSheet, Text, Switch } from 'react-native';
+import React, { useContext, useState } from "react";
+import { View, StyleSheet, Text, Switch } from "react-native";
 
-import CheckoutContext from '../context/CheckoutContext';
-import VoucherContext from '../context/VoucherContext';
+import CheckoutContext from "../context/CheckoutContext";
+import VoucherContext from "../context/VoucherContext";
 
-let orderSummaryLabel = 'ORDER SUMMARY';
-let takeoutLabel = 'TAKEOUT?';
+let orderSummaryLabel = "ORDER SUMMARY";
+let takeoutLabel = "TAKEOUT?";
 
 let enabled = false;
-let itemText = 'Item';
-let discountLabel = 'Discount';
-let gratuityLabel = 'Gratuity';
-let gratuity = '$8.42';
-let totalBeforeTaxLabel = 'Total Before Tax';
-let taxLabel = 'Tax';
-let orderTotalLabel = 'ORDER TOTAL:';
+let itemText = "Item";
+let discountLabel = "Discount";
+let gratuityLabel = "Gratuity";
+let gratuity = "$8.42";
+let totalBeforeTaxLabel = "Total Before Tax";
+let taxLabel = "Tax";
+let orderTotalLabel = "ORDER TOTAL:";
+
+let promotionsOriginalTotalMiles = 2500;
+// promotions[3].originalTotalMiles
 
 const OrderSummary = () => {
-	const { state } = useContext(CheckoutContext);
-	const {
-		payment_type,
-		subtotal,
-		tipAmount,
-		tax,
-		itemQuantity,
-		airlineSubtotalMiles,
-		airlineTip,
-		airlineTax,
-		totalException,
-	} = state;
-	const { exceptionAmount, showException } = useContext(VoucherContext);
-	const [takeoutSwitch, setTakeoutSwitch] = useState(false);
-	const [takeout, setTakeout] = useState('DINEIN');
+  const { state } = useContext(CheckoutContext);
+  const {
+    payment_type,
+    subtotal,
+    tipAmount,
+    tax,
+    itemQuantity,
+    airlineSubtotalMiles,
+    airlineTip,
+    airlineTax,
+    totalException,
+    airlineTotalExceptionMiles,
+    promotions
+  } = state;
+  const { exceptionAmount, showException } = useContext(VoucherContext);
+  const [takeoutSwitch, setTakeoutSwitch] = useState(false);
+  const [takeout, setTakeout] = useState("DINEIN");
 
-	let subtotalDisplay = payment_type === 'MILES' ? airlineSubtotalMiles : `$${subtotal}`;
+  let subtotalDisplay =
+    payment_type === "MILES" ? airlineSubtotalMiles : `$${subtotal}`;
 
-	let totalExceptionNum = 0,
-		discountAmountDisplay;
+  let totalExceptionNum = 0,
+    discountAmountDisplay;
 
-	let totalExceptionDisplayFlag = !!+totalException;
+  let totalExceptionDisplayFlag = !!+totalException;
 
-	console.log(`TMB - totalException - ${+totalException} = ${!!+totalException}`);
+  const discountAmountFormat = totalExceptionString => {
+    return payment_type === "MILES"
+      ? airlineTotalExceptionMiles
+      : `-$${totalExceptionString.replace(/-/, "")}`;
+    // return totalExceptionString.replace(/-/, '');
+  };
 
-	const discountAmountFormat = totalExceptionString => {
-		return payment_type === 'MILES' ? 0 : `-$${totalExceptionString.replace(/-/, '')}`;
-		// return totalExceptionString.replace(/-/, '');
-	};
+  if (+totalException) {
+    console.log(`typeof  - totalException`);
+    console.log(typeof totalException);
+    discountAmountDisplay = discountAmountFormat(totalException);
+  }
 
-	if (+totalException) {
-		console.log(`typeof  - totalException`);
-		console.log(typeof totalException);
-		discountAmountDisplay = discountAmountFormat(totalException);
-	}
+  let gratuityDisplay = payment_type === "MILES" ? airlineTip : `$${tipAmount}`;
 
-	console.log(`TMB - discountAmountDisplay - ${discountAmountDisplay}`);
+  let totalBeforeTaxCurrency = (
+    ((+subtotal + +tipAmount) * 100 + +totalException * 100) /
+    100
+  ).toFixed(2);
 
-	let gratuityDisplay = payment_type === 'MILES' ? airlineTip : `$${tipAmount}`;
+  let totalBeforeTaxMiles = (+airlineSubtotalMiles + +airlineTip).toFixed(0);
+  let totalBeforeTaxDisplay =
+    payment_type !== "MILES"
+      ? `$${totalBeforeTaxCurrency}`
+      : totalBeforeTaxMiles;
+  let taxDisplay = payment_type !== "MILES" ? `$${tax}` : airlineTax;
 
-	let totalBeforeTaxCurrency = (((+subtotal + +tipAmount) * 100 + +totalException * 100) / 100).toFixed(2);
+  let totalAmountCurrencyDisplay = `$${(+totalBeforeTaxCurrency + +tax).toFixed(
+    2
+  )}`;
+  let totalAmountMilesDisplay = (+totalBeforeTaxMiles + +airlineTax).toFixed(0);
 
-	let totalBeforeTaxMiles = (+airlineSubtotalMiles + +airlineTip).toFixed(0);
-	let totalBeforeTaxDisplay = payment_type !== 'MILES' ? `$${totalBeforeTaxCurrency}` : totalBeforeTaxMiles;
-	let taxDisplay = payment_type !== 'MILES' ? `$${tax}` : airlineTax;
-
-	let totalAmountCurrencyDisplay = `$${(+totalBeforeTaxCurrency + +tax).toFixed(2)}`;
-	let totalAmountMilesDisplay = (+totalBeforeTaxMiles + +airlineTax).toFixed(0);
-
-	return (
-		<View style={styles.orderSummaryContainer}>
-			<Text style={styles.orderSummaryLabel}>{orderSummaryLabel}</Text>
-			<View style={styles.rowContainer}>
-				<Text style={styles.takeoutLabel}>{takeoutLabel}</Text>
-				<Switch
-					style={styles.switch}
-					value={enabled}
-					onValueChange={takeoutSwitch => {
-						setTakeoutSwitch(takeoutSwitch => !takeoutSwitch);
-						setTakeout(takeoutSwitch === false ? 'DINEIN' : 'TOGO');
-					}}
-					// ios_backgroundColor={"#737373"}
-					// trackColor={{ false: "#737373", true: "#737373" }}
-				/>
-			</View>
-			<View style={styles.rowContainer}>
-				<Text style={styles.textLabel}>{`${itemText}(${itemQuantity})`}</Text>
-				<Text style={styles.textLabel}>{subtotalDisplay}</Text>
-			</View>
-			{/* MOVE THIS boolean OUT  */}
-			{totalExceptionDisplayFlag && (
-				<View style={styles.rowContainer}>
-					<Text style={styles.textLabel}>{discountLabel}</Text>
-					<Text style={styles.textLabel}>{discountAmountDisplay}</Text>
-				</View>
-			)}
-			<View style={styles.rowContainer}>
-				<Text style={styles.textLabel}>{gratuityLabel}</Text>
-				<Text style={styles.textLabel}>{gratuityDisplay}</Text>
-			</View>
-			<View style={styles.rowContainer}>
-				<Text style={styles.textLabel}>{totalBeforeTaxLabel}</Text>
-				<Text style={styles.textLabel}>{totalBeforeTaxDisplay}</Text>
-			</View>
-			<View style={styles.rowContainer}>
-				<Text style={styles.textLabel}>{taxLabel}</Text>
-				<Text style={styles.textLabel}>{taxDisplay}</Text>
-			</View>
-			<View
-				style={{
-					borderBottomColor: '#C7C7C7',
-					borderBottomWidth: 1,
-				}}
-			/>
-			<View style={styles.rowContainer}>
-				<Text style={styles.orderTotal}>{orderTotalLabel}</Text>
-				<Text style={[styles.orderTotal, styles.orderTotalAmount]}>{totalAmountCurrencyDisplay}</Text>
-			</View>
-			{/* if miles enabled */}
-			<View style={styles.rowContainer}>
-				<View>
-					<Text style={styles.orText}>OR</Text>
-					<Text style={styles.milesTotalAmountLabel}>PAY WITH MILES</Text>
-				</View>
-				<View>
-					<Text style={[styles.milesTotalAmountLabel, styles.milesTotalAmount]}>
-						{totalAmountMilesDisplay}
-					</Text>
-					<Text style={styles.awardMilesText}>AWARD MILES</Text>
-				</View>
-			</View>
-		</View>
-	);
+  return (
+    <View style={styles.orderSummaryContainer}>
+      <Text style={styles.orderSummaryLabel}>{orderSummaryLabel}</Text>
+      <View style={styles.rowContainer}>
+        <Text style={styles.takeoutLabel}>{takeoutLabel}</Text>
+        <Switch
+          style={styles.switch}
+          value={enabled}
+          onValueChange={takeoutSwitch => {
+            setTakeoutSwitch(takeoutSwitch => !takeoutSwitch);
+            setTakeout(takeoutSwitch === false ? "DINEIN" : "TOGO");
+          }}
+          // ios_backgroundColor={"#737373"}
+          // trackColor={{ false: "#737373", true: "#737373" }}
+        />
+      </View>
+      <View style={styles.rowContainer}>
+        <Text style={styles.textLabel}>{`${itemText}(${itemQuantity})`}</Text>
+        <Text style={styles.textLabel}>{subtotalDisplay}</Text>
+      </View>
+      {/* MOVE THIS boolean OUT  */}
+      {totalExceptionDisplayFlag && (
+        <View style={styles.rowContainer}>
+          <Text style={styles.textLabel}>{discountLabel}</Text>
+          <Text style={styles.textLabel}>{discountAmountDisplay}</Text>
+        </View>
+      )}
+      <View style={styles.rowContainer}>
+        <Text style={styles.textLabel}>{gratuityLabel}</Text>
+        <Text style={styles.textLabel}>{gratuityDisplay}</Text>
+      </View>
+      <View style={styles.rowContainer}>
+        <Text style={styles.textLabel}>{totalBeforeTaxLabel}</Text>
+        <Text style={styles.textLabel}>{totalBeforeTaxDisplay}</Text>
+      </View>
+      <View style={styles.rowContainer}>
+        <Text style={styles.textLabel}>{taxLabel}</Text>
+        <Text style={styles.textLabel}>{taxDisplay}</Text>
+      </View>
+      <View
+        style={{
+          borderBottomColor: "#C7C7C7",
+          borderBottomWidth: 1
+        }}
+      />
+      <View style={styles.rowContainer}>
+        <Text style={styles.orderTotal}>{orderTotalLabel}</Text>
+        <Text style={[styles.orderTotal, styles.orderTotalAmount]}>
+          {totalAmountCurrencyDisplay}
+        </Text>
+      </View>
+      {/* if miles enabled */}
+      <View style={styles.rowContainer}>
+        <View>
+          <Text style={styles.orText}>OR</Text>
+          <Text style={styles.milesTotalAmountLabel}>PAY WITH MILES</Text>
+        </View>
+        <View style={{ flex: 1 }}>
+          <View
+            style={{
+              flexDirection: "row",
+              justifyContent: "space-between"
+              // alignItems: "center"
+            }}
+          >
+            <Text
+              style={[styles.promotionsOriginalTotalMiles, { color: "red " }]}
+            >
+              {promotionsOriginalTotalMiles}
+            </Text>
+            <Text
+              style={[styles.milesTotalAmountLabel, styles.milesTotalAmount]}
+            >
+              {totalAmountMilesDisplay}
+            </Text>
+          </View>
+          <View style={{}}>
+            <Text style={styles.awardMilesText}>AWARD MILES</Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  );
 };
 
 export default OrderSummary;
 
-const royalBlue = '#003399';
+const royalBlue = "#003399";
+const grey = "#737373";
 
 const styles = StyleSheet.create({
-	orderSummaryContainer: {
-		marginLeft: 13,
-		marginRight: 13,
-		marginTop: 3,
-	},
-	orderSummaryLabel: {
-		color: '#737373',
-		fontSize: 20,
-		fontWeight: '600',
-		height: 30,
-		letterSpacing: 0.8,
-		textAlign: 'left',
-	},
-	switch: {
-		flex: 0.3,
-		height: 30,
-		// marginRight: 13,
-		width: 73,
-		marginRight: 25,
-	},
-	rowContainer: {
-		flexDirection: 'row',
-		justifyContent: 'space-between',
-		alignItems: 'center',
-		marginTop: 5,
-	},
-	takeoutLabel: {
-		color: '#737373',
-		fontSize: 16,
-	},
-	textLabel: {
-		marginBottom: 10,
-		color: '#737373',
-		fontSize: 16,
-		height: 19,
-	},
-	orderTotal: {
-		color: '#4cd964',
-		fontSize: 15,
-		fontWeight: 'bold',
-	},
-	orderTotalAmount: {
-		fontSize: 16,
-		textAlign: 'right',
-	},
-	milesTotalAmountLabel: {
-		color: royalBlue,
-		fontSize: 15,
-		fontWeight: 'bold',
-	},
-	milesTotalAmount: {
-		color: royalBlue,
-		fontSize: 16,
-		fontWeight: 'bold',
-		marginTop: 12,
-		textAlign: 'right',
-	},
-	orText: {
-		fontSize: 9,
-		marginBottom: 3,
-		// marginRight: 43,
-		marginTop: 3,
-		textAlign: 'center',
-	},
-	awardMilesText: {
-		color: royalBlue,
-		fontSize: 8,
-		marginLeft: 3,
-		fontWeight: 'bold',
-		textAlign: 'right',
-	},
+  orderSummaryContainer: {
+    marginLeft: 13,
+    marginRight: 13,
+    marginTop: 3
+  },
+  orderSummaryLabel: {
+    color: "#737373",
+    fontSize: 20,
+    fontWeight: "600",
+    height: 30,
+    letterSpacing: 0.8,
+    textAlign: "left"
+  },
+  switch: {
+    flex: 0.3,
+    height: 30,
+    // marginRight: 13,
+    width: 70
+    // marginRight: 25
+  },
+  rowContainer: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginTop: 5
+  },
+  takeoutLabel: {
+    flex: 0.7,
+    color: "#737373",
+    fontSize: 16
+  },
+  textLabel: {
+    marginBottom: 10,
+    color: "#737373",
+    fontSize: 16,
+    height: 19
+  },
+  orderTotal: {
+    color: "#4cd964",
+    fontSize: 15,
+    fontWeight: "bold"
+  },
+  orderTotalAmount: {
+    fontSize: 16,
+    textAlign: "right"
+  },
+  milesTotalAmountLabel: {
+    color: royalBlue,
+    fontSize: 15,
+    fontWeight: "bold"
+  },
+  milesTotalAmount: {
+    color: royalBlue,
+    fontSize: 16,
+    fontWeight: "bold"
+    // marginTop: 3
+    // textAlign: "right"
+  },
+
+  promotionsOriginalTotalMiles: {
+    color: grey,
+    fontSize: 11,
+    textDecorationLine: "line-through"
+    // textAlign: "left",
+    // marginTop: 3
+  },
+
+  orText: {
+    fontSize: 9,
+    marginBottom: 3,
+    // marginRight: 43,
+    marginTop: 3,
+    textAlign: "center"
+  },
+  awardMilesText: {
+    color: royalBlue,
+    fontSize: 8,
+    marginLeft: 3,
+    fontWeight: "bold",
+    textAlign: "right"
+  }
 });

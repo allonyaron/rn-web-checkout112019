@@ -4,18 +4,19 @@ import {
   View,
   Text,
   TouchableHighlight,
-  Modal,
+  // Modal,
   TextInput,
   KeyboardAvoidingView,
   Image
 } from "react-native";
+import Modal from "modal-react-native-web";
 
-import VoucherContext from "../context/VoucherContext";
-import OrientationContext from "../context/OrientationContext";
+import VoucherContext from "../../context/VoucherContext";
+import OrientationContext from "../../context/OrientationContext";
 
-import leftArrow from "../assets/images/ui-directional-arrow-left.png";
-import rightArrow from "../assets/images/ui-directional-arrow-right.png";
-import circleCheck from "../assets/images/ui-check-circle-closed-330-x-330-i-copy.png";
+import leftArrow from "../../assets/images/ui-directional-arrow-left.png";
+import rightArrow from "../../assets/images/ui-directional-arrow-right.png";
+import circleCheck from "../../assets/images/ui-check-circle-closed-330-x-330-i-copy.png";
 
 let voucherHeadingText = "Credit Card Voucher";
 let voucherAppliedHeadingText = "Redeem Voucher";
@@ -114,7 +115,6 @@ const VoucherModal = ({ modalVisible, setModalVisible }) => {
         borderColor: "#de071c",
         backgroundColor: "#fef0f0"
       });
-
   };
 
   const [inputs, useFocusNextField] = useState({});
@@ -125,7 +125,6 @@ const VoucherModal = ({ modalVisible, setModalVisible }) => {
   // };
 
   const handleVoucherData = data => {
-    // console.log(`TMB - validateForm() - ${validateForm()}`);
     // debugger;
     if (validateForm()) {
       console.log(`TMB - validateForm() - true`);
@@ -236,9 +235,7 @@ const VoucherModal = ({ modalVisible, setModalVisible }) => {
           {isVoucherForm ? (
             <View>
               <View style={styles.headingContainer}>
-                <Text style={styles.headingText}>
-                  {voucherHeadingText} - {orientation}
-                </Text>
+                <Text style={styles.headingText}>{voucherHeadingText}</Text>
               </View>
               <View style={styles.instructionTextContainer}>
                 <Text
@@ -510,10 +507,8 @@ const VoucherModal = ({ modalVisible, setModalVisible }) => {
                         setModalVisible(!modalVisible);
                       }}
                     >
-                      <View style={styles.cancelButtonContainer}>
-                        <Text style={styles.cancelButtonText}>Cancel</Text>
-                        <Image style={styles.arrow} source={rightArrow} />
-                      </View>
+                      <Text style={styles.cancelButtonText}>Cancel</Text>
+                      <Image style={styles.arrow} source={rightArrow} />
                     </TouchableHighlight>
                   </View>
                 </View>
@@ -547,7 +542,7 @@ const styles = StyleSheet.create({
   },
   contentContainerPortrait: {
     width: 628,
-    height: 611
+    height: 600
   },
   contentContainerLandscape: {
     width: 960,
@@ -617,7 +612,8 @@ const styles = StyleSheet.create({
     width: 150
   },
   footerContainer: {
-    margin: 50,
+    marginHorizontal: 50,
+    marginTop: 10,
     flexDirection: "row",
     justifyContent: "space-between",
     flex: 1
@@ -633,7 +629,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
     height: 60,
     width: 175
-    // backgroundColor: blue,
+    // borderWidth: 2,
+    // borderColor: blue,
+    // borderRadius: 4
   },
   cancelButtonText: {
     color: "#757575",
@@ -697,7 +695,8 @@ const styles = StyleSheet.create({
   errorMessage: {
     color: "#de071c",
     fontSize: 12,
-    paddingTop: 8
+    paddingTop: 8,
+    height: 15
   },
   image: {
     height: 160,
