@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { Image, View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
 import PaymentMethod from "./PaymentMethod";
@@ -9,30 +9,41 @@ import RedeemVouchers from "./RedeemVouchers";
 let gratuityTitle = "GRATUITY";
 let paymentMethod = "PAYMENT METHOD";
 
-const PaymentContainer = ({ orientation }) => {
+const PaymentContainer = ({ orientation, isTabOpen }) => {
   if (orientation === "portrait") {
     return (
       <View style={[styles.paymentContainer, styles.paymentContainerPortrait]}>
-        {/* //leftside */}
-        {/* <View style={styles.paymentLeftContainer}>
-          <View style={styles.headerBorder}>
-            <Text style={styles.headerTitle}>{paymentMethod}</Text>
+        {isTabOpen ? (
+          <View style={styles.paymentRightContainer}>
+            <View style={styles.headerBorder}>
+              <Text style={styles.headerTitle}>{gratuityTitle}</Text>
+            </View>
+            <View style={styles.mainContainer}>
+              <Gratuity />
+            </View>
           </View>
-          <View style={styles.mainContainer}>
-            <PaymentMethod />
-            <PromoCode />
-          </View>
-        </View> */}
-        {/* //right side */}
-        <View style={styles.paymentRightContainer}>
-          <View style={styles.headerBorder}>
-            <Text style={styles.headerTitle}>{gratuityTitle}</Text>
-          </View>
-          <View style={styles.mainContainer}>
-            <Gratuity />
-            {/* <RedeemVouchers orientation={orientation} /> */}
-          </View>
-        </View>
+        ) : (
+          <Fragment>
+            <View style={styles.paymentLeftContainer}>
+              <View style={styles.headerBorder}>
+                <Text style={styles.headerTitle}>{paymentMethod}</Text>
+              </View>
+              <View style={styles.mainContainer}>
+                <PaymentMethod />
+                <PromoCode />
+              </View>
+            </View>
+            <View style={styles.paymentRightContainer}>
+              <View style={styles.headerBorder}>
+                <Text style={styles.headerTitle}>{gratuityTitle}</Text>
+              </View>
+              <View style={styles.mainContainer}>
+                <Gratuity />
+                <RedeemVouchers orientation={orientation} />
+              </View>
+            </View>
+          </Fragment>
+        )}
       </View>
     );
   } else if (orientation === "landscape") {

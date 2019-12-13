@@ -27,7 +27,6 @@ import CheckoutContext from "../context/CheckoutContext";
 
 const CheckoutScreen = props => {
   const { orientation } = useContext(OrientationContext);
-
   const { state } = useContext(CheckoutContext);
   // const { state, dispatch } = useContext(CheckoutContext);
 
@@ -35,6 +34,7 @@ const CheckoutScreen = props => {
 
   const { isTabOpen } = state;
   //set default for isTabOpen
+  // let isTabOpen = true;
   console.log(`TMB-isTabOpen - ${isTabOpen}`);
   if (orientation === "portrait") {
     return (
@@ -45,13 +45,21 @@ const CheckoutScreen = props => {
       >
         {/* remove default status bar on top of ipad screen */}
         <StatusBar hidden={true} />
-        <HeaderContainer />
+        <View style={styles.headerContainer}>
+          <HeaderContainer />
+        </View>
+
         <View style={styles.bodyContainer}>
-          {isTabOpen !== true ? (
+          {isTabOpen === true ? (
             <View style={styles.mainBodyContainer}>
-              <PaymentContainer orientation={orientation} />
+              <PaymentContainer
+                isTabOpen={isTabOpen}
+                orientation={orientation}
+              />
               <View style={styles.itemsContainer}>
                 <TabItemsContainer />
+              </View>
+              <View style={styles.itemsContainer}>
                 <CartItemsContainer />
               </View>
             </View>
@@ -122,11 +130,28 @@ const blue = "#157efb";
 
 const styles = StyleSheet.create({
   pageContainer: {
-    flex: 1,
-    backgroundColor: "#f6f6f6"
+    flex: 1
+    // backgroundColor: "#f6f6f6"
   },
   headerContainer: {
-    height: 109
+    // height: 109
+    // borderWidth: 10,
+    // borderColor: "black"
+    flex: 11
+  },
+  bodyContainer: {
+    flex: 63,
+    flexDirection: "row"
+    // borderWidth: 10,
+    // borderColor: "black",
+    // height: 652
+  },
+  footerContainer: {
+    marginBottom: 13,
+    flex: 24
+    // borderWidth: 10,
+    // borderColor: "black",
+    // height: 250
   },
   headerStyle: {
     height: 61,
@@ -183,15 +208,12 @@ const styles = StyleSheet.create({
     // paddingRight: 20
   },
 
-  bodyContainer: {
-    flex: "stretch",
-    flexDirection: "row"
-  },
   mainBodyContainer: {
     flex: 68,
     marginLeft: 10,
     marginRight: 10
   },
+
   paymentContainer: {
     backgroundColor: "white",
     borderWidth: 1,
@@ -219,9 +241,7 @@ const styles = StyleSheet.create({
     // height: 380,
     marginTop: 7
   },
-  footerContainer: {
-    marginBottom: 13
-  },
+
   upsellContainer: {
     backgroundColor: "white",
     borderBottomWidth: 1,
