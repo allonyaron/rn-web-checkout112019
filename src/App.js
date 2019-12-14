@@ -26,7 +26,11 @@ import { VoucherProvider } from "./context/VoucherContext";
 import { OrientationProvider } from "./context/OrientationContext";
 
 // import { PromoProvider } from "../context/PromoCodeContext";
-import { PromoProvider, usePromo } from "./context/PromoCodeContext";
+import { PromoProvider, usePromoDispatch } from "./context/PromoCodeContext";
+import {
+  PaymentProvider,
+  usePaymentDispatch
+} from "./context/PaymentMethodContext";
 
 import CheckoutScreen from "./screens/CheckoutScreen";
 
@@ -39,7 +43,8 @@ const App = () => {
   // const {orientation} = useContext(OrientationContext);
 
   const { dispatch } = useContext(CheckoutContext);
-  const { promoDispatch } = usePromo();
+  const { promoDispatch } = usePromoDispatch();
+  const { paymentDispatch } = usePaymentDispatch();
 
   window.cartScreen = {};
 
@@ -74,7 +79,9 @@ export default () => {
       <VoucherProvider>
         <OrientationProvider>
           <PromoProvider>
-            <App />
+            <PaymentProvider>
+              <App />
+            </PaymentProvider>
           </PromoProvider>
         </OrientationProvider>
       </VoucherProvider>

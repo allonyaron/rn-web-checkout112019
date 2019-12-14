@@ -3,16 +3,13 @@ import React, { useContext } from "react";
 import { Text, TouchableOpacity, StyleSheet } from "react-native";
 
 import CheckoutContext from "../context/CheckoutContext";
+import { usePaymentState } from "../context/PaymentMethodContext";
 
 const FooterContainer = () => {
   const { state, sendWebkitMessageToIOS } = useContext(CheckoutContext);
-  const {
-    isTabOpen,
-    payment_type,
-    total,
-    airlineTotalMiles,
-    cartItemQuantity
-  } = state;
+  const { isTabOpen, total, airlineTotalMiles, cartItemQuantity } = state;
+  const { paymentState } = usePaymentState();
+  const { payment_type } = paymentState;
 
   //set default for isTabOpen
   console.log(`TMB-isTabOpen - ${JSON.stringify(isTabOpen)}`);

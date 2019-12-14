@@ -1,7 +1,12 @@
 import React, { useContext, useState } from "react";
 import { Image, View, Text, StyleSheet, TouchableOpacity } from "react-native";
 
-import CheckoutContext from "../context/CheckoutContext";
+// import CheckoutContext from "../context/CheckoutContext";
+
+import {
+  usePaymentState,
+  usePaymentDispatch
+} from "../context/PaymentMethodContext";
 
 import checked from "../assets/images/ui-checkmark-on.png";
 import unchecked from "../assets/images/ui-checkmark-rest.png";
@@ -15,8 +20,11 @@ let payWithMilesTitle = "Pay With Miles";
 let joinATabTitle = "Join A Tab";
 
 const PaymentMethod = () => {
-  const { state, dispatch } = useContext(CheckoutContext);
-  const { payment_type } = state;
+  // const {  dispatch } = useContext(CheckoutContext);
+
+  const { paymentDispatch } = usePaymentDispatch();
+  const { paymentState } = usePaymentState();
+  const { payment_type } = paymentState;
 
   return (
     <View>
@@ -24,7 +32,10 @@ const PaymentMethod = () => {
         <TouchableOpacity
           onPress={() => {
             // setPaymentMethod("CREDITCARD");
-            dispatch({ type: "SET_CURRENCY", payload: "CREDITCARD" });
+            paymentDispatch({
+              type: "SET_PAYMENT_TYPE",
+              payload: "CREDITCARD"
+            });
           }}
         >
           <Image
@@ -40,7 +51,7 @@ const PaymentMethod = () => {
           // disabled={!active}
           onPress={() => {
             // setPaymentMethod("MILES");
-            dispatch({ type: "SET_MILES", payload: "MILES" });
+            paymentDispatch({ type: "SET_PAYMENT_TYPE", payload: "MILES" });
           }}
         >
           <Image
@@ -55,7 +66,7 @@ const PaymentMethod = () => {
         <TouchableOpacity
           //disabled={!active}
           onPress={() => {
-            dispatch({ type: "SET_CURRENCY", payload: "JOINTAB" });
+            paymentDispatch({ type: "SET_PAYMENT_TYPE", payload: "JOINTAB" });
           }}
         >
           <Image

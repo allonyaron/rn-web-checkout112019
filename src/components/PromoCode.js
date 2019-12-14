@@ -9,7 +9,7 @@ import {
   Alert
 } from "react-native";
 
-import { usePromo } from "../context/PromoCodeContext";
+import { usePromoState, usePromoDispatch } from "../context/PromoCodeContext";
 
 import CheckoutContext from "../context/CheckoutContext";
 
@@ -32,8 +32,8 @@ const PromoCode = () => {
 
   const { sendWebkitMessageToIOS, state } = useContext(CheckoutContext);
 
-  const { promoState, promoDispatch } = usePromo();
-
+  const { promoDispatch } = usePromoDispatch();
+  const { promoState } = usePromoState();
   const { promoCode } = promoState;
   console.log(`promoCode - ${promoCode}`);
   let { promoScannerEnabled } = state;

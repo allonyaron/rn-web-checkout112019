@@ -30,12 +30,6 @@ export const CheckoutProvider = ({ children }) => {
         return { ...state, ...action.payload };
       case "UPDATE_ALL_TOTALS":
         return { ...state, ...action.payload };
-      case "SET_CURRENCY":
-        console.log(`SET_CURRENCY`);
-        return { ...state, payment_type: action.payload };
-      case "SET_MILES":
-        console.log(`SET_MILES`);
-        return { ...state, payment_type: action.payload };
       case "SET_GRATUITY":
         return { ...state, tipAmount: action.payload };
       case "SET_GRATUITY_MILES":
