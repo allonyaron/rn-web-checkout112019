@@ -25,6 +25,9 @@ import CheckoutContext from "./context/CheckoutContext";
 import { VoucherProvider } from "./context/VoucherContext";
 import { OrientationProvider } from "./context/OrientationContext";
 
+// import { PromoProvider } from "../context/PromoCodeContext";
+import { PromoProvider, usePromo } from "./context/PromoCodeContext";
+
 import CheckoutScreen from "./screens/CheckoutScreen";
 
 // import testAppState from './data/appState.json'
@@ -36,24 +39,9 @@ const App = () => {
   // const {orientation} = useContext(OrientationContext);
 
   const { dispatch } = useContext(CheckoutContext);
+  const { promoDispatch } = usePromo();
 
   window.cartScreen = {};
-  window.cartScreen.props = {
-    updateReactReduxStoreFromIOSDispatch,
-    udpateAllTotalsDispatch,
-    handleTaxTotalMilesChange,
-    handlePassengerChange,
-    updateUpsells,
-    handlePromoCodeChange,
-    toggleOrientationChange,
-    toggleItemsLoading,
-    handleSetPromoCode,
-    clearVouchers,
-    logRocketInit,
-    logRocketIdentifyUser,
-    toggleCalcTotalLoading,
-    handleSetCCVoucherInfo
-  };
 
   return (
     <CheckoutScreen
@@ -64,7 +52,7 @@ const App = () => {
       handleTaxTotalMilesChange={handleTaxTotalMilesChange}
       handlePassengerChange={handlePassengerChange}
       updateUpsells={updateUpsells}
-      handlePromoCodeChange={handlePromoCodeChange}
+      handlePromoCodeChange={promoDispatch}
       toggleOrientationChange={toggleOrientationChange}
       toggleItemsLoading={toggleItemsLoading}
       handleSetPromoCode={handleSetPromoCode}
@@ -85,7 +73,9 @@ export default () => {
     <CheckoutProvider>
       <VoucherProvider>
         <OrientationProvider>
-          <App />
+          <PromoProvider>
+            <App />
+          </PromoProvider>
         </OrientationProvider>
       </VoucherProvider>
     </CheckoutProvider>

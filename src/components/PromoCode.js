@@ -9,7 +9,8 @@ import {
   Alert
 } from "react-native";
 
-// import VoucherContext from '../context/VoucherContext';
+import { usePromo } from "../context/PromoCodeContext";
+
 import CheckoutContext from "../context/CheckoutContext";
 
 let enterPromoCode = "Enter Promo Code";
@@ -17,6 +18,7 @@ let enterPromoCode = "Enter Promo Code";
 // let promoScannerEnabled = false;
 
 const validatePromoCode = promoCode => {
+  console.log(`promoCode - ${promoCode}`);
   if (promoCode && promoCode.length === 8) {
     return true;
   }
@@ -24,14 +26,18 @@ const validatePromoCode = promoCode => {
 };
 
 const PromoCode = () => {
-  const [promoCode, setPromoCode] = useState();
+  // const [promoCode, setPromoCode] = useState();
   // const [promoEnabled, setPromoEnabled] = useState(true);
   // const { addPromo } = useContext(VoucherContext);
 
   const { sendWebkitMessageToIOS, state } = useContext(CheckoutContext);
 
+  const { promoState, promoDispatch } = usePromo();
+
+  const { promoCode } = promoState;
+  console.log(`promoCode - ${promoCode}`);
   let { promoScannerEnabled } = state;
-  promoScannerEnabled = true;
+  // promoScannerEnabled = true;
 
   return (
     <View style={styles.container}>
@@ -43,7 +49,9 @@ const PromoCode = () => {
             type="text"
             maxLength={8}
             onChangeText={text => {
-              setPromoCode(text);
+              // setPromoCode(text);
+              console.log(`promoCode - UPDATE_PROMOCODE - ${promoCode}`);
+              promoDispatch({ type: "UPDATE_PROMOCODE", payload: text });
             }}
             style={styles.inputField}
             value={promoCode}
@@ -67,12 +75,24 @@ const PromoCode = () => {
         <View style={[styles.button]}>
           <TouchableOpacity
             onPress={() => {
+              console.log(`promoCode - ${promoCode}`);
               if (validatePromoCode(promoCode)) {
                 sendWebkitMessageToIOS("handlePromoCodeSubmit", {
                   promoCode: promoCode
                 });
+                promoDispatch({ type: "UPDATE_PROMOCODE", payload: "" });
               }
-              setPromoCode("");
+              // setPromoCode("");
+
+              // I need to send promocode webkitIOS
+              // I need to use it in the value
+              // I need to setPromocode on onChange
+              // - needs to be added to the voucher array
+
+              // With a promo context I can set and update the promo component
+              // set the global context array for the promo code
+              // import the action - separate out the action to dispatch to the correct context
+
               //add else clause for alert of non valid promo
 
               // if (true) {

@@ -1,19 +1,23 @@
 import React, { useReducer } from "react";
 
+import data from "../data/appState.json";
+
 const CheckoutContext = React.createContext();
 
 export const CheckoutProvider = ({ children }) => {
-  const initialState = {
-    itemQuantity: 0,
-    airlineSubtotalMiles: 0,
-    subtotal: 0,
-    airlineTip: 0,
-    tipAmount: 0,
-    totalException: 0,
-    tax: 0,
-    airlineTax: 0,
-    payment_type: "CREDITCARD"
-  };
+  // const initialState = {
+  //   itemQuantity: 0,
+  //   airlineSubtotalMiles: 0,
+  //   subtotal: 0,
+  //   airlineTip: 0,
+  //   tipAmount: 0,
+  //   totalException: 0,
+  //   tax: 0,
+  //   airlineTax: 0,
+  //   payment_type: "CREDITCARD"
+  // };
+
+  const initialState = data;
 
   let reducer = (state, action) => {
     switch (action.type) {
@@ -36,6 +40,8 @@ export const CheckoutProvider = ({ children }) => {
         return { ...state, tipAmount: action.payload };
       case "SET_GRATUITY_MILES":
         return { ...state, airlineTip: action.payload };
+      // case "UPDATE_PROMOCODE":
+      //   return { ...state, promoCode: action.payload };
       default:
         return state;
     }

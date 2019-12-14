@@ -31,8 +31,13 @@ export const handlePassengerChange = () =>
   console.log(`IOS message test - handlePassengerChange`);
 export const updateUpsells = () =>
   console.log(`IOS message test - updateUpsells`);
-export const handlePromoCodeChange = () =>
+export const handlePromoCodeChange = dispatch => {
   console.log(`IOS message test - handlePromoCodeChange`);
+  return promoCode => {
+    dispatch({ type: "UPDATE_PROMOCODE", payload: promoCode });
+  };
+};
+
 export const toggleOrientationChange = () =>
   console.log(`IOS message test - toggleOrientationChange`);
 export const toggleItemsLoading = () =>

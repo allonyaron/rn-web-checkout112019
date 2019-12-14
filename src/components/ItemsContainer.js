@@ -187,14 +187,14 @@ export const CartItemsContainer = () => {
 };
 export const TabItemsContainer = () => {
   const { state } = useContext(CheckoutContext);
-  // const { tabItems, tabItemQuantity } = state;
-  const { cartItems, tabItemQuantity } = state;
+  const { tabItems, tabItemQuantity } = state;
+  // const { cartItems, tabItemQuantity } = state;
 
   return (
     <ItemsContainer
       addMoreItemsButton={false}
       // itemData={tabItems}
-      itemData={cartItems}
+      itemData={tabItems}
       itemQuantity={tabItemQuantity}
       label={"Item in your tab"}
       pluralLabel={"Items in your tab"}
