@@ -5,37 +5,47 @@
 // }
 
 export const updateReactReduxStoreFromIOSDispatch = dispatch => {
-  return appState => {
+  return data => {
     console.log(
       `IOS message test - updateReactReduxStoreFromIOSDispatch - appState -  ${JSON.stringify(
-        appState
+        data
       )}`
     );
-    let payload = updateStateFromIOS(appState);
+    let payload = updateStateFromIOS(data);
     dispatch({ type: "SET_INIT_APPSTATE", payload: payload });
   };
 };
 export const udpateAllTotalsDispatch = dispatch => {
-  return totals => {
+  return data => {
     console.log(
-      `IOS message test - udpateAllTotalsDispatch - ${JSON.stringify(totals)}`
+      `IOS message test - udpateAllTotalsDispatch - ${JSON.stringify(data)}`
     );
-    let payload = updateAllTotals(totals);
+    let payload = updateAllTotals(data);
     dispatch({ type: "UPDATE_ALL_TOTALS", payload: payload });
   };
 };
 // export const updateAllTotals = totals => console.log(`IOS message test - updateAllTotals - ${JSON.stringify(totals)}`);
-export const handleTaxTotalMilesChange = () =>
-  console.log(`IOS message test - handleTaxTotalMilesChange`);
+export const handleTaxTotalMilesChange = dispatch => {
+  return data => {
+    // const payload = updateGratuityPayload(data);
+    dispatch({ type: "UPDATE_GRATUITY_TOTALS", payload: data });
+  };
+};
+
 export const handlePassengerChange = () =>
   console.log(`IOS message test - handlePassengerChange`);
 export const updateUpsells = () =>
   console.log(`IOS message test - updateUpsells`);
+
+//PromoCode
 export const handlePromoCodeChange = dispatch => {
   console.log(`IOS message test - handlePromoCodeChange`);
   return promoCode => {
     dispatch({ type: "UPDATE_PROMOCODE", payload: promoCode });
   };
+};
+export const updatePromoCode = (dispatch, promoCode) => {
+  dispatch({ type: "UPDATE_PROMOCODE", payload: promoCode });
 };
 
 export const toggleOrientationChange = () =>
@@ -138,6 +148,73 @@ const updateAllTotals = ({
   airlineTip,
   airlineTotalMiles
 });
+
+const updateGratuityPayload = ({}) => ({});
+
+// {
+//   "totalException":"0.00",
+//   "total":"213.33",
+//   "joinTabEnabled":true,
+//   "tax":"0.83",
+//   "airlineTip":25000,
+//   "airlineSubtotalMiles":1570,
+//   "airlineTotalBeforeTax":26570,
+//   "is_mileage_plus_enabled":true,
+//   "airlineTax":110,
+//   "isTabOpen":false,
+//   "boardingPassEnabled":true,
+//   "cartHasFees":false,
+//   "tabCartTotal":"0.00",
+//   "airlineCharge":0,
+//   "shouldAllowPayment":true,
+//   "tipPercentage":"16",
+//   "taxAndFeeSeparate":false,
+//   "promotions":[
+//      {
+//         "name":"chase",
+//         "enabled":true,
+//         "applied":false
+//      },
+//      {
+//         "name":"jetblue",
+//         "enabled":false,
+//         "applied":false
+//      },
+//      {
+//         "name":"papi",
+//         "enabled":false,
+//         "applied":false
+//      },
+//      {
+//         "enabled":true,
+//         "name":"united",
+//         "applied":false,
+//         "originalTotalMiles":26680
+//      }
+//   ],
+//   "airlineTotalMiles":26680,
+//   "tipAmount":"200.00",
+//   "subtotal":"12.50",
+//   "cartFeeList":[
+//      {
+//         "amount":"$0.83",
+//         "amountMiles":110,
+//         "name":"Tax",
+//         "description":""
+//      },
+//      {
+//         "amount":"$0.83",
+//         "amountMiles":110,
+//         "name":"Total",
+//         "description":""
+//      }
+//   ],
+//   "totalBeforeTax":"212.50",
+//   "airlineTotalException":0,
+//   "shouldAllowMilesPayment":true,
+//   "ccVoucher":true,
+//   "charge":"0.00"
+// }
 
 // export const updateReactReduxStoreFromIOS = appState => {
 //   return async dispatch => {

@@ -30,10 +30,7 @@ export const CheckoutProvider = ({ children }) => {
         return { ...state, ...action.payload };
       case "UPDATE_ALL_TOTALS":
         return { ...state, ...action.payload };
-      case "SET_GRATUITY":
-        return { ...state, tipAmount: action.payload };
-      case "SET_GRATUITY_MILES":
-        return { ...state, airlineTip: action.payload };
+
       // case "UPDATE_PROMOCODE":
       //   return { ...state, promoCode: action.payload };
       default:

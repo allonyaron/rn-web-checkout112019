@@ -14,7 +14,9 @@ let gratuityTotals = (payment_type, airlineSubtotalMiles, subtotal) =>
   tipAmountArr.map(amount => {
     let gratuityTotalAmount =
       payment_type === "MILES"
-        ? (airlineSubtotalMiles * (amount / 100)).toFixed(0)
+        ? (
+            Math.ceil((airlineSubtotalMiles * (amount / 100)) / 10) * 10
+          ).toFixed(0)
         : `${(subtotal * (amount / 100)).toFixed(2)}`;
     console.log(`gratuityTotalAmount - ${gratuityTotalAmount}`);
     return {
@@ -26,10 +28,10 @@ let gratuityTotals = (payment_type, airlineSubtotalMiles, subtotal) =>
 
 const Gratuity = () => {
   const [activeButton, setActiveButton] = useState(18);
-  const { state, dispatch } = useContext(CheckoutContext);
+  const { state, sendWebkitMessageToIOS } = useContext(CheckoutContext);
   const { subtotal, airlineSubtotalMiles, airlineTip } = state;
   const [modalVisible, setModalVisible] = useState(false);
-  const [tipPercent, setTipPercent] = useState(18);
+  // const [tipPercent, setTipPercent] = useState(18);
 
   const { paymentState } = usePaymentState();
   const { payment_type } = paymentState;
@@ -51,15 +53,20 @@ const Gratuity = () => {
             ]}
             onPress={() => {
               setActiveButton(option.amount);
-              dispatch({
-                type:
-                  payment_type === "MILES"
-                    ? "SET_GRATUITY_MILES"
-                    : "SET_GRATUITY",
-                payload: option.tipAmount
+
+              sendWebkitMessageToIOS("handleTipPercentageChange", {
+                tipPercentage: option.amount,
+                tipAmount: null
               });
+              // dispatch({
+              //   type:
+              //     payment_type === "MILES"
+              //       ? "SET_GRATUITY_MILES"
+              //       : "SET_GRATUITY",
+              //   payload: option.tipAmount
+              // });
               // setGratuityAmount(`${option.tipAmount}`);
-              setTipPercent(option.amount);
+              // setTipPercent(option.amount);
             }}
             key={generate()}
           >

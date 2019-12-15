@@ -10,7 +10,7 @@ import {
 } from "react-native";
 
 import { usePromoState, usePromoDispatch } from "../context/PromoCodeContext";
-
+import { updatePromoCode } from "../actions";
 import CheckoutContext from "../context/CheckoutContext";
 
 let enterPromoCode = "Enter Promo Code";
@@ -33,6 +33,7 @@ const PromoCode = () => {
   const { sendWebkitMessageToIOS, state } = useContext(CheckoutContext);
 
   const { promoDispatch } = usePromoDispatch();
+
   const { promoState } = usePromoState();
   const { promoCode } = promoState;
   console.log(`promoCode - ${promoCode}`);
@@ -51,7 +52,8 @@ const PromoCode = () => {
             onChangeText={text => {
               // setPromoCode(text);
               console.log(`promoCode - UPDATE_PROMOCODE - ${promoCode}`);
-              promoDispatch({ type: "UPDATE_PROMOCODE", payload: text });
+              updatePromoCode(promoDispatch, text);
+              // promoDispatch({ type: "UPDATE_PROMOCODE", payload: text });
             }}
             style={styles.inputField}
             value={promoCode}
