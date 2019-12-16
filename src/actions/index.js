@@ -25,9 +25,10 @@ export const udpateAllTotalsDispatch = dispatch => {
   };
 };
 // export const updateAllTotals = totals => console.log(`IOS message test - updateAllTotals - ${JSON.stringify(totals)}`);
-export const handleTaxTotalMilesChange = dispatch => {
+export const handleTaxTotalMilesChangeDispatch = dispatch => {
   return data => {
     // const payload = updateGratuityPayload(data);
+    console.log(`1TMB - data = ${JSON.stringify(data)}`);
     dispatch({ type: "UPDATE_GRATUITY_TOTALS", payload: data });
   };
 };

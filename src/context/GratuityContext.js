@@ -4,9 +4,12 @@ const GratuityStateContext = React.createContext();
 const GratuityDispatchContext = React.createContext();
 
 const gratuityReducer = (state, action) => {
+  console.log(`TMB - ...action.payload - ${JSON.stringify(action.payload)}`);
   switch (action.type) {
     case "SET_GRATUITY":
       return { ...state, ...action.payload };
+    // case "UPDATE_GRATUITY_TOTALS":
+    //   return { ...state, ...action.payload };
     default: {
       throw new Error(`Unsupported action type: ${action.type}`);
     }
@@ -40,11 +43,11 @@ const initialState = {};
 const GratuityProvider = ({ children }) => {
   const [state, dispatch] = React.useReducer(gratuityReducer, initialState);
   return (
-    <GratuityStateContext value={state}>
-      <GratuityDispatchContext value={dispatch}>
+    <GratuityStateContext.Provider value={state}>
+      <GratuityDispatchContext.Provider value={dispatch}>
         {children}
-      </GratuityDispatchContext>
-    </GratuityStateContext>
+      </GratuityDispatchContext.Provider>
+    </GratuityStateContext.Provider>
   );
 };
 

@@ -6,6 +6,7 @@ import { generate } from "shortid";
 import CheckoutContext from "../context/CheckoutContext";
 
 import { usePaymentState } from "../context/PaymentMethodContext";
+import { useGratuityState } from "../context/GratuityContext";
 
 let otherTipPercentageLabel = "OTHER";
 
@@ -29,12 +30,24 @@ let gratuityTotals = (payment_type, airlineSubtotalMiles, subtotal) =>
 const Gratuity = () => {
   const [activeButton, setActiveButton] = useState(18);
   const { state, sendWebkitMessageToIOS } = useContext(CheckoutContext);
-  const { subtotal, airlineSubtotalMiles, airlineTip } = state;
+  const {
+    subtotal,
+    airlineSubtotalMiles,
+    airlineTip,
+    tipPercentage,
+    tipAmount
+  } = state;
+
+  // "airlineTip": 500,
+  // "tipPercentage": "0.16",
+  // "tipAmount": "4.00",
+
   const [modalVisible, setModalVisible] = useState(false);
   // const [tipPercent, setTipPercent] = useState(18);
 
   const { paymentState } = usePaymentState();
   const { payment_type } = paymentState;
+  // const {gratuityState} =
 
   const gratuityOptions = gratuityTotals(
     payment_type,
@@ -55,7 +68,7 @@ const Gratuity = () => {
               setActiveButton(option.amount);
 
               sendWebkitMessageToIOS("handleTipPercentageChange", {
-                tipPercentage: option.amount,
+                tipPercentage: option.amount / 100,
                 tipAmount: null
               });
               // dispatch({
@@ -104,8 +117,7 @@ const Gratuity = () => {
               activeButton === "other" ? styles.active : styles.notActive
             ]}
             onPress={() => {
-              // setModalVisible(true);
-              // setInitData(appState);
+              setModalVisible(true);
             }}
             key={generate()}
           >
@@ -124,15 +136,16 @@ const Gratuity = () => {
         </View>
       </View>
       <View>
-        {/* <GratuityModal
+        <GratuityModal
           modalVisible={modalVisible}
           setModalVisible={setModalVisible}
-          tipPercent={tipPercent}
-          setTipPercent={setTipPercent}
+          tipPercent={tipPercentage}
+          // setTipPercent={setTipPercent}
+          sendWebkitMessageToIOS={sendWebkitMessageToIOS}
           setActiveButton={setActiveButton}
-          setGratuityAmount={() => {}}
+          // setGratuityAmount={() => {}}
           subtotal={subtotal}
-        /> */}
+        />
       </View>
     </View>
   );

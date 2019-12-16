@@ -3,19 +3,22 @@ import {
   View,
   Text,
   TouchableHighlight,
-  Modal,
+  // Modal,
   StyleSheet
 } from "react-native";
 
-// import Slider from "@react-native-community/slider";
+import Modal from "modal-react-native-web";
+
+import Slider from "@react-native-community/slider";
 
 const GratuityModal = ({
   modalVisible,
   setModalVisible,
   tipPercent,
+  sendWebkitMessageToIOS,
   setTipPercent,
   setActiveButton,
-  setGratuityAmount,
+  // setGratuityAmount,
   subtotal
 }) => {
   const [sliderValue, setSliderValue] = useState(tipPercent);
@@ -36,7 +39,7 @@ const GratuityModal = ({
             <Text style={styles.headingText}>The Tip Amount</Text>
           </View>
           <View>
-            {/* <Slider
+            <Slider
               style={styles.slider}
               minimumValue={0}
               maximumValue={100}
@@ -45,7 +48,7 @@ const GratuityModal = ({
               maximumTrackTintColor="#000000"
               value={sliderValue}
               onValueChange={value => setSliderValue(value)}
-            /> */}
+            />
             <Text style={styles.percentage}>{sliderValue}%</Text>
           </View>
           <View style={styles.buttonContainer}>
@@ -60,9 +63,13 @@ const GratuityModal = ({
             <TouchableHighlight
               style={[styles.button]}
               onPress={() => {
-                setTipPercent(sliderValue);
+                // sendWebkitMessageToIOS(sliderValue);
+                sendWebkitMessageToIOS("handleTipPercentageChange", {
+                  tipPercentage: sliderValue / 100,
+                  tipAmount: null
+                });
                 setActiveButton("other");
-                setGratuityAmount(((subtotal * sliderValue) / 100).toFixed(2));
+                // setGratuityAmount(((subtotal * sliderValue) / 100).toFixed(2));
                 setModalVisible(!modalVisible);
               }}
             >

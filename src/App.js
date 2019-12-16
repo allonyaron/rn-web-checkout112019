@@ -6,7 +6,8 @@ import React, { useContext } from "react";
 import {
   updateReactReduxStoreFromIOSDispatch,
   udpateAllTotalsDispatch,
-  handleTaxTotalMilesChange,
+  handleTaxTotalMilesChangeDispatch,
+  // handleTaxTotalMilesChange,
   handlePassengerChange,
   updateUpsells,
   // handlePromoCodeChange,
@@ -31,6 +32,10 @@ import {
   PaymentProvider,
   usePaymentDispatch
 } from "./context/PaymentMethodContext";
+import {
+  GratuityProvider,
+  useGratuityDispatch
+} from "./context/GratuityContext";
 
 import CheckoutScreen from "./screens/CheckoutScreen";
 
@@ -45,6 +50,7 @@ const App = () => {
   const { dispatch } = useContext(CheckoutContext);
   const { promoDispatch } = usePromoDispatch();
   const { paymentDispatch } = usePaymentDispatch();
+  const { gratuityDispatch } = useGratuityDispatch();
 
   window.cartScreen = {};
 
@@ -54,7 +60,7 @@ const App = () => {
         dispatch
       )}
       updateAllTotals={udpateAllTotalsDispatch(dispatch)}
-      handleTaxTotalMilesChange={handleTaxTotalMilesChange}
+      handleTaxTotalMilesChange={handleTaxTotalMilesChangeDispatch(dispatch)}
       handlePassengerChange={handlePassengerChange}
       updateUpsells={updateUpsells}
       handlePromoCodeChange={promoDispatch}
@@ -80,7 +86,9 @@ export default () => {
         <OrientationProvider>
           <PromoProvider>
             <PaymentProvider>
-              <App />
+              <GratuityProvider>
+                <App />
+              </GratuityProvider>
             </PaymentProvider>
           </PromoProvider>
         </OrientationProvider>

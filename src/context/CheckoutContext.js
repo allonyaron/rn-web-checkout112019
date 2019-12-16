@@ -31,6 +31,9 @@ export const CheckoutProvider = ({ children }) => {
       case "UPDATE_ALL_TOTALS":
         return { ...state, ...action.payload };
 
+      case "UPDATE_GRATUITY_TOTALS":
+        return { ...state, ...action.payload };
+
       // case "UPDATE_PROMOCODE":
       //   return { ...state, promoCode: action.payload };
       default:
