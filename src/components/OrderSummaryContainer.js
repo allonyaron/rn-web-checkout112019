@@ -29,7 +29,9 @@ const OrderSummary = () => {
     itemQuantity,
     airlineSubtotalMiles,
     airlineTip,
-    airlineTax
+    airlineTax,
+    totalException,
+    airlineTotalExceptionMiles
   } = state;
   const { exceptionAmount, showException } = useContext(VoucherContext);
   const [takeoutSwitch, setTakeoutSwitch] = useState(false);
@@ -38,13 +40,28 @@ const OrderSummary = () => {
   let subtotalDisplay =
     payment_type === "MILES" ? airlineSubtotalMiles : `$${subtotal}`;
 
-  let discountAmountDisplay =
-    payment_type === "MILES" ? 0 : `-$${exceptionAmount}`;
+  let totalExceptionNum = 0,
+    discountAmountDisplay;
+
+  let totalExceptionDisplayFlag = !!+totalException;
+
+  const discountAmountFormat = totalExceptionString => {
+    return payment_type === "MILES"
+      ? airlineTotalExceptionMiles
+      : `-$${totalExceptionString.replace(/-/, "")}`;
+    // return totalExceptionString.replace(/-/, '');
+  };
+
+  if (+totalException) {
+    console.log(`typeof  - totalException`);
+    console.log(typeof totalException);
+    discountAmountDisplay = discountAmountFormat(totalException);
+  }
 
   let gratuityDisplay = payment_type === "MILES" ? airlineTip : `$${tipAmount}`;
 
   let totalBeforeTaxCurrency = (
-    ((+subtotal + +tipAmount) * 100 - exceptionAmount * 100) /
+    ((+subtotal + +tipAmount) * 100 + +totalException * 100) /
     100
   ).toFixed(2);
 
@@ -80,7 +97,7 @@ const OrderSummary = () => {
         <Text style={styles.textLabel}>{`${itemText}(${itemQuantity})`}</Text>
         <Text style={styles.textLabel}>{subtotalDisplay}</Text>
       </View>
-      {showException && (
+      {totalExceptionDisplayFlag && (
         <View style={styles.rowContainer}>
           <Text style={styles.textLabel}>{discountLabel}</Text>
           <Text style={styles.textLabel}>{discountAmountDisplay}</Text>

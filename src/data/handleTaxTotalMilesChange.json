@@ -45,3 +45,7 @@
   "ccVoucher": true,
   "charge": "0.00"
 }
+
+
+
+{"totalException":"0.00","total":"18.64","joinTabEnabled":true,"tax":"1.24","airlineTip":310,"airlineSubtotalMiles":1880,"airlineTotalBeforeTax":2190,"is_mileage_plus_enabled":true,"airlineTax":160,"isTabOpen":false,"boardingPassEnabled":true,"cartHasFees":false,"tabCartTotal":"0.00","airlineCharge":0,"shouldAllowPayment":true,"tipPercentage":"0.16","taxAndFeeSeparate":false,"promotions":[{"name":"chase","enabled":false,"applied":false},{"name":"jetblue","enabled":false,"applied":false},{"name":"papi","enabled":false,"applied":false},{"enabled":false,"name":"united","applied":false,"originalTotalMiles":2340}],"airlineTotalMiles":2350,"tipAmount":"2.40","subtotal":"15.00","cartFeeList":[{"amount":"$1.24","amountMiles":160,"name":"Tax","description":""},{"amount":"$1.24","amountMiles":160,"name":"Total","description":""}],"totalBeforeTax":"17.40","airlineTotalException":0,"shouldAllowMilesPayment":1,"ccVoucher":true,"charge":"0.00"}

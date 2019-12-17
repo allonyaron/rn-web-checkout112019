@@ -43,7 +43,7 @@ const Gratuity = () => {
   // "tipAmount": "4.00",
 
   const [modalVisible, setModalVisible] = useState(false);
-  // const [tipPercent, setTipPercent] = useState(18);
+  const [tipPercent, setTipPercent] = useState(18);
 
   const { paymentState } = usePaymentState();
   const { payment_type } = paymentState;
@@ -54,6 +54,8 @@ const Gratuity = () => {
     airlineSubtotalMiles,
     subtotal
   );
+
+  console.log(`gratuityOptions - ${JSON.stringify(gratuityOptions)}`);
 
   return (
     <View>
@@ -139,8 +141,8 @@ const Gratuity = () => {
         <GratuityModal
           modalVisible={modalVisible}
           setModalVisible={setModalVisible}
-          tipPercent={tipPercentage}
-          // setTipPercent={setTipPercent}
+          tipPercent={tipPercent}
+          setTipPercent={setTipPercent}
           sendWebkitMessageToIOS={sendWebkitMessageToIOS}
           setActiveButton={setActiveButton}
           // setGratuityAmount={() => {}}

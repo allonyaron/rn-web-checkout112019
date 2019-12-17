@@ -61,7 +61,9 @@ const CheckoutScreen = props => {
             </View>
           ) : (
             <View style={styles.mainBodyContainer}>
-              <PaymentContainer orientation={orientation} />
+              <View style={styles.paymentContainer}>
+                <PaymentContainer orientation={orientation} />
+              </View>
               <View style={styles.itemsContainer}>
                 <CartItemsContainer />
               </View>
@@ -115,25 +117,26 @@ const blue = "#157efb";
 
 const styles = StyleSheet.create({
   pageContainer: {
-    flex: 1
+    flex: 1,
     // backgroundColor: "#f6f6f6"
+    alignItems: "space-between"
   },
   headerContainer: {
     // height: 109
     // borderWidth: 10,
     // borderColor: "black"
-    flex: 11
+    // flex: 11
   },
   bodyContainer: {
-    flex: 63,
+    flex: 1,
     flexDirection: "row"
     // borderWidth: 10,
     // borderColor: "black",
     // height: 652
   },
   footerContainer: {
-    marginBottom: 13,
-    flex: 24
+    marginBottom: 13
+    // flex: 24
     // borderWidth: 10,
     // borderColor: "black",
     // height: 250
@@ -200,13 +203,13 @@ const styles = StyleSheet.create({
   },
 
   paymentContainer: {
-    backgroundColor: "white",
-    borderWidth: 1,
-    borderColor: "#d1d1d1",
-    borderRadius: 25,
-    display: "flex",
-    flexDirection: "row",
-    height: 266
+    backgroundColor: "white"
+    // borderWidth: 1,
+    // borderColor: "#d1d1d1",
+    // borderRadius: 25,
+    // display: "flex",
+    // flexDirection: "row",
+    // height: 266
   },
   paymentMethodContainer: {
     height: 50,
@@ -224,7 +227,8 @@ const styles = StyleSheet.create({
     borderColor: "#d1d1d1",
     borderRadius: 25,
     // height: 380,
-    marginTop: 7
+    marginTop: 7,
+    flex: 1
   },
 
   upsellContainer: {
