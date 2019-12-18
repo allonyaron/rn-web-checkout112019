@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { View, StyleSheet, TouchableOpacity, Text } from "react-native";
 
 import OrderSummary from "./OrderSummaryContainer";
-
+import PromoContainer from "./PromoContainer";
 import CheckoutContext from "../context/CheckoutContext";
 
 let buttonText = "PAY NOW";
@@ -38,6 +38,7 @@ const SidebarContainer = () => {
         }}
       />
       <OrderSummary />
+      <PromoContainer />
     </View>
   );
 };
