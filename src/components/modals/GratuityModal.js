@@ -3,23 +3,35 @@ import {
   View,
   Text,
   TouchableHighlight,
-  Modal,
+  // Modal,
   StyleSheet
 } from "react-native";
 
+import Modal from "modal-react-native-web";
+
 // import Slider from "@react-native-community/slider";
+
+// import Slider from "react-native-slider";
+
+import Slider from "react-rangeslider";
+import "react-rangeslider/lib/index.css";
 
 const GratuityModal = ({
   modalVisible,
   setModalVisible,
   tipPercent,
+  sendWebkitMessageToIOS,
   setTipPercent,
   setActiveButton,
-  setGratuityAmount,
+  // setGratuityAmount,
   subtotal
 }) => {
-  const [sliderValue, setSliderValue] = useState(tipPercent);
-
+  // const [sliderValue, setSliderValue] = useState(+tipPercent * 100);
+  // if (sliderValue !== tipPercent) {
+  //   // setSliderValue(+tipPercent * 100);
+  // }
+  let sliderValue = tipPercent * 100;
+  console.log(`tipPercent - ${tipPercent}`);
   return (
     <Modal
       animationType="fade"
@@ -35,17 +47,17 @@ const GratuityModal = ({
             <Text style={styles.headingText}>Please Enter</Text>
             <Text style={styles.headingText}>The Tip Amount</Text>
           </View>
-          <View>
-            {/* <Slider
-              style={styles.slider}
+          <View style={styles.slider}>
+            <Slider
               minimumValue={0}
               maximumValue={100}
-              step={1}
-              minimumTrackTintColor="sliderBlue"
-              maximumTrackTintColor="#000000"
+              // step={1}
+              // minimumTrackTintColor="sliderBlue"
+              // maximumTrackTintColor="#000000"
               value={sliderValue}
-              onValueChange={value => setSliderValue(value)}
-            /> */}
+              // onValueChange={value => setSliderValue(value)}
+              onChange={value => setTipPercent(value)}
+            />
             <Text style={styles.percentage}>{sliderValue}%</Text>
           </View>
           <View style={styles.buttonContainer}>
@@ -60,9 +72,13 @@ const GratuityModal = ({
             <TouchableHighlight
               style={[styles.button]}
               onPress={() => {
-                setTipPercent(sliderValue);
+                // sendWebkitMessageToIOS(sliderValue);
+                sendWebkitMessageToIOS("handleTipPercentageChange", {
+                  tipPercentage: tipPercent / 100,
+                  tipAmount: null
+                });
                 setActiveButton("other");
-                setGratuityAmount(((subtotal * sliderValue) / 100).toFixed(2));
+                // setGratuityAmount(((subtotal * sliderValue) / 100).toFixed(2));
                 setModalVisible(!modalVisible);
               }}
             >
@@ -122,8 +138,11 @@ const styles = StyleSheet.create({
   },
   slider: {
     // height: 70,
-    width: 280
+    width: 280,
     // marginBottom: 20
+    height: 70,
+    // width: 285.5,
+    marginBottom: 20
   },
   percentage: {
     fontSize: 20,

@@ -7,7 +7,9 @@
     "modal-react-native-web": "^0.2.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-native-slider": "^0.11.0",
     "react-native-web": "^0.11.7",
+    "react-rangeslider": "^2.2.0",
     "react-scripts": "3.2.0",
     "shortid": "^2.2.15"
   },

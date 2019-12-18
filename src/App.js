@@ -6,10 +6,11 @@ import React, { useContext } from "react";
 import {
   updateReactReduxStoreFromIOSDispatch,
   udpateAllTotalsDispatch,
-  handleTaxTotalMilesChange,
+  handleTaxTotalMilesChangeDispatch,
+  // handleTaxTotalMilesChange,
   handlePassengerChange,
   updateUpsells,
-  handlePromoCodeChange,
+  // handlePromoCodeChange,
   toggleOrientationChange,
   toggleItemsLoading,
   handleSetPromoCode,
@@ -25,6 +26,17 @@ import CheckoutContext from "./context/CheckoutContext";
 import { VoucherProvider } from "./context/VoucherContext";
 import { OrientationProvider } from "./context/OrientationContext";
 
+// import { PromoProvider } from "../context/PromoCodeContext";
+import { PromoProvider, usePromoDispatch } from "./context/PromoCodeContext";
+import {
+  PaymentProvider,
+  usePaymentDispatch
+} from "./context/PaymentMethodContext";
+import {
+  GratuityProvider,
+  useGratuityDispatch
+} from "./context/GratuityContext";
+
 import CheckoutScreen from "./screens/CheckoutScreen";
 
 // import testAppState from './data/appState.json'
@@ -36,24 +48,11 @@ const App = () => {
   // const {orientation} = useContext(OrientationContext);
 
   const { dispatch } = useContext(CheckoutContext);
+  const { promoDispatch } = usePromoDispatch();
+  const { paymentDispatch } = usePaymentDispatch();
+  const { gratuityDispatch } = useGratuityDispatch();
 
   window.cartScreen = {};
-  window.cartScreen.props = {
-    updateReactReduxStoreFromIOSDispatch,
-    udpateAllTotalsDispatch,
-    handleTaxTotalMilesChange,
-    handlePassengerChange,
-    updateUpsells,
-    handlePromoCodeChange,
-    toggleOrientationChange,
-    toggleItemsLoading,
-    handleSetPromoCode,
-    clearVouchers,
-    logRocketInit,
-    logRocketIdentifyUser,
-    toggleCalcTotalLoading,
-    handleSetCCVoucherInfo
-  };
 
   return (
     <CheckoutScreen
@@ -61,10 +60,10 @@ const App = () => {
         dispatch
       )}
       updateAllTotals={udpateAllTotalsDispatch(dispatch)}
-      handleTaxTotalMilesChange={handleTaxTotalMilesChange}
+      handleTaxTotalMilesChange={handleTaxTotalMilesChangeDispatch(dispatch)}
       handlePassengerChange={handlePassengerChange}
       updateUpsells={updateUpsells}
-      handlePromoCodeChange={handlePromoCodeChange}
+      handlePromoCodeChange={promoDispatch}
       toggleOrientationChange={toggleOrientationChange}
       toggleItemsLoading={toggleItemsLoading}
       handleSetPromoCode={handleSetPromoCode}
@@ -85,7 +84,13 @@ export default () => {
     <CheckoutProvider>
       <VoucherProvider>
         <OrientationProvider>
-          <App />
+          <PromoProvider>
+            <PaymentProvider>
+              <GratuityProvider>
+                <App />
+              </GratuityProvider>
+            </PaymentProvider>
+          </PromoProvider>
         </OrientationProvider>
       </VoucherProvider>
     </CheckoutProvider>
