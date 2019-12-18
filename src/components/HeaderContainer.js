@@ -12,6 +12,8 @@ import {
 import CheckoutContext from "../context/CheckoutContext";
 
 let translations = {};
+
+translations.welcome = "WELCOME";
 translations.scanYourBoardingPassToViewOffers =
   "SCAN YOUR BOARDING PASS TO VIEW OFFERS";
 
@@ -28,8 +30,8 @@ let warnings = {
 };
 
 const HeaderContainer = () => {
-  const { sendWebkitMessageToIOS } = useContext(CheckoutContext);
-
+  const { sendWebkitMessageToIOS, state } = useContext(CheckoutContext);
+  const { passengerName } = state;
   return (
     <Fragment>
       <View style={styles.headerStyle}>
@@ -85,7 +87,9 @@ const HeaderContainer = () => {
           onPress={() => sendWebkitMessageToIOS("handleScanBoardingPass")}
         >
           <Text style={styles.scanBoardingPassTextStyle}>
-            {translations.scanYourBoardingPassToViewOffers}
+            {passengerName
+              ? `${translations.welcome} ${passengerName.toUpperCase()}`
+              : translations.scanYourBoardingPassToViewOffers}
           </Text>
           <Image
             style={[styles.scanBooardingCameraImage]}

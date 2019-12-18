@@ -4,6 +4,8 @@ import { View, StyleSheet, Text, Switch } from "react-native";
 import CheckoutContext from "../context/CheckoutContext";
 import VoucherContext from "../context/VoucherContext";
 
+import { usePaymentState } from "../context/PaymentMethodContext";
+
 let orderSummaryLabel = "ORDER SUMMARY";
 let takeoutLabel = "TAKEOUT?";
 
@@ -11,28 +13,23 @@ let enabled = false;
 let itemText = "Item";
 let discountLabel = "Discount";
 let gratuityLabel = "Gratuity";
-let gratuity = "$8.42";
 let totalBeforeTaxLabel = "Total Before Tax";
 let taxLabel = "Tax";
 let orderTotalLabel = "ORDER TOTAL:";
 
-let promotionsOriginalTotalMiles = 2500;
-// promotions[3].originalTotalMiles
-
 const OrderSummary = () => {
   const { state } = useContext(CheckoutContext);
+  const { paymentState } = usePaymentState();
+  const { payment_type } = paymentState;
   const {
-    payment_type,
+    // payment_type,
     subtotal,
     tipAmount,
     tax,
     itemQuantity,
     airlineSubtotalMiles,
     airlineTip,
-    airlineTax,
-    totalException,
-    airlineTotalExceptionMiles,
-    promotions
+    airlineTax
   } = state;
   const { exceptionAmount, showException } = useContext(VoucherContext);
   const [takeoutSwitch, setTakeoutSwitch] = useState(false);
@@ -41,28 +38,13 @@ const OrderSummary = () => {
   let subtotalDisplay =
     payment_type === "MILES" ? airlineSubtotalMiles : `$${subtotal}`;
 
-  let totalExceptionNum = 0,
-    discountAmountDisplay;
-
-  let totalExceptionDisplayFlag = !!+totalException;
-
-  const discountAmountFormat = totalExceptionString => {
-    return payment_type === "MILES"
-      ? airlineTotalExceptionMiles
-      : `-$${totalExceptionString.replace(/-/, "")}`;
-    // return totalExceptionString.replace(/-/, '');
-  };
-
-  if (+totalException) {
-    console.log(`typeof  - totalException`);
-    console.log(typeof totalException);
-    discountAmountDisplay = discountAmountFormat(totalException);
-  }
+  let discountAmountDisplay =
+    payment_type === "MILES" ? 0 : `-$${exceptionAmount}`;
 
   let gratuityDisplay = payment_type === "MILES" ? airlineTip : `$${tipAmount}`;
 
   let totalBeforeTaxCurrency = (
-    ((+subtotal + +tipAmount) * 100 + +totalException * 100) /
+    ((+subtotal + +tipAmount) * 100 - exceptionAmount * 100) /
     100
   ).toFixed(2);
 
@@ -98,8 +80,7 @@ const OrderSummary = () => {
         <Text style={styles.textLabel}>{`${itemText}(${itemQuantity})`}</Text>
         <Text style={styles.textLabel}>{subtotalDisplay}</Text>
       </View>
-      {/* MOVE THIS boolean OUT  */}
-      {totalExceptionDisplayFlag && (
+      {showException && (
         <View style={styles.rowContainer}>
           <Text style={styles.textLabel}>{discountLabel}</Text>
           <Text style={styles.textLabel}>{discountAmountDisplay}</Text>
@@ -135,28 +116,11 @@ const OrderSummary = () => {
           <Text style={styles.orText}>OR</Text>
           <Text style={styles.milesTotalAmountLabel}>PAY WITH MILES</Text>
         </View>
-        <View style={{ flex: 1 }}>
-          <View
-            style={{
-              flexDirection: "row",
-              justifyContent: "space-between"
-              // alignItems: "center"
-            }}
-          >
-            <Text
-              style={[styles.promotionsOriginalTotalMiles, { color: "red " }]}
-            >
-              {promotionsOriginalTotalMiles}
-            </Text>
-            <Text
-              style={[styles.milesTotalAmountLabel, styles.milesTotalAmount]}
-            >
-              {totalAmountMilesDisplay}
-            </Text>
-          </View>
-          <View style={{}}>
-            <Text style={styles.awardMilesText}>AWARD MILES</Text>
-          </View>
+        <View>
+          <Text style={[styles.milesTotalAmountLabel, styles.milesTotalAmount]}>
+            {totalAmountMilesDisplay}
+          </Text>
+          <Text style={styles.awardMilesText}>AWARD MILES</Text>
         </View>
       </View>
     </View>
@@ -166,7 +130,6 @@ const OrderSummary = () => {
 export default OrderSummary;
 
 const royalBlue = "#003399";
-const grey = "#737373";
 
 const styles = StyleSheet.create({
   orderSummaryContainer: {
@@ -186,8 +149,8 @@ const styles = StyleSheet.create({
     flex: 0.3,
     height: 30,
     // marginRight: 13,
-    width: 70
-    // marginRight: 25
+    width: 73,
+    marginRight: 25
   },
   rowContainer: {
     flexDirection: "row",
@@ -196,7 +159,6 @@ const styles = StyleSheet.create({
     marginTop: 5
   },
   takeoutLabel: {
-    flex: 0.7,
     color: "#737373",
     fontSize: 16
   },
@@ -223,19 +185,10 @@ const styles = StyleSheet.create({
   milesTotalAmount: {
     color: royalBlue,
     fontSize: 16,
-    fontWeight: "bold"
-    // marginTop: 3
-    // textAlign: "right"
+    fontWeight: "bold",
+    marginTop: 12,
+    textAlign: "right"
   },
-
-  promotionsOriginalTotalMiles: {
-    color: grey,
-    fontSize: 11,
-    textDecorationLine: "line-through"
-    // textAlign: "left",
-    // marginTop: 3
-  },
-
   orText: {
     fontSize: 9,
     marginBottom: 3,

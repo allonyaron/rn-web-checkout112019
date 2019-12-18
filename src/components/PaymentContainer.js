@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Image, View, Text, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, StyleSheet } from "react-native";
 
 import PaymentMethod from "./PaymentMethod";
 import PromoCode from "./PromoCode";
