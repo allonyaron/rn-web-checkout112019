@@ -3,23 +3,29 @@ import {
   View,
   Text,
   TouchableHighlight,
-  Modal,
+  // Modal,
   StyleSheet
 } from "react-native";
 
 // import Slider from "@react-native-community/slider";
 
+import Modal from "modal-react-native-web";
+
+import Slider from "react-rangeslider";
+import "react-rangeslider/lib/index.css";
+
 const GratuityModal = ({
   modalVisible,
   setModalVisible,
   tipPercent,
+  sendWebkitMessageToIOS,
   setTipPercent,
   setActiveButton,
   setGratuityAmount,
   subtotal
 }) => {
-  const [sliderValue, setSliderValue] = useState(tipPercent);
-
+  // const [sliderValue, setSliderValue] = useState(tipPercent);
+  let sliderValue = tipPercent;
   return (
     <Modal
       animationType="fade"
@@ -35,17 +41,18 @@ const GratuityModal = ({
             <Text style={styles.headingText}>Please Enter</Text>
             <Text style={styles.headingText}>The Tip Amount</Text>
           </View>
-          <View>
-            {/* <Slider
-              style={styles.slider}
+          <View style={styles.slider}>
+            <Slider
               minimumValue={0}
               maximumValue={100}
               step={1}
               minimumTrackTintColor="sliderBlue"
               maximumTrackTintColor="#000000"
               value={sliderValue}
-              onValueChange={value => setSliderValue(value)}
-            /> */}
+              // onValueChange={value => setSliderValue(value)}
+
+              onChange={value => setTipPercent(value)}
+            />
             <Text style={styles.percentage}>{sliderValue}%</Text>
           </View>
           <View style={styles.buttonContainer}>
@@ -60,9 +67,14 @@ const GratuityModal = ({
             <TouchableHighlight
               style={[styles.button]}
               onPress={() => {
-                setTipPercent(sliderValue);
+                sendWebkitMessageToIOS("handleTipPercentageChange", {
+                  tipPercentage: tipPercent / 100,
+                  tipAmount: null
+                });
+
+                // setTipPercent(sliderValue);
                 setActiveButton("other");
-                setGratuityAmount(((subtotal * sliderValue) / 100).toFixed(2));
+                // setGratuityAmount(((subtotal * sliderValue) / 100).toFixed(2));
                 setModalVisible(!modalVisible);
               }}
             >

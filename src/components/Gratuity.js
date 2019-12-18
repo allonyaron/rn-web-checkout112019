@@ -7,6 +7,8 @@ import CheckoutContext from "../context/CheckoutContext";
 
 import { usePaymentState } from "../context/PaymentMethodContext";
 
+import { useGratuityState } from "../context/GratuityContext";
+
 let otherTipPercentageLabel = "OTHER";
 
 let tipAmountArr = [16, 18, 20];
@@ -29,9 +31,18 @@ let gratuityTotals = (payment_type, airlineSubtotalMiles, subtotal) =>
 const Gratuity = () => {
   const [activeButton, setActiveButton] = useState(18);
   const { state, sendWebkitMessageToIOS } = useContext(CheckoutContext);
-  const { subtotal, airlineSubtotalMiles, airlineTip } = state;
+  const {
+    subtotal,
+    airlineSubtotalMiles,
+    airlineTip,
+    tipPercentage,
+    tipAmount
+  } = state;
+
+  // should I feed in tippercentage to the dispatch in here??
+
   const [modalVisible, setModalVisible] = useState(false);
-  // const [tipPercent, setTipPercent] = useState(18);
+  const [tipPercent, setTipPercent] = useState(18);
 
   const { paymentState } = usePaymentState();
   const { payment_type } = paymentState;
@@ -53,20 +64,10 @@ const Gratuity = () => {
             ]}
             onPress={() => {
               setActiveButton(option.amount);
-
               sendWebkitMessageToIOS("handleTipPercentageChange", {
-                tipPercentage: option.amount,
+                tipPercentage: option.amount / 100,
                 tipAmount: null
               });
-              // dispatch({
-              //   type:
-              //     payment_type === "MILES"
-              //       ? "SET_GRATUITY_MILES"
-              //       : "SET_GRATUITY",
-              //   payload: option.tipAmount
-              // });
-              // setGratuityAmount(`${option.tipAmount}`);
-              // setTipPercent(option.amount);
             }}
             key={generate()}
           >
@@ -104,7 +105,7 @@ const Gratuity = () => {
               activeButton === "other" ? styles.active : styles.notActive
             ]}
             onPress={() => {
-              // setModalVisible(true);
+              setModalVisible(true);
               // setInitData(appState);
             }}
             key={generate()}
@@ -124,15 +125,16 @@ const Gratuity = () => {
         </View>
       </View>
       <View>
-        {/* <GratuityModal
+        <GratuityModal
           modalVisible={modalVisible}
           setModalVisible={setModalVisible}
           tipPercent={tipPercent}
           setTipPercent={setTipPercent}
+          sendWebkitMessageToIOS={sendWebkitMessageToIOS}
           setActiveButton={setActiveButton}
           setGratuityAmount={() => {}}
           subtotal={subtotal}
-        /> */}
+        />
       </View>
     </View>
   );

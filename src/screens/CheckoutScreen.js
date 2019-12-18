@@ -196,7 +196,8 @@ const styles = StyleSheet.create({
   mainBodyContainer: {
     flex: 68,
     marginLeft: 10,
-    marginRight: 10
+    marginRight: 10,
+    height: 652
   },
 
   paymentContainer: {
@@ -223,7 +224,7 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#d1d1d1",
     borderRadius: 25,
-    // height: 380,
+    height: 380,
     marginTop: 7
   },
 

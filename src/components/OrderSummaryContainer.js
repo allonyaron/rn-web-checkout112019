@@ -29,7 +29,10 @@ const OrderSummary = () => {
     itemQuantity,
     airlineSubtotalMiles,
     airlineTip,
-    airlineTax
+    airlineTax,
+    totalException,
+    airlineTotalExceptionMiles,
+    promotions
   } = state;
   const { exceptionAmount, showException } = useContext(VoucherContext);
   const [takeoutSwitch, setTakeoutSwitch] = useState(false);

@@ -40,11 +40,11 @@ const initialState = {};
 const GratuityProvider = ({ children }) => {
   const [state, dispatch] = React.useReducer(gratuityReducer, initialState);
   return (
-    <GratuityStateContext value={state}>
-      <GratuityDispatchContext value={dispatch}>
+    <GratuityStateContext.Provider value={state}>
+      <GratuityDispatchContext.Provider value={dispatch}>
         {children}
-      </GratuityDispatchContext>
-    </GratuityStateContext>
+      </GratuityDispatchContext.Provider>
+    </GratuityStateContext.Provider>
   );
 };
 
